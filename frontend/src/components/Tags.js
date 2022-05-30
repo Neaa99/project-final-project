@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink, Link, useParams } from 'react-router-dom'
 
+// import { BackIcon } from './BackIcon'
 
-const Marvel = () => {
+const Tags = () => {
 
-    const [marvel, setMarvel] = useState([])
+    const [tagDetails, setTagDetails] = useState([])
+    const { tags } = useParams()
 
     useEffect(() => {
-        fetch(`https://marvel-api-linnea.herokuapp.com/marvel`)
+        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/tags/${tags}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                setMarvel(data)
+                setTagDetails(data)
             })
-        }, [])
+        }, [tags])
 
         return (
-            <div className="homePage">
-    
-            {marvel.map((marvel) => (
+            <div className="homePage"> 
+                <p>Hi</p>
+
+                {tagDetails.map((marvel) => (
                 <Link
                     to={`/feed/${marvel.id}`} 
                     key={marvel.id}
@@ -32,9 +35,10 @@ const Marvel = () => {
                 </div>
                 </Link>
             ))}
-    
             </div>
-        )
+    )
 }
 
-export default Marvel
+
+
+export default Tags

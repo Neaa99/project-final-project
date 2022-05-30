@@ -7,6 +7,9 @@ import LandingPage from './components/LandingPage'
 import AuthorizedPage from './components/AuthorizedPage'
 import Profile from './components/Profile'
 import Feed from 'components/Feed'
+import Details from 'components/Details'
+import Tags from 'components/Tags'
+import Category from 'components/Category'
 
 import { account } from './reducers/account'
 
@@ -25,7 +28,10 @@ export const App = () => {
             <Route exact path="/" element={<LandingPage />}></Route>
             <Route exact path="/authorized" element={<><AuthorizedPage /><Profile /></>}></Route>
             <Route path="/authorized/profile" element={<><AuthorizedPage /><Profile /></>}></Route>
-            <Route exact path="/feed" element={<Feed />}></Route>
+            <Route exact path="/feed" element={<><AuthorizedPage /><Feed /></>}></Route>
+            <Route path='/feed/:id' element={<><AuthorizedPage /><Details /></>}></Route>
+            <Route path='/feed/tags/:tags' element={<><AuthorizedPage /><Tags /></>}></Route>
+            <Route path='/feed/category/:category' element={<><AuthorizedPage /><Category /></>}></Route>
           </Routes>
         </main>
       </Provider>
