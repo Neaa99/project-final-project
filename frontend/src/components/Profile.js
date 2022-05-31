@@ -54,9 +54,9 @@ const Profile = () => {
   }
 
   return (
-    <section className="profile-info-section">
-      <h3>{`Welcome ${user.fullName}`}</h3>
-      <div className="profile-info-wrapper">
+    <section className="main">
+      <h3 className="welcome">{`Welcome ${user.fullName}`}</h3>
+      <div className="profile-info-and-form">
         <div className="profile-info">
           <p><span>Username:</span> {`${user.username}`}</p>
           <p><span>Email:</span> {`${user.email}`}</p>
@@ -73,7 +73,8 @@ const Profile = () => {
             <p><span>Description:</span> {`${user.desc}`}</p>
           }
         </div>
-        <div className="profile-form-wrapper">
+
+        <div className="profile-form">
           <ProfileForm
             fullName={fullName}
             setFullName={setFullName}

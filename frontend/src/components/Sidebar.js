@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   const dispatch = useDispatch()
   return (
-    <aside className="sidebar">
+    <article className="sidebar">
       <nav className="sidebar-nav">
         <ul className="sidebar-list">
           <Link to="/authorized/profile"><li className="sidebar-list-item">Profile</li></Link>
@@ -24,7 +24,7 @@ const Sidebar = () => {
         </ul>
       </nav>
 
-    </aside> 
+    </article> 
 
   )
 }

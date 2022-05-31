@@ -19,7 +19,7 @@ const Category = () => {
 
         return (
             <div className="homePage"> 
-                <p>Hi</p>
+             
 
                 {Category.map((marvel) => (
                 <Link

@@ -19,7 +19,7 @@ const Tags = () => {
 
         return (
             <div className="homePage"> 
-                <p>Hi</p>
+                
 
                 {tagDetails.map((marvel) => (
                 <Link
