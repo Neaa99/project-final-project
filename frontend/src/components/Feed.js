@@ -9,6 +9,8 @@ const Marvel = () => {
     const [asgardiens, setAsgardiens] = useState([])
     const [spiderman, setSpiderman] = useState([])
     const [xmen, setXmen] = useState([])
+    const [animated, setAnimated] = useState([])
+    const [upcoming, setUpcoming] = useState([])
 
 
 
@@ -55,7 +57,25 @@ const Marvel = () => {
                 console.log(data)
                 setXmen(data)
             })
-        }, [])       
+        }, [])     
+    
+    useEffect(() => {
+        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/Animated`)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setAnimated(data)
+            })
+        }, [])    
+        
+    useEffect(() => {
+        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/Upcoming`)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setUpcoming(data)
+            })
+        }, [])         
 
         return (
             <div className="homePage">
@@ -65,7 +85,7 @@ const Marvel = () => {
                         {marvel.map((marvel) => (
                         
                             <Link
-                                to={`/feed/${marvel.id}`} 
+                                to={`/feed/${marvel.title}`} 
                                 key={marvel.id}
                                 tabIndex="0">
                                 <p>{marvel.title}</p>    
@@ -81,7 +101,23 @@ const Marvel = () => {
                         {avengers.map((marvel) => (
                         
                             <Link
-                                to={`/feed/${marvel.id}`} 
+                                to={`/feed/${marvel.title}`} 
+                                key={marvel.id}
+                                tabIndex="0">
+                                <p>{marvel.title}</p>    
+                                <img src={marvel.poster} alt={marvel.title}/>
+                            </Link>
+                        ))}
+                    </div>
+                </section>
+
+                <h3>Upcoming movies and series:</h3>
+                <section className="all-marvel">
+                    <div className="scroller">
+                        {upcoming.map((marvel) => (
+                        
+                            <Link
+                                to={`/feed/${marvel.title}`} 
                                 key={marvel.id}
                                 tabIndex="0">
                                 <p>{marvel.title}</p>    
@@ -97,7 +133,7 @@ const Marvel = () => {
                         {asgardiens.map((marvel) => (
                         
                             <Link
-                                to={`/feed/${marvel.id}`} 
+                                to={`/feed/${marvel.title}`} 
                                 key={marvel.id}
                                 tabIndex="0">
                                 <p>{marvel.title}</p>    
@@ -113,7 +149,7 @@ const Marvel = () => {
                         {spiderman.map((marvel) => (
                         
                             <Link
-                                to={`/feed/${marvel.id}`} 
+                                to={`/feed/${marvel.title}`} 
                                 key={marvel.id}
                                 tabIndex="0">
                                 <p>{marvel.title}</p>    
@@ -126,10 +162,26 @@ const Marvel = () => {
                 <h3>X-Man:</h3>
                 <section className="all-marvel">
                     <div className="scroller">
-                        {avengers.map((marvel) => (
+                        {xmen.map((marvel) => (
                         
                             <Link
-                                to={`/feed/${marvel.id}`} 
+                                to={`/feed/${marvel.title}`} 
+                                key={marvel.id}
+                                tabIndex="0">
+                                <p>{marvel.title}</p>    
+                                <img src={marvel.poster} alt={marvel.title}/>
+                            </Link>
+                        ))}
+                    </div>
+                </section>
+
+                <h3>Animated series and movies:</h3>
+                <section className="all-marvel">
+                    <div className="scroller">
+                        {animated.map((marvel) => (
+                        
+                            <Link
+                                to={`/feed/${marvel.title}`} 
                                 key={marvel.id}
                                 tabIndex="0">
                                 <p>{marvel.title}</p>    

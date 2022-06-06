@@ -29,9 +29,9 @@ export const App = () => {
             <Route exact path="/authorized" element={<><AuthorizedPage /><Profile /></>}></Route>
             <Route path="/authorized/profile" element={<><AuthorizedPage /><Profile /></>}></Route>
             <Route exact path="/feed" element={<><AuthorizedPage /><Feed /></>}></Route>
-            <Route exact path='/feed/:id' element={<><AuthorizedPage /><Details /></>}></Route>
+            <Route exact path='/feed/:title' element={<><AuthorizedPage /><Details /></>}></Route>
             <Route path='/feed/tags/:tags' element={<><AuthorizedPage /><Tags /></>}></Route>
-            <Route path='/feed/category/:category' element={<><AuthorizedPage /><Category /></>}></Route>
+            <Route path='/feed/categories/:category' element={<><AuthorizedPage /><Category /></>}></Route>
           </Routes>
         </main>
       </Provider>

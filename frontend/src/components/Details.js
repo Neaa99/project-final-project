@@ -5,27 +5,57 @@ import { NavLink, Link, useParams } from 'react-router-dom'
 
 const Details = () => {
 
+
     const [details, setDetails] = useState([])
-    const [marvelCategory, setCategory] = useState([])
-    const { id, category } = useParams()
+    const [marvelCategories, setCategory] = useState([])
+    const [marvelTags, setTags] = useState([])
+    const { title } = useParams()
 
     useEffect(() => {
-        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${id}`)
+        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
                 setDetails(data)
             })
-        }, [id])
+        }, [title])
 
-    useEffect(() => {
-        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/tags/${category}`)
+       useEffect(() => {
+        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
-                setCategory(data)
+                console.log(data.category)
+                setCategory(data.category)
             })
-        }, [category])        
+        }, [])       
+
+    useEffect(() => {
+        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data.tags)
+                setTags(data.tags)
+            })
+        }, []) 
+
+      
+        
+        // if ({details.medium} === "Movie") {
+        //     <p tabIndex="0" >Box office: {details.box_office}</p>
+        // } else if ({details.medium} === "Series") {
+        //     <p tabIndex="0" >Number of episodes: {details.numberOfEpisodes}</p>
+        // } else {
+        //     <p tabIndex="0" >Length of OneShot: {details.oneShotLength}</p>
+        // }
+        // const x = () => {
+        //     if (details.medium === 'Movie') {
+        //         let dependMedium = details.box_office
+        //     } else if (details.medium === 'Series') {
+        //         let dependMedium = details.numberOfEpisodes
+        //     } else {
+        //         let dependMedium = details.oneShotLength
+        //     }
+        // }
 
         return (
             <div className="main"> 
@@ -36,29 +66,46 @@ const Details = () => {
                 
                 <div className="movie-box">
                     <img className="movie-image" src={details.poster} alt={details.title} tabIndex="0"/>
-                    <div className="movie-summary">
-                       <h2>{details.title}</h2>
-                       
-                       <Link to={`/feed/${details.category}`}><h2>{details.category}</h2></Link>
-                       <Link to={`/feed/tags/${details.tags}`}><h2>{details.tags}</h2></Link>
+                        <section className="movie-summary">
+                        <h2 className="movie-title">{details.title}</h2>
 
-                    {/* <div>
-                       {marvelCategory.map((marvel) => (
+                            <div className="movie-details">
+                                <p tabIndex="0" >{details.medium}</p>
+                                <p tabIndex="0" >Director: {details.director}</p>
+                                <p tabIndex="0" >Release date: {details.release_date}</p>
+
+                                {details.numberOfEpisodes && (
+                                    <p tabIndex="0" >Number of episodes: {details.numberOfEpisodes}</p>
+                                )}
+                                {details.box_office && (
+                                        <p tabIndex="0" >Box office: {details.box_office}</p>
+
+                                )}
+                                 {details.oneShotLength && (
+                                        <p tabIndex="0" >Length of OneSHot: {details.oneShotLength}</p>
+
+
+                                )}
+
+
                         
-                        <Link
-                            to={`/feed/${marvel.id}`} 
-                            key={marvel.id}
-                            tabIndex="0">
-                            <p>{marvel.title}</p>    
-                            <img src={marvel.poster} alt={marvel.title}/>
-                        </Link>
-                    ))}
-                    </div> */}
-                        <p tabIndex="0" >{details.medium}</p>
-                        <p tabIndex="0" >{details.director}</p>
-                        <p tabIndex="0" >{details.release_date}</p>
 
-                    </div>
+                            </div>
+                        
+                            <div className="categories">
+                                <h2>Categories:</h2>
+                                {marvelCategories.map((category) => (<Link to={`/feed/categories/${category}`}><h2>{category}</h2></Link>))}
+                            </div>
+
+                            <div className="tags">
+                                <h2>Tags:</h2>
+                                {marvelTags.map((tag) => (<Link to={`/feed/tags/${tag}`}><h2>{tag}</h2></Link>))}
+                            </div>
+
+                            <div className="movie-desc">
+                                <p>{details.description}</p>
+                            </div>
+                        </section>
                 </div>
             </div>
     )

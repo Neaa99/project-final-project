@@ -18,20 +18,26 @@ const Tags = () => {
         }, [tags])
 
         return (
-            <div className="homePage"> 
-                
+            <div className="category-feed"> 
+             
+            <h3>Tags: {tags}</h3>
 
                 {tagDetails.map((marvel) => (
                 <Link
-                    to={`/feed/${marvel.id}`} 
+                    to={`/feed/${marvel.title}`} 
                     key={marvel.id}
-                    tabIndex="0">
+                    tabIndex="0"
+                    className="category-movie-box">
+
+               <h1 className="movie-title">{marvel.title}</h1>        
                     
-                <img src={marvel.poster} alt={marvel.title}/>
+                <img src={marvel.poster} alt={marvel.title} className="movie-poster"/>
     
                 <div className="details">
-                    <h1>{marvel.title}</h1>
                     <p>{marvel.release_date}</p>
+                    {/* <p className="tags-box"> {marvelTags.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p> */}
+                    
+                    
                 </div>
                 </Link>
             ))}
