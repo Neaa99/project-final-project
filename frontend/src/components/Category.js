@@ -17,11 +17,11 @@ const { category, title } = useParams()
         }) }, []) 
 
 
-        useEffect(() => {fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
+        useEffect(() => {fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/${category}`)
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data.tags)
-                    setNewTag(data.tags)
+                    console.log(data[0].tags) //Shows first element, I want to access it all
+                    setNewTag(data[0].tags)
                 })
             }, []) 
 
