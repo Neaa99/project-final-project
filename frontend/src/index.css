@@ -352,6 +352,18 @@ a:link {
   border-radius: 5px;
 }
 
+.category-box {
+  display: flex;
+  gap: 5px;
+}
+
+.category {
+  cursor: pointer;
+  background-color: rgb(93, 93, 252);
+  padding: 5px;
+  border-radius: 1px;
+}
+
 .movie-poster {
   width: 70vw;
 }
@@ -372,6 +384,26 @@ a:link {
   }
   .movie-box {
     flex-direction: row;
+  }
+  .movie-poster {
+    width: auto;
+    height: 700px;
+    
+  }
+  .category-feed {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px; 
+ 
+  }
+  .tags-box {
+    max-width:450px;
+    max-height: 200px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    width: auto;
   }
 }
 

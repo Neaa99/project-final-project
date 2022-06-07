@@ -75,12 +75,12 @@ const Details = () => {
                         
                             <div className="categories">
                                 <h2>Categories:</h2>
-                                {marvelCategories.map((category) => (<Link to={`/feed/categories/${category}`}><h2>{category}</h2></Link>))}
+                                <p className="category-box">{marvelCategories.map((category) => (<Link to={`/feed/categories/${category}`}><p className="category">{category}</p></Link>))}</p>
                             </div>
 
                             <div className="tags">
                                 <h2>Tags:</h2>
-                                {marvelTags.map((tag) => (<Link to={`/feed/tags/${tag}`}><h2>{tag}</h2></Link>))}
+                                <p className="tags-box"> {marvelTags.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p> 
                             </div>
 
                             <div className="movie-desc">
