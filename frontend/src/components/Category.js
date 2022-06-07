@@ -7,22 +7,23 @@ const Category = () => {
 
 const [Category, setCategory] = useState([]) 
 const [newTag, setNewTag] = useState([]) 
-const { category } = useParams() 
+const { category, title } = useParams() 
 
     useEffect(() => { fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/${category}`) 
         .then(res => res.json()) 
         .then(data => { 
             console.log(data) 
-            setNewTag(data) 
+            setCategory(data) 
         }) }, []) 
 
 
-    useEffect(() => { fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/${category}`) 
-        .then(res => res.json()) 
-        .then(data => { 
-            console.log(data.tags) 
-            setNewTag(data.tags)
-         }) }, [])
+        useEffect(() => {fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data.tags)
+                    setNewTag(data.tags)
+                })
+            }, []) 
 
         return (
             <div className="category-feed"> 

@@ -38,25 +38,6 @@ const Details = () => {
             })
         }, []) 
 
-      
-        
-        // if ({details.medium} === "Movie") {
-        //     <p tabIndex="0" >Box office: {details.box_office}</p>
-        // } else if ({details.medium} === "Series") {
-        //     <p tabIndex="0" >Number of episodes: {details.numberOfEpisodes}</p>
-        // } else {
-        //     <p tabIndex="0" >Length of OneShot: {details.oneShotLength}</p>
-        // }
-        // const x = () => {
-        //     if (details.medium === 'Movie') {
-        //         let dependMedium = details.box_office
-        //     } else if (details.medium === 'Series') {
-        //         let dependMedium = details.numberOfEpisodes
-        //     } else {
-        //         let dependMedium = details.oneShotLength
-        //     }
-        // }
-
         return (
             <div className="main"> 
                 
