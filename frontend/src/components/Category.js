@@ -6,22 +6,22 @@ import { NavLink, Link, useParams } from 'react-router-dom'
 const Category = () => {
 
 const [Category, setCategory] = useState([]) 
-const [marvelTags, setTags] = useState([]) 
-const { category, title, tags } = useParams() 
+const [newTag, setNewTag] = useState([]) 
+const { category } = useParams() 
 
     useEffect(() => { fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/${category}`) 
         .then(res => res.json()) 
         .then(data => { 
             console.log(data) 
-            setCategory(data) 
-        }) }, [category]) 
+            setNewTag(data) 
+        }) }, []) 
 
 
-    useEffect(() => { fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`) 
+    useEffect(() => { fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/${category}`) 
         .then(res => res.json()) 
         .then(data => { 
             console.log(data.tags) 
-            setTags(data.tags)
+            setNewTag(data.tags)
          }) }, [])
 
         return (
@@ -42,7 +42,7 @@ const { category, title, tags } = useParams()
         
                     <div className="details"> 
                         <p>{marvel.release_date}</p> 
-                        {/* <p className="tags-box"> {marvelTags.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p> */} 
+                        <p className="tags-box"> {newTag.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p> 
                     </div> 
                 
                 </Link> ))}

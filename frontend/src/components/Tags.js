@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, Link, useParams } from 'react-router-dom'
 
+import TagBox from './TagBox'
+
 // import { BackIcon } from './BackIcon'
 
 const Tags = () => {
@@ -12,7 +14,7 @@ const Tags = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/tags/${tags}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                console.log(data.tags)
                 setTagDetails(data)
             })
         }, [tags])
@@ -36,7 +38,7 @@ const Tags = () => {
                 <div className="details">
                     <p>{marvel.release_date}</p>
                     {/* <p className="tags-box"> {marvelTags.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p> */}
-                    
+                    {/* <TagBox /> */}
                     
                 </div>
                 </Link>

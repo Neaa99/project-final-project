@@ -10,6 +10,7 @@ import Feed from 'components/Feed'
 import Details from 'components/Details'
 import Tags from 'components/Tags'
 import Category from 'components/Category'
+import TagBox from 'components/TagBox'
 
 import { account } from './reducers/account'
 
