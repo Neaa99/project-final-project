@@ -46,11 +46,11 @@ const Tags = () => {
                                 <p className="tag-desc">{marvel.description}</p>
                                 <p className="tag-rating"><span className="IMBd">IMDb:</span> {marvel.imdbRating}</p>
                                 <p className="tag-medium">{marvel.medium}</p>
-                                {/* <div className="mini-box">
+                                <div className="mini-box">
                                     <p className="small-category">{marvel.category[0]}</p>
                                     <p className="small-category">{marvel.category[1]}</p>
 
-                                </div> */}
+                                </div>
 
 
 
