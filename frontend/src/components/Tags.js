@@ -7,34 +7,26 @@ import TagBox from './TagBox'
 
 const Tags = () => {
 
-    const [tagDetails, setTagDetails] = useState([])
+
     const [newTag, setNewTag] = useState([]) 
     const { tags } = useParams()
 
     useEffect(() => {
-        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
+        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/tags/${tags}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                setTagDetails(data)
+                setNewTag(data)
             })
-        }, [title])      
+        }, [])      
 
-    useEffect(() => {
-        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data.tags)
-                setNewTag(data.tags)
-            })
-        }, []) 
 
         return (
             <>
             <h3>Tags: {tags}</h3>
             <div className="category-feed"> 
 
-                {tagDetails.map((marvel) => (
+                {newTag.map((marvel) => (
                 <Link
                     to={`/feed/${marvel.title}`} 
                     key={marvel.id}
@@ -47,8 +39,9 @@ const Tags = () => {
     
                 <div className="details">
                     <p>{marvel.release_date}</p>
-                    {/* <p className="tags-box"> {newTag.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p> */}
-                    {/* <TagBox /> */}
+                    {/* <p>Tags:</p> */}
+                    {/* <p className="tags-box">{marvel.tags.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p> */}
+
                     
                 </div>
                 </Link>
