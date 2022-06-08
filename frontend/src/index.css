@@ -18,6 +18,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
+  /* background-color: #FAFBFD; */
 }
 
 code {
@@ -25,15 +26,6 @@ code {
     monospace;
 }
 
-/* .main {
-  position: sticky;
-  font-size: 1.6rem;
-  color: var(--primary-sixth);
-  background-color: #ffd8be;
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-} */
 
 .landingpage-section-wrapper {
   width: 100%;
@@ -48,7 +40,7 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-three);
+  background-color: white;
   box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
   border-radius: 28px;
   padding: 50px;
@@ -76,22 +68,28 @@ label {
 }
 
 .sidebar {
-  background: var(--primary-three);
+  background: #7A81DC;
   color: #000;
   width: 100%;
   height: 10%;
   bottom: 0;
   position: fixed;
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px;
   position: fixed;
   z-index: 10;
 }
 
 .sidebar-list {
   margin: 0;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-nav {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -292,6 +290,7 @@ a:link {
   flex-direction: column;
   height: 100vh;
   margin: 10px 10px;
+  margin-top: 80px;
   /* padding: 0 50px; */
 }
 
@@ -331,6 +330,14 @@ a:link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0px; /* Margin here so the text don't disaperar under the header */
+
+}
+
+.main-title {
+  z-index: 100;
+  position: sticky;
+  text-align: center;
 }
 
 .category-movie-box {
@@ -352,6 +359,69 @@ a:link {
   border-radius: 5px;
 }
 
+.tags-movie-box {
+  padding: 20px;
+}
+
+.tag-poster {
+  height: auto;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.tag-details {
+  margin:  0 10px;
+}
+
+.tag-desc {
+  font-size: 10px;
+}
+
+.tag-rating {
+  font-size: 10px;
+  color: #DC0023
+}
+
+.IMBd {
+  color: black;
+  background: #DFB31D;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.tag-medium {
+  font-size: 10px;
+}
+
+.info-box {
+  display: flex;
+  margin: 0px;
+}
+
+.tag-title {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.small-category {
+  background: lightblue;
+  font-size: 10px;
+  padding: 3px;
+
+}
+
+.mini-box {
+  display: flex;
+  max-width: 20vh;
+  max-height: 50px;
+  gap: 5px;
+}
+
+.tag-date {
+  font-size: 12px;
+  margin: 0px;
+}
+
 .category-box {
   display: flex;
   gap: 5px;
@@ -367,6 +437,38 @@ a:link {
 .movie-poster {
   width: 70vw;
 }
+
+.header {
+  background: #FD7E6D;
+  color: #000;
+  width: 100vw;
+  height: 10%;
+  top: 0;
+  position: fixed;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 10;
+}
+
+.icon {
+  width: 30px;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  margin: 20px; 
+}
+
+.icon-text {
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.icon:hover {
+  margin-right: 5px;
+}
+
 
 /* Desktop */
 @media (min-width:1024px) {
@@ -457,14 +559,19 @@ a:link {
   overflow: auto;
   position: sticky;
   font-size: 1.6rem;
-  color: var(--primary-sixth);
-  background-color: #ffd8be;
+  color: black;
+  background-color: #ffd8be6b;
+  /* margin-top: 70px;  So the Title dosn't dissaperar behind the header */
   margin-bottom: 50px;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .homePage {
   display: flex;
-  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap; FAFBFD*/
   flex-direction: column;
   height: 100%;
   overflow: hidden;

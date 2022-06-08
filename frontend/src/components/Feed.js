@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+import Header from './Header'
+
 
 const Marvel = () => {
 
@@ -78,6 +80,7 @@ const Marvel = () => {
         }, [])         
 
         return (
+            
             <div className="homePage">
             <h3>All marvel:</h3>
                 <section className="all-marvel">

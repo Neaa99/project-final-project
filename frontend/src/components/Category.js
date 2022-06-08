@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
+import Header from './Header'
+
 
 const Category = (movie) => {
 
@@ -16,10 +18,10 @@ const { category } = useParams()
 
         return (
             <>
-            <h3>Category: {category}</h3> 
-            <div className="category-feed"> 
-                
-             
+            
+            <div className="homePage"> 
+            <section className="category-feed">
+            <h3 className="main-title">Category: {category}</h3> 
 
                 {Category.map((marvel) => (
                 <Link
@@ -43,6 +45,7 @@ const { category } = useParams()
                     </div> 
                 
                 </Link> ))}
+                </section>
             </div>
             </>
     )

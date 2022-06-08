@@ -23,29 +23,42 @@ const Tags = () => {
 
         return (
             <>
-            <h3>Tags: {tags}</h3>
+            <h3 className="main-title">Tag: {tags}</h3>
             <div className="category-feed"> 
 
+            <section className="tags-movie-box">
+
+            
                 {newTag.map((marvel) => (
-                <Link
-                    to={`/feed/${marvel.title}`} 
-                    key={marvel.id}
-                    tabIndex="0"
-                    className="category-movie-box">
+                    <Link
+                        to={`/feed/${marvel.title}`} 
+                        key={marvel.id}
+                        tabIndex="0"
+                        className="tags-movie-box">
 
-               <h3 className="movie-title">{marvel.title}</h3>        
-                    
-                <img src={marvel.poster} alt={marvel.title} className="movie-poster"/>
-    
-                <div className="details">
-                    <p>{marvel.release_date}</p>
-                    {/* <p>Tags:</p> */}
-                    {/* <p className="tags-box">{marvel.tags.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p> */}
+                              
+                        <div className="info-box">
+                            <img className="tag-poster" src={marvel.poster} alt={marvel.title} />
+            
+                            <div className="tag-details">
+                                <h3 className="tag-title">{marvel.title}</h3>   
+                                <p className="tag-date">{marvel.release_date}</p>
+                                <p className="tag-desc">{marvel.description}</p>
+                                <p className="tag-rating"><span className="IMBd">IMDb:</span> {marvel.imdbRating}</p>
+                                <p className="tag-medium">{marvel.medium}</p>
+                                {/* <div className="mini-box">
+                                    <p className="small-category">{marvel.category[0]}</p>
+                                    <p className="small-category">{marvel.category[1]}</p>
 
-                    
-                </div>
-                </Link>
-            ))}
+                                </div> */}
+
+
+
+                            </div>
+                        </div>
+                    </Link>
+                 ))}
+            </section>
             </div>
             </>
     )

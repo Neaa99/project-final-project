@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 const Sidebar = () => {
 
   const dispatch = useDispatch()
+  
   return (
     <article className="sidebar">
       <nav className="sidebar-nav">
