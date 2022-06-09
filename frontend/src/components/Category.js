@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
-import Header from './Header'
+import TopScroll from './TopScroll'
 
 
 const Category = (movie) => {
@@ -17,35 +17,48 @@ const { category } = useParams()
         }) }, []) 
 
         return (
-            <>
-            
-            <div className="homePage"> 
-            <section className="category-feed">
-            <h3 className="main-title">Category: {category}</h3> 
+<>
+            <h3 className="main-title">Category: {category}</h3>
+            <div className="category-feed"> 
 
+            <TopScroll />
+
+            <section className="movie-container">
+
+            
                 {Category.map((marvel) => (
-                <Link
-                    to={`/feed/${marvel.title}`} 
-                    key={marvel.id}
-                    tabIndex="0"
-                    className="category-movie-box">
-                
-                    <h3 className="movie-title">{marvel.title}</h3>
-                        
-                    <img src={marvel.poster} alt={marvel.title}  className="movie-poster"/>
-        
-                    <div className="details"> 
-                        <p>{marvel.release_date}</p> 
-                        <p>Tags:</p>
-                        <p className="tags-box">{marvel.tags.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p>
-                        
-                        {/* <p className="tags-box"> {marvelTags.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p>  */}
-                       
-                    
-                    </div> 
-                
-                </Link> ))}
-                </section>
+                    <Link
+                        to={`/feed/${marvel.title}`} 
+                        key={marvel.id}
+                        tabIndex="0"
+                        className="movie-container">
+
+                              
+                        <div className="info-box">
+                            <img className="tag-poster" src={marvel.poster} alt={marvel.title} />
+            
+                            <div className="tag-details">
+                                <h3 className="tag-title">{marvel.title}</h3>   
+                                <p className="tag-date">{marvel.release_date}</p>
+                                <p className="tag-desc">{marvel.description}</p>
+                                <p className="tag-rating"><span className="IMBd">IMDb:</span> {marvel.imdbRating}</p>
+                                <p className="tag-medium">{marvel.medium}</p>
+                                <div className="mini-tag-box">
+                                    <p className="one-tag">{marvel.tags[0]}</p>
+                                    {marvel.tags[1] && (
+                                    <p className="one-tag">{marvel.tags[1]}</p>)} 
+                                                    
+
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </Link>
+                 ))}
+            </section>
             </div>
             </>
     )

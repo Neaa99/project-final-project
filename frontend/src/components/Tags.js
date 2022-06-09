@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, Link, useParams } from 'react-router-dom'
 
-import TagBox from './TagBox'
-
-// import { BackIcon } from './BackIcon'
+import TopScroll from './TopScroll'
 
 const Tags = () => {
 
@@ -23,45 +21,50 @@ const Tags = () => {
 
         return (
             <>
-            <h3 className="main-title">Tag: {tags}</h3>
-            <div className="category-feed"> 
-
-            <section className="tags-movie-box">
-
+                        <h3 className="main-title">Category: {tags}</h3>
+                        <div className="category-feed"> 
             
-                {newTag.map((marvel) => (
-                    <Link
-                        to={`/feed/${marvel.title}`} 
-                        key={marvel.id}
-                        tabIndex="0"
-                        className="tags-movie-box">
-
-                              
-                        <div className="info-box">
-                            <img className="tag-poster" src={marvel.poster} alt={marvel.title} />
+                        <TopScroll />
             
-                            <div className="tag-details">
-                                <h3 className="tag-title">{marvel.title}</h3>   
-                                <p className="tag-date">{marvel.release_date}</p>
-                                <p className="tag-desc">{marvel.description}</p>
-                                <p className="tag-rating"><span className="IMBd">IMDb:</span> {marvel.imdbRating}</p>
-                                <p className="tag-medium">{marvel.medium}</p>
-                                <div className="mini-box">
-                                    <p className="small-category">{marvel.category[0]}</p>
-                                    <p className="small-category">{marvel.category[1]}</p>
-
-                                </div>
-
-
-
-                            </div>
+                        <section className="movie-container">
+            
+                        
+                            {newTag.map((marvel) => (
+                                <Link
+                                    to={`/feed/${marvel.title}`} 
+                                    key={marvel.id}
+                                    tabIndex="0"
+                                    className="movie-container">
+            
+                                          
+                                    <div className="info-box">
+                                        <img className="tag-poster" src={marvel.poster} alt={marvel.title} />
+                        
+                                        <div className="tag-details">
+                                            <h3 className="tag-title">{marvel.title}</h3>   
+                                            <p className="tag-date">{marvel.release_date}</p>
+                                            <p className="tag-desc">{marvel.description}</p>
+                                            <p className="tag-rating"><span className="IMBd">IMDb:</span> {marvel.imdbRating}</p>
+                                            <p className="tag-medium">{marvel.medium}</p>
+                                            <div className="mini-tag-box">
+                                                <p className="one-tag blue">{marvel.category[0]}</p>
+                                                {marvel.tags[0] && (
+                                                <p className="one-tag red">{marvel.tags[0]}</p>)} 
+                                                                
+            
+            
+                                            </div>
+            
+            
+            
+                                        </div>
+                                    </div>
+                                </Link>
+                             ))}
+                        </section>
                         </div>
-                    </Link>
-                 ))}
-            </section>
-            </div>
-            </>
-    )
+                        </>
+                )
 }
 
 

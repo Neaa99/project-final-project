@@ -152,6 +152,7 @@ label {
   border-radius: 5px;
 }
 
+
 span {
   font-weight: bold;
 }
@@ -359,8 +360,8 @@ a:link {
   border-radius: 5px;
 }
 
-.tags-movie-box {
-  padding: 20px;
+.movie-container {
+  padding: 0 20px;
 }
 
 .tag-poster {
@@ -391,6 +392,7 @@ a:link {
 
 .tag-medium {
   font-size: 10px;
+  /* margin: 0; */
 }
 
 .info-box {
@@ -403,19 +405,22 @@ a:link {
   margin: 0px;
 }
 
-.small-category {
+.one-tag {
   background: #FD7E6D;
   font-size: 10px;
   padding: 3px;
   border-radius: 3px;
+  margin: 0;
 
 }
 
-.mini-box {
+.mini-tag-box {
   display: flex;
   max-width: 20vh;
   max-height: 50px;
   gap: 5px;
+  
+  
 }
 
 .tag-date {
@@ -427,6 +432,7 @@ a:link {
   display: flex;
   gap: 5px;
 }
+
 
 .category {
   cursor: pointer;
@@ -449,6 +455,7 @@ a:link {
   border-radius: 20px;
   position: fixed;
   z-index: 10;
+  display: flex;
 }
 
 .icon {
@@ -606,3 +613,82 @@ a:link {
 }
 
 
+/* TopScroll */
+
+.span-box {
+  margin: 20px 0 0 0;
+  width: 300px;
+  height: 40px;
+}
+
+.top-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.list-item {
+  background: #FD7E6D;
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.red {
+  background: #FD7E6D;
+}
+
+.blue {
+  background: #5D5DFC;
+}
+
+.green {
+  background: #849D35;
+}
+
+
+/* Burger Menu */
+
+.burger-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+
+ .meny ul {
+  position: fixed;
+  background: linear-gradient(to bottom right, #F6EABE, 
+     #FDA65D, #FFA810);
+  width: 100%;
+  height: 100vh;
+  right: 96%;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;   
+}
+
+.meny li:hover, .meny li:focus {
+  font-weight: 600;
+  border-radius: 5px;  
+  background-color: white;
+  width: 100%;
+  animation-name: colorChange2;
+  animation-duration: 5s;
+}
+
+.meny button:focus + ul {
+  opacity: 1;
+  pointer-events: auto;
+  right: 0;
+}
