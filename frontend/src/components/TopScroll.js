@@ -11,10 +11,10 @@ const TopScroll = (props) => {
     return (
         <div className="span-box">
             <div className="top-nav">
-                <Link to={`/feed/tags/${tag}`}>
+                <Link to={`/feed/tags`}>
                     <li className="list-item red">Tags</li>
                 </Link>
-                <Link to={`/feed/categories/${category}`}>
+                <Link to={`/feed/categories`}>
                     <li className="list-item blue">Categories</li>
                 </Link>
                 <Link to={``}>

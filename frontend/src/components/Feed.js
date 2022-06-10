@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import Header from './Header'
+import TopScroll from './TopScroll'
 
 
 const Marvel = () => {
@@ -13,6 +13,7 @@ const Marvel = () => {
     const [xmen, setXmen] = useState([])
     const [animated, setAnimated] = useState([])
     const [upcoming, setUpcoming] = useState([])
+    const [oneShot, setOneShot] = useState([])
 
 
 
@@ -77,11 +78,22 @@ const Marvel = () => {
                 console.log(data)
                 setUpcoming(data)
             })
-        }, [])         
+        }, [])  
+
+    useEffect(() => {
+        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/OneShot`)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setOneShot(data)
+            })
+        }, []) 
 
         return (
             
+            
             <div className="homePage">
+                <TopScroll />
             <h3>All marvel:</h3>
                 <section className="all-marvel">
                     <div className="scroller">
@@ -182,6 +194,22 @@ const Marvel = () => {
                 <section className="all-marvel">
                     <div className="scroller">
                         {animated.map((marvel) => (
+                        
+                            <Link
+                                to={`/feed/${marvel.title}`} 
+                                key={marvel.id}
+                                tabIndex="0">
+                                <p>{marvel.title}</p>    
+                                <img src={marvel.poster} alt={marvel.title}/>
+                            </Link>
+                        ))}
+                    </div>
+                </section>
+
+                <h3>OneShots:</h3>
+                <section className="all-marvel">
+                    <div className="scroller">
+                        {oneShot.map((marvel) => (
                         
                             <Link
                                 to={`/feed/${marvel.title}`} 

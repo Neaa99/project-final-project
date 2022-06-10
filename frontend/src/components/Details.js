@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, Link, useParams } from 'react-router-dom'
+import uniqid from 'uniqid';
 
 // import { BackIcon } from './BackIcon'
 
@@ -39,7 +40,7 @@ const Details = () => {
         }, []) 
 
         return (
-            <div className="main"> 
+            <div className="homePage"> 
                 
                 <NavLink className="backLink" to='/marvel'>
                    {/* <BackIcon /> */}
@@ -49,43 +50,51 @@ const Details = () => {
                     <img className="movie-image" src={details.poster} alt={details.title} tabIndex="0"/>
                         <section className="movie-summary">
                         <h2 className="movie-title">{details.title}</h2>
-
-                            <div className="movie-details">
-                                <p tabIndex="0" >{details.medium}</p>
-                                <p tabIndex="0" >Director: {details.director}</p>
-                                <p tabIndex="0" >Release date: {details.release_date}</p>
-
-                                {details.numberOfEpisodes && (
-                                    <p tabIndex="0" >Number of episodes: {details.numberOfEpisodes}</p>
-                                )}
-                                {details.box_office && (
-                                        <p tabIndex="0" >Box office: {details.box_office}</p>
-
-                                )}
-                                 {details.oneShotLength && (
-                                        <p tabIndex="0" >Length of OneSHot: {details.oneShotLength}</p>
-
-
-                                )}
-
-
-                        
-
-                            </div>
-                        
-                            <div className="categories">
-                                <h2>Categories:</h2>
-                                <p className="category-box">{marvelCategories.map((category) => (<Link to={`/feed/categories/${category}`}><p className="category">{category}</p></Link>))}</p>
-                            </div>
-
-                            <div className="tags">
-                                <h2>Tags:</h2>
-                                <p className="tags-box"> {marvelTags.map((tag) => (<Link to={`/feed/tags/${tag}`}><p className="tag">{tag}</p></Link>))}</p> 
-                            </div>
-
+                        <p className="movie-medium bold">{details.medium}</p>
+                            
                             <div className="movie-desc">
                                 <p>{details.description}</p>
                             </div>
+
+                            <div className="movie-details">
+                                <p className="details-p"><span className="bold">Release date:</span> 
+                                    <br/>{details.release_date}</p>
+                                <p className="details-p"><span className="bold">Director:</span>
+                                    <br/> {details.director}</p>
+
+                                {details.numberOfEpisodes && (
+                                    <p className="details-p"><span className="bold">Number of episodes:</span> 
+                                        <br/>{details.numberOfEpisodes}</p>
+                                )}
+                                {details.box_office && (
+                                        <p className="details-p"><span className="bold">Box office:</span> 
+                                            <br/>{details.box_office}</p>
+                                )}
+                                 {details.oneShotLength && (
+                                        <p className="details-p"><span className="bold">Length of OneSHot:</span> 
+                                            <br/>{details.oneShotLength}</p>
+                                )}
+                            </div>
+                        
+                            <p className="details-category-title">Categories:</p>
+                            <div className="details-category">
+                                <p className="category-box">{marvelCategories.map((category) => (
+                                    <Link to={`/feed/categories/${category}`} key={uniqid()}>
+                                        <p className="tag blue">{category}</p>
+                                    </Link>))}
+                                </p>
+                            </div>
+
+                            <p className="details-tags-title">Tags:</p>
+                            <div className="details-tags">
+                                <p className="tags-box"> {marvelTags.map((tag) => (
+                                    <Link to={`/feed/tags/${tag}`} key={uniqid()}>
+                                        <p className="tag red">{tag}</p>
+                                    </Link>))}
+                                </p> 
+                            </div>
+
+                           
                         </section>
                 </div>
             </div>
