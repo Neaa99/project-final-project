@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { batch, useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
-import { account } from '../reducers/account'
+import { account } from '../../reducers/account'
 
-import { API_URL, SIGNUP } from '../utils/constants'
+import { API_URL, SIGNIN } from '../../utils/constants'
 
-const SignupForm = () => {
+const LoginForm = () => {
   const [username, setUsername] = useState('')
-  const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
   const accessToken = useSelector(store => store.account.accessToken)
@@ -22,8 +21,8 @@ const SignupForm = () => {
     }
   }, [accessToken, history])
 
-  const handleOnClick = () => {
-    dispatch(account.actions.showSignupForm(false))
+  const handleOnClick = (action) => {
+    dispatch(action)
   }
 
   const onFormSubmit = (event) => {
@@ -34,10 +33,10 @@ const SignupForm = () => {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ username, email, password })
+      body: JSON.stringify({ username, password })
     }
 
-    fetch(API_URL(SIGNUP), options)
+    fetch(API_URL(SIGNIN), options)
       .then(res => res.json())
       .then(data => {
         if (data.success) {
@@ -68,46 +67,32 @@ const SignupForm = () => {
 
   return (
     <div className="landingpage-section-wrapper">
-      <section className="landingpage-section signup-section">
-        <h3>Sign Up!</h3>
-        <form className="form signup-form" onSubmit={onFormSubmit}>
+      <section className="landingpage-section">
+        <h3>Log in</h3>
+        <form className="form" onSubmit={onFormSubmit}>
           <label htmlFor="username">Username:</label>
           <input 
-            className="input signup-username-input" 
+            className="input" 
             type="text" 
             value={username} 
             onChange={(event) => setUsername(event.target.value)} 
           />
-          <label htmlFor="Email">Email:</label>
-          <input 
-            className="input signup-Email-input" 
-            type="email" 
-            value={email} 
-            onChange={(event) => setEmail(event.target.value)} 
-          />
           <label htmlFor="password">Password:</label>
           <input 
-            className="input signup-password-input" 
+            className="input" 
             type="password" 
             value={password} 
             onChange={(event) => setPassword(event.target.value)} 
           />
           {error && <p className="error-msg">{error.message}</p>}
-          <button className="btn custom-btn signup-button" type="submit">Sign Up</button>
+          <button className="btn custom-btn" type="submit">Log in</button>
         </form>
         <div>
-          <p> Already a member? </p>
-          <button 
-            className="btn custom-btn" 
-            onClick={handleOnClick}
-          > 
-            Log in here!
-          </button>
+          <p className='not-member'> Not yet a member? </p>
+          <button className="btn custom-btn create-account-btn" onClick={() => handleOnClick(account.actions.showSignupForm(true))}> Create an account</button>
         </div>
       </section>
     </div>
-
   )
 }
-
-export default SignupForm 
+export default LoginForm
