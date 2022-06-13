@@ -67,25 +67,25 @@ const LoginForm = () => {
 
   return (
     <div className="landingpage-section-wrapper">
-      <section className="landingpage-section login-section">
+      <section className="landingpage-section">
         <h3>Log in</h3>
-        <form className="form login-form" onSubmit={onFormSubmit}>
+        <form className="form" onSubmit={onFormSubmit}>
           <label htmlFor="username">Username:</label>
           <input 
-            className="input login-username-input" 
+            className="input" 
             type="text" 
             value={username} 
             onChange={(event) => setUsername(event.target.value)} 
           />
           <label htmlFor="password">Password:</label>
           <input 
-            className="input login-password-input" 
+            className="input" 
             type="password" 
             value={password} 
             onChange={(event) => setPassword(event.target.value)} 
           />
           {error && <p className="error-msg">{error.message}</p>}
-          <button className="btn custom-btn login-button" type="submit">Log in</button>
+          <button className="btn custom-btn" type="submit">Log in</button>
         </form>
         <div>
           <p className='not-member'> Not yet a member? </p>

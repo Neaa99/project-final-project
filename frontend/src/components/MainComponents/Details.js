@@ -38,38 +38,36 @@ const Details = () => {
         }, []) 
 
         return (
-            <div className="homePage"> 
+            <section className="homePage"> 
                 
-                <NavLink className="backLink" to='/marvel'>
-                   {/* <BackIcon /> */}
-                </NavLink>
-                
-                <div className="movie-box">
+                <section className="details-body">
+                   
                     <img className="movie-image" src={details.poster} alt={details.title} tabIndex="0"/>
-                        <section className="movie-summary">
+                    
+                    <section className="movie-summary">
                         <h2 className="movie-title">{details.title}</h2>
                         <p className="movie-medium bold">{details.medium}</p>
                             
-                            <div className="movie-desc">
-                                <p>{details.description}</p>
-                            </div>
+                        <div className="movie-desc">
+                            <p>{details.description}</p>
+                        </div>
 
                             <div className="movie-details">
-                                <p className="details-p"><span className="bold">Release date:</span> 
+                                <p className="details-p"><span>Release date:</span> 
                                     <br/>{details.release_date}</p>
-                                <p className="details-p"><span className="bold">Director:</span>
+                                <p className="details-p"><span>Director:</span>
                                     <br/> {details.director}</p>
 
                                 {details.numberOfEpisodes && (
-                                    <p className="details-p"><span className="bold">Number of episodes:</span> 
+                                    <p className="details-p"><span>Number of episodes:</span> 
                                         <br/>{details.numberOfEpisodes}</p>
                                 )}
                                 {details.box_office && (
-                                        <p className="details-p"><span className="bold">Box office:</span> 
+                                        <p className="details-p"><span>Box office:</span> 
                                             <br/>{details.box_office}</p>
                                 )}
                                  {details.oneShotLength && (
-                                        <p className="details-p"><span className="bold">Length of OneSHot:</span> 
+                                        <p className="details-p"><span>Length of OneSHot:</span> 
                                             <br/>{details.oneShotLength}</p>
                                 )}
                             </div>
@@ -94,8 +92,8 @@ const Details = () => {
 
                            
                         </section>
-                </div>
-            </div>
+                </section>
+            </section>
     )
 }
 

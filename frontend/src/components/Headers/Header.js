@@ -20,20 +20,22 @@ const Header = () => {
     return(
         <header>
             <div className="header">
-            {/* <BurgerMenu /> */}
                 <button className="backLink" onClick={onBackButtonClick}>
                    <BackIcon />
                 </button>
-                <Link to="/authorized/profile"><p className="sidebar-list-item">Profile</p></Link>
-          <Link to="/feed"><p className="sidebar-list-item">Feed</p></Link>
-          <p 
-            className="sidebar-list-item" 
-            onClick={() => {
-              dispatch(account.actions.logOut())
-              localStorage.removeItem('user')
-            }}>Log out</p>
                 
-
+                <Link to="/authorized/profile">
+                  <p className="header-list-item">Profile</p>
+                </Link>
+                <Link to="/feed">
+                  <p className="header-list-item">Feed</p>
+                </Link>
+                <p className="header-list-item" 
+                    onClick={() => {
+                      dispatch(account.actions.logOut())
+                      localStorage.removeItem('user')
+                    }}>Log out
+                </p>
             </div>
         </header>
     )
