@@ -46,9 +46,10 @@ const Tags = () => {
                                             <p className="info-rating"><span className="IMBd">IMDb:</span> {marvel.imdbRating}</p>
                                             <p className="info-medium">{marvel.medium}</p>
                                             <div className="mini-tag-box">
-                                                <p className="one-tag blue">{marvel.category[0]}</p>
                                                 {marvel.tags[0] && (
                                                 <p className="one-tag red">{marvel.tags[0]}</p>)} 
+                                                {marvel.tags[1] && (
+                                                <p className="one-tag red">{marvel.tags[1]}</p>)} 
                                                                 
             
             

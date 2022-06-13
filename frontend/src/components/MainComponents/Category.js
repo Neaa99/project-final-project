@@ -42,9 +42,10 @@ const { category } = useParams()
                                 <p className="info-rating"><span className="IMBd">IMDb:</span> {marvel.imdbRating}</p>
                                 <p className="info-medium">{marvel.medium}</p>
                                 <div className="mini-tag-box">
-                                    <p className="one-tag">{marvel.tags[0]}</p>
+                                    {marvel.tags[0] && (
+                                    <p className="one-tag red">{marvel.tags[0]}</p>)} 
                                     {marvel.tags[1] && (
-                                    <p className="one-tag">{marvel.tags[1]}</p>)} 
+                                    <p className="one-tag red">{marvel.tags[1]}</p>)} 
                                                     
 
 

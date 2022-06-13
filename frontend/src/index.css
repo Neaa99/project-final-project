@@ -267,7 +267,6 @@ a:link {
   flex-direction: column;
   height: 100%;
   margin: 10px 10px;
-  margin-top: 80px;
 }
 
 .movie-image{
@@ -318,6 +317,8 @@ a:link {
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(122,122,122,0.512);
+
 }
 
 
@@ -364,7 +365,6 @@ a:link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px; /* Margin here so the text don't disaperar under the header */
 }
 
 .movie-container {
@@ -462,7 +462,7 @@ a:link {
 
 /*/////////////////////////////////////// Feed & Scrollbar Styling /////////////////////////////////////////////////////////////////////*/
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
 }
 
@@ -477,22 +477,20 @@ a:link {
 
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* Hide scrollbar for IE, Edge add Firefox */
 .scrollbar-hidden {
   -ms-overflow-style: none;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; 
 }
 
 .scroller {
   overflow: auto;
   width: 90vw;
-  height: 600px;
-  /* border: 1px solid black; */
+  height: 520px;
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
 }
 
 .inside-scroller {
@@ -509,6 +507,12 @@ a:link {
 .inside-scroller img {
   margin: 0;
   max-height: 430px; 
+}
+
+.scroll-tag {
+  border-radius: 7px;
+  padding: 5px;
+  box-shadow: 5px 5px 10px rgba(122,122,122,0.412);
 }
 
 

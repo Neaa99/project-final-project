@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { NavLink, Link, useParams } from 'react-router-dom'
 import uniqid from 'uniqid';
 
+import TopScroll from 'components/Headers/TopScroll';
+
 const Details = () => {
 
 
@@ -39,7 +41,7 @@ const Details = () => {
 
         return (
             <section className="homePage"> 
-                
+                <TopScroll />
                 <section className="details-body">
                    
                     <img className="movie-image" src={details.poster} alt={details.title} tabIndex="0"/>
