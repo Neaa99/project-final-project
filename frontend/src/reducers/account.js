@@ -6,8 +6,8 @@ const initialState = localStorage.getItem('user') ? {
   email: JSON.parse(localStorage.getItem('user')).email,
   fullName: JSON.parse(localStorage.getItem('user')).fullName,
   age: JSON.parse(localStorage.getItem('user')).age,
-  location: JSON.parse(localStorage.getItem('user')).location,
-  desc: JSON.parse(localStorage.getItem('user')).desc,
+  superhero: JSON.parse(localStorage.getItem('user')).superhero,
+  movie: JSON.parse(localStorage.getItem('user')).movie,
   accessToken: JSON.parse(localStorage.getItem('user')).accessToken,
   errors: null, 
   signup: false
@@ -19,8 +19,8 @@ const initialState = localStorage.getItem('user') ? {
   email: null,
   fullName: null,
   age: null,
-  location: null,
-  desc: null,
+  superhero: null,
+  movie: null,
   accessToken: null,
   errors: null, 
   signup: false
@@ -49,8 +49,8 @@ export const account = createSlice({
     setProfileInfo: (store, action) => {
       store.fullName = action.payload.fullName
       store.age = action.payload.age
-      store.location = action.payload.location
-      store.desc = action.payload.description
+      store.superhero = action.payload.superhero
+      store.movie = action.payload.movie
     },
 
     setErrors: (store, action) => {

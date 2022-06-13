@@ -55,8 +55,8 @@ const LoginForm = () => {
               email: data.email,
               fullName: data.fullName,
               age: data.age,
-              location: data.location,
-              desc: data.description
+              superhero: data.superhero,
+              movie: data.movie
             }))
           })
         } else {

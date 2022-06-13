@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProfileForm = ({ fullName, setFullName, age, setAge, location, setLocation, description, setDescription, onFormSubmit }) => {
+const ProfileForm = ({ fullName, setFullName, age, setAge, superhero, setSuperhero, movie, setMovie, onFormSubmit }) => {
     return (
         <>
             <p>Add more info to your profile</p>
@@ -24,23 +24,43 @@ const ProfileForm = ({ fullName, setFullName, age, setAge, location, setLocation
                     value={age} 
                     onChange={(event) => setAge(event.target.value)} 
                 />
-                <label htmlFor="location">Super Hero name</label>
+                <label htmlFor="superhero">Super Hero name</label>
                 <input 
-                    id="location" 
+                    id="superhero" 
                     className="input" 
                     type="text" 
-                    value={location} 
-                    onChange={(event) => setLocation(event.target.value)} 
+                    value={superhero} 
+                    onChange={(event) => setSuperhero(event.target.value)} 
                 />
-                <label htmlFor="description">Description</label>
-                <textarea 
-                    id="description" 
-                    placeholder="Favorite Marvel movie?"
+                <label htmlFor="movie">Favorite Marvel movie</label>
+                <select 
+                    id="movie" 
                     className="description-textarea" 
-                    value={description} 
-                    onChange={(event) => setDescription(event.target.value)} 
+                    value={movie} 
+                    onChange={(event) => setMovie(event.target.value)} 
                 >
-                </textarea>
+                    <option value="" selected disabled>Select a movie</option>
+                    <option value="Iron Man">Iron Man</option>
+                    <option value="The Hulk">The Hulk</option>
+                    <option value="Avengers">Avengers</option>
+                    <option value="Captain America">Captain America</option>
+                    <option value="Guardians of the Galaxy">Guardians of the Galaxy</option>
+                    <option value="Shang-Chi">Shang-Chi</option>
+                    <option value="Spider-Man">Spider-Man</option>
+                    <option value="Captain Marvel">Captain Marvel</option>
+                    <option value="Doctor Strange">Doctor Strange</option>
+                    <option value="Ant-Man">Ant-Man</option>
+                    <option value="Eternals">Eternals</option>
+                    <option value="Black Widow">Black Widow</option>
+                    <option value="Black Panther">Black Panther</option>
+                    <option value="Deadpool">Deadpool</option>
+                    <option value="Wolverine">Wolverine</option>
+                    <option value="X-Men">X-Men</option>
+                    <option value="Fantastic Four">Fantastic Four</option>
+                    <option value="Venom">Venom</option>
+                    <option value="Blade">Blade</option>
+                    <option value="Morbius">Morbius</option>
+                </select>
                 <button className="btn custom-btn" type="submit">Add</button>
           </form>
         </>

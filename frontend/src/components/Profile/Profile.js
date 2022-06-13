@@ -12,8 +12,8 @@ const Profile = () => {
 
   const [fullName, setFullName] = useState(user.fullName)
   const [age, setAge] = useState(user.age)
-  const [location, setLocation] = useState(user.location)
-  const [description, setDescription] = useState(user.desc)
+  const [superhero, setSuperhero] = useState(user.superhero)
+  const [movie, setMovie] = useState(user.movie)
 
   const dispatch = useDispatch()
 
@@ -26,7 +26,7 @@ const Profile = () => {
         'Content-Type': 'application/json',
         'Authorization': user.accessToken
       },
-      body: JSON.stringify({ fullName: fullName, age: age, location: location, description: description })
+      body: JSON.stringify({ fullName: fullName, age: age, superhero: superhero, movie: movie })
     }
 
     fetch(EDIT_USER(user.id), options)
@@ -38,8 +38,8 @@ const Profile = () => {
           localStorage.setItem('user', JSON.stringify({
             fullName: data.fullName,
             age: data.age,
-            location: data.location,
-            desc: data.description
+            superhero: data.superhero,
+            movie: data.movie
           }))
         } else {
           dispatch(account.actions.setErrors(data))
@@ -48,8 +48,8 @@ const Profile = () => {
       .finally(() => {
         setFullName(user.fullName)
         setAge(user.age)
-        setLocation(user.location)
-        setDescription(user.desc)
+        setSuperhero(user.superhero)
+        setMovie(user.movie)
       })
   }
 
@@ -66,12 +66,12 @@ const Profile = () => {
               {user.age && 
                 <p><span>Age:</span> {`${user.age}`}</p>
               }
-              {user.location && 
-                <p><span>Location:</span> {`${user.location}`}</p>
-              }
-              {user.desc && 
-                <p><span>Description:</span> {`${user.desc}`}</p>
-              }
+              {/* {user.location &&  */}
+                <p><span>Super Hero Name:</span> {`${user.superhero}`}</p>
+              {/* } */}
+              {/* {user.movie &&  */}
+                <p><span>Favorite Marvel movie:</span> {`${user.movie}`}</p>
+              {/* } */}
         </div>
 
         <div className="profile-form">
@@ -80,10 +80,10 @@ const Profile = () => {
             setFullName={setFullName}
             age={age}
             setAge={setAge}
-            location={location}
-            setLocation={setLocation}
-            description={description}
-            setDescription={setDescription}
+            superhero={superhero}
+            setSuperhero={setSuperhero}
+            movie={movie}
+            setMovie={setMovie}
             onFormSubmit={onFormSubmit}
           />
         </div>
