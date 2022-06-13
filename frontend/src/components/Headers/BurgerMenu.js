@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from 'react-redux'
-import { account } from '../reducers/account'
+import { account } from '../../reducers/account'
 import { Link } from 'react-router-dom'
 
 import { BurgerIcon } from "./BurgerIcon";

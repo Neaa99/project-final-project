@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, Link, useParams } from 'react-router-dom'
 
-import TopScroll from './TopScroll'
+import TopScroll from 'components/Headers/TopScroll'
 
 const Tags = () => {
 

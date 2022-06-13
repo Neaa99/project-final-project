@@ -1,10 +1,8 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
-import { account } from '../reducers/account'
-
-import { Link } from 'react-router-dom'
+import { account } from 'reducers/account'
 
 const Sidebar = () => {
 

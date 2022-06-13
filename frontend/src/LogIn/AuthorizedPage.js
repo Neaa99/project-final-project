@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-import Sidebar from 'components/Sidebar'
-import Header from 'components/Header'
+import Sidebar from 'components/Headers/Sidebar'
+import Header from 'components/Headers/Header'
 
 const AuthorizedPage = () => {
 

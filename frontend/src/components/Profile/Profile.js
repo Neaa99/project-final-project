@@ -3,9 +3,9 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import ProfileForm from './ProfileForm'
 
-import { account } from '../reducers/account'
+import { account } from '../../reducers/account'
 
-import { EDIT_USER } from '../utils/constants'
+import { EDIT_USER } from '../../utils/constants'
 
 const Profile = () => {
   const user = useSelector(store => store.account)

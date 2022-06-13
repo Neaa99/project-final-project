@@ -1,10 +1,14 @@
 import React from "react";
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 
+import { useDispatch } from 'react-redux'
+import { account } from "reducers/account";
+
 import { BackIcon } from "./BackIcon";
-import BurgerMenu from "./BurgerMenu";
 
 const Header = () => {
+
+    const dispatch = useDispatch()
 
     const navigate = useNavigate();
 
@@ -17,7 +21,7 @@ const Header = () => {
         <header>
             <div className="header">
             {/* <BurgerMenu /> */}
-                <button class="backLink" onClick={onBackButtonClick}>
+                <button className="backLink" onClick={onBackButtonClick}>
                    <BackIcon />
                 </button>
                 <Link to="/authorized/profile"><p className="sidebar-list-item">Profile</p></Link>

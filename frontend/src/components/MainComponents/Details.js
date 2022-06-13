@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { NavLink, Link, useParams } from 'react-router-dom'
 import uniqid from 'uniqid';
 
-// import { BackIcon } from './BackIcon'
-
 const Details = () => {
 
 
