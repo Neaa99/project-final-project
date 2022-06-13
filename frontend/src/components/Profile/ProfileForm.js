@@ -24,7 +24,7 @@ const ProfileForm = ({ fullName, setFullName, age, setAge, location, setLocation
                     value={age} 
                     onChange={(event) => setAge(event.target.value)} 
                 />
-                <label htmlFor="location">Location</label>
+                <label htmlFor="location">Super Hero name</label>
                 <input 
                     id="location" 
                     className="input" 
@@ -35,6 +35,7 @@ const ProfileForm = ({ fullName, setFullName, age, setAge, location, setLocation
                 <label htmlFor="description">Description</label>
                 <textarea 
                     id="description" 
+                    placeholder="Favorite Marvel movie?"
                     className="description-textarea" 
                     value={description} 
                     onChange={(event) => setDescription(event.target.value)} 
