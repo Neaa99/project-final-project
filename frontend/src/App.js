@@ -26,7 +26,7 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Provider store={store}>
-        <main className="main">
+        <main>
           <Routes>
             <Route exact path="/" element={<LandingPage />}></Route>
             <Route exact path="/authorized" element={<><AuthorizedPage /><Profile /></>}></Route>

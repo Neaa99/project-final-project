@@ -95,8 +95,8 @@ const Marvel = () => {
             <div className="homePage">
                 <TopScroll />
             <h3>All marvel:</h3>
-                <section className="all-marvel">
-                    <div className="scroller">
+                <section className="scroller">
+                    <div className="inside-scroller">
                         {marvel.map((marvel) => (
                         
                             <Link
@@ -111,8 +111,8 @@ const Marvel = () => {
                 </section>
     
                 <h3>Avengers:</h3>
-                <section className="all-marvel">
-                    <div className="scroller">
+                <section className="scroller">
+                    <div className="inside-scroller">
                         {avengers.map((marvel) => (
                         
                             <Link
@@ -127,8 +127,8 @@ const Marvel = () => {
                 </section>
 
                 <h3>Upcoming movies and series:</h3>
-                <section className="all-marvel">
-                    <div className="scroller">
+                <section className="scroller">
+                    <div className="inside-scroller">
                         {upcoming.map((marvel) => (
                         
                             <Link
@@ -143,8 +143,8 @@ const Marvel = () => {
                 </section>
 
                 <h3>Asgardiens:</h3>
-                <section className="all-marvel">
-                    <div className="scroller">
+                <section className="scroller">
+                    <div className="inside-scroller">
                         {asgardiens.map((marvel) => (
                         
                             <Link
@@ -159,8 +159,8 @@ const Marvel = () => {
                 </section>
 
                 <h3>Spider-Man:</h3>
-                <section className="all-marvel">
-                    <div className="scroller">
+                <section className="scroller">
+                    <div className="inside-scroller">
                         {spiderman.map((marvel) => (
                         
                             <Link
@@ -175,8 +175,8 @@ const Marvel = () => {
                 </section>
 
                 <h3>X-Man:</h3>
-                <section className="all-marvel">
-                    <div className="scroller">
+                <section className="scroller">
+                    <div className="inside-scroller">
                         {xmen.map((marvel) => (
                         
                             <Link
@@ -191,8 +191,8 @@ const Marvel = () => {
                 </section>
 
                 <h3>Animated series and movies:</h3>
-                <section className="all-marvel">
-                    <div className="scroller">
+                <section className="scroller">
+                    <div className="inside-scroller">
                         {animated.map((marvel) => (
                         
                             <Link
@@ -207,10 +207,10 @@ const Marvel = () => {
                 </section>
 
                 <h3>OneShots:</h3>
-                <section className="all-marvel">
-                    <div className="scroller">
+                <section className="scroller">
+                    <div className="inside-scroller">
                         {oneShot.map((marvel) => (
-                        
+            
                             <Link
                                 to={`/feed/${marvel.title}`} 
                                 key={marvel.id}

@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom'
 
 
 
-const TopScroll = (props) => {
+const TopScroll = () => {
 
-    const tag = props.tags
-    const category = props.category
 
     return (
         <div className="span-box">

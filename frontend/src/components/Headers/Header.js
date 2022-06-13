@@ -13,7 +13,6 @@ const Header = () => {
     const navigate = useNavigate();
 
     const onBackButtonClick = () => {
-        // navigate(-1)
         navigate(-1);
       };
 

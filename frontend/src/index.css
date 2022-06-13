@@ -19,6 +19,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #ffd8be6b;
+  font-size: 1.6rem;
   /* background-color: #FAFBFD; */
 }
 
@@ -94,6 +95,28 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.profile-info {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--primary-two);
+  box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
+}
+
+.profile-form {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--primary-two);
+  box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
 }
 
 .description-textarea {
@@ -180,19 +203,60 @@ a:link {
  text-decoration: none;
 }
 
+@media (min-width:1024px) {
+  .profile-info-and-form {
+    flex-direction: row;
+    height: 100vh;
+    align-items: flex-start;
+  }
+  .profile-info, .profile-form {
+    height: 400px;
+    justify-content: flex-start;
+  }
+}
 
 /*///////////////////////////////////// Header /////////////////////////////////////////////////////////////////////*/
 
+.header {
+  background: #FD7E6D;
+  color: #000;
+  width: 100vw;
+  height: 10%;
+  top: 0;
+  position: fixed;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+}
+
+.backLink {
+  z-index: 100;
+  all: unset
+}
 
 .header-list-item {
   cursor: pointer;
   margin: 20px;
 }
 
+.icon {
+  width: 30px;
+}
 
-.backLink {
-  z-index: 100;
-  all: unset
+.icon-box {
+  display: flex;
+  align-items: center;
+  margin: 20px; 
+}
+
+.icon-text {
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.icon:hover {
+  margin-right: 5px;
 }
 
 /*///////////////////////////////////////// Details /////////////////////////////////////////////////////////////////////*/
@@ -246,6 +310,7 @@ a:link {
 
 .details-category, .details-tags {
   overflow: auto;
+  max-width: 350px;
 }
 
 .tag {
@@ -261,6 +326,27 @@ a:link {
   gap: 5px;
 }
 
+@media (min-width:1024px) {
+
+  .movie-image {
+    width: auto;
+  }
+  .movie-box {
+    flex-direction: row;
+  }
+  .movie-poster {
+    width: auto;
+    height: 700px;
+  }
+  .tags-box {
+    max-width:450px;
+    max-height: 200px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    width: auto;
+  }
+}
 
 
 /*///////////////////////////////////// Tags/Category /////////////////////////////////////////////////////////////////////*/
@@ -362,105 +448,19 @@ a:link {
   background: #849D35;
 }
 
-/*///////////////////////////////////////////////////////////// Header /////////////////////////////////////////////////////////////////////*/
-
-
-.header {
-  background: #FD7E6D;
-  color: #000;
-  width: 100vw;
-  height: 10%;
-  top: 0;
-  position: fixed;
-  border-radius: 20px;
-  position: fixed;
-  z-index: 10;
-  display: flex;
-}
-
-.icon {
-  width: 30px;
-}
-
-.icon-box {
-  display: flex;
-  align-items: center;
-  margin: 20px; 
-}
-
-.icon-text {
-  margin: 0 10px;
-  font-weight: 700;
-}
-
-.icon:hover {
-  margin-right: 5px;
-}
-
-
-/*///////////////////////////////////////////////////////////// Desktop /////////////////////////////////////////////////////////////////////*/
-
 @media (min-width:1024px) {
-  .profile-info-and-form {
-    flex-direction: row;
-    height: 100vh;
-    align-items: flex-start;
-  }
-  .profile-info, .profile-form {
-    height: 400px;
-    justify-content: flex-start;
-  }
-  .movie-image {
-    width: auto;
-  }
-  .movie-box {
-    flex-direction: row;
-  }
-  .movie-poster {
-    width: auto;
-    height: 700px;
-    
-  }
-  .category-feed {
+
+  .categoryTag-feed {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
     /* margin-bottom: 50px;  */
  
   }
-  .tags-box {
-    max-width:450px;
-    max-height: 200px;
-    flex-wrap: wrap;
-  }
-  .tag {
-    width: auto;
-  }
+
 }
 
-.profile-info {
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  width: 250px;
-  padding: 20px;
-  border-radius: 20px;
-  background: var(--primary-two);
-  box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
-}
-
-.profile-form {
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  width: 250px;
-  padding: 20px;
-  border-radius: 20px;
-  background: var(--primary-two);
-  box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
-}
-
-/*///////////////////////////////////////////////////////////// Scrollbar Styling /////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////// Feed & Scrollbar Styling /////////////////////////////////////////////////////////////////////*/
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -485,22 +485,7 @@ a:link {
   scrollbar-width: none; /* Firefox */
 }
 
-.main {
-  /* overflow: auto; */
-  position: sticky;
-  font-size: 1.6rem;
-  color: black;
-  /* background-color: #ffd8be6b; */
-  /* margin-top: 70px;  So the Title dosn't dissaperar behind the header */
-}
-
-.center-text {
-  text-align: center;
-}
-
-
-
-.all-marvel {
+.scroller {
   overflow: auto;
   width: 90vw;
   height: 600px;
@@ -510,24 +495,24 @@ a:link {
   margin-left: 20px;
 }
 
-.scroller {
+.inside-scroller {
   display: flex;
   gap: 10px;
   text-align: center;
 }
 
-.all-marvel img {
+.scroller img {
   width: 300px;
 
 }
 
-.all-marvel img {
+.inside-scroller img {
   margin: 0;
   max-height: 430px; 
 }
 
 
-/*///////////////////////////////////////////////////////////// TopScroll /////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////// TopScroll /////////////////////////////////////////////////////////////////////*/
 
 
 .span-box {
@@ -545,7 +530,6 @@ a:link {
 }
 
 .list-item {
-  /* background: #FD7E6D; */
   font-size: 16px;
   padding: 3px;
   border-radius: 3px;
@@ -553,75 +537,17 @@ a:link {
 
 
 
-/*///////////////////////////////////////////////////////////// Burger Menu /////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////// Burger Menu /////////////////////////////////////////////////////////////////////*/
 
 
-.burger-btn {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
 
+/*///////////////////////////////////// Desktop /////////////////////////////////////////////////////////////////////*/
 
- .meny ul {
-  position: fixed;
-  background: linear-gradient(to bottom right, #F6EABE, 
-     #FDA65D, #FFA810);
-  width: 100%;
-  height: 100vh;
-  right: 96%;
-  border-radius: 10px;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.5s ease;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;   
-}
+@media (min-width:1024px) {
 
-.meny li:hover, .meny li:focus {
-  font-weight: 600;
-  border-radius: 5px;  
-  background-color: white;
-  width: 100%;
-  animation-name: colorChange2;
-  animation-duration: 5s;
-}
+  /* Do it in seprete "folders" */
 
-.meny button:focus + ul {
-  opacity: 1;
-  pointer-events: auto;
-  right: 0;
 }
 
 
 
-
-.listed-tags-section {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin-top: 70px;
-}
-
-.listed-tags {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.tag-item {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
