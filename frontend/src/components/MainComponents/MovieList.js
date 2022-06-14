@@ -6,7 +6,6 @@ useEffect(() => {
     fetch(`https://marvel-api-linnea.herokuapp.com/marvel`)
         .then(res => res.json())
         .then(data => {
-            // console.log(data)
             setMovies(data)
         })
     }, [])

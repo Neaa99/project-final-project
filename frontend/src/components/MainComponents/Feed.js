@@ -21,7 +21,6 @@ const Marvel = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setMarvel(data)
             })
         }, [])
@@ -30,7 +29,6 @@ const Marvel = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/Avengers`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setAvengers(data)
             })
         }, [])    
@@ -39,7 +37,6 @@ const Marvel = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/Asgardiens`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setAsgardiens(data)
             })
         }, [])   
@@ -48,7 +45,6 @@ const Marvel = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/Spider-Man`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setSpiderman(data)
             })
         }, [])   
@@ -57,7 +53,6 @@ const Marvel = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/X-Men`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setXmen(data)
             })
         }, [])     
@@ -66,7 +61,6 @@ const Marvel = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/Animated`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setAnimated(data)
             })
         }, [])    
@@ -75,7 +69,6 @@ const Marvel = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/Upcoming`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setUpcoming(data)
             })
         }, [])  
@@ -84,7 +77,6 @@ const Marvel = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/OneShot`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setOneShot(data)
             })
         }, []) 
@@ -93,6 +85,7 @@ const Marvel = () => {
             
             
             <div className="homePage">
+                <h1 className="main-title">Feed</h1>
                 <TopScroll />
             <h3>All marvel:</h3>
                 <section className="scroller">

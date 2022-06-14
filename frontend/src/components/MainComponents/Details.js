@@ -16,7 +16,6 @@ const Details = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setDetails(data)
             })
         }, [title])
@@ -25,7 +24,6 @@ const Details = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data.category)
                 setCategory(data.category)
             })
         }, [])       
@@ -34,7 +32,6 @@ const Details = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data.tags)
                 setTags(data.tags)
             })
         }, []) 
@@ -74,7 +71,7 @@ const Details = () => {
                                 )}
                             </div>
                         
-                            <p className="details-category-title">Categories:</p>
+                            <p className="details-category-title"><span>Categories:</span></p>
                             <div className="details-category">
                                 <p className="category-box">{marvelCategories.map((category) => (
                                     <Link to={`/feed/categories/${category}`} key={uniqid()}>
@@ -83,13 +80,13 @@ const Details = () => {
                                 </p>
                             </div>
 
-                            <p className="details-tags-title">Tags:</p>
+                            <p className="details-tags-title"><span>Tags:</span></p>
                             <div className="details-tags">
-                                <p className="tags-box"> {marvelTags.map((tag) => (
+                                <div className="tags-box"> {marvelTags.map((tag) => (
                                     <Link to={`/feed/tags/${tag}`} key={uniqid()}>
                                         <p className="tag red">{tag}</p>
                                     </Link>))}
-                                </p> 
+                                </div> 
                             </div>
 
                            

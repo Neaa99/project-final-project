@@ -39,7 +39,7 @@ const ProfileForm = ({ fullName, setFullName, age, setAge, superhero, setSuperhe
                     value={movie} 
                     onChange={(event) => setMovie(event.target.value)} 
                 >
-                    <option value="" selected disabled>Select a movie</option>
+                    <option value="" defaultValue disabled>Select a movie</option>
                     <option value="Iron Man">Iron Man</option>
                     <option value="The Hulk">The Hulk</option>
                     <option value="Avengers">Avengers</option>

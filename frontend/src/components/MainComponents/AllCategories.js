@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom'
 const AllCategories = () => {
 
     return (
-        <div className="listed-tags-section">
-        <h1 className="main-title">All categories</h1>
+
+        <section>
+            <div className="title-container">
+                <h3 className="main-title">All Categories</h3>
+            </div>
             <div className="listed-tags">
 
              <Link to={`/feed/categories/Phase 1`}>
@@ -113,8 +116,7 @@ const AllCategories = () => {
 
             
             </div>
-
-        </div>
+        </section>
     )
 }
 

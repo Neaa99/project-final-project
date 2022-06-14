@@ -54,7 +54,11 @@ const Profile = () => {
   }
 
   return (
-    <section className="homePage">
+    <section>
+       <div className="title-container">
+                <h3 className="main-title">Profile</h3>
+            </div>
+     
       <h3 className="welcome">{`Welcome ${user.fullName}`}</h3>
       <div className="profile-info-and-form">
         <div className="profile-info">

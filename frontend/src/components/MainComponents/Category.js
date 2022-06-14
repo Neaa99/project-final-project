@@ -12,13 +12,14 @@ const { category } = useParams()
     useEffect(() => { fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/${category}`) 
         .then(res => res.json()) 
         .then(data => { 
-            // console.log(data) 
             setCategory(data) 
         }) }, []) 
 
         return (
 <>
-            <h3 className="main-title">Category: {category}</h3>
+        <div className="title-container">
+            <h3 className="main-title">{category}</h3>
+        </div>
             <div className="categoryTag-feed"> 
 
                 <TopScroll />

@@ -13,15 +13,18 @@ const Tags = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/tags/${tags}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setNewTag(data)
             })
         }, [])      
 
 
         return (
-            <section className="homePage">
-                <h3 className="main-title">Category: {tags}</h3>
+            
+            <section>
+
+                <div className="title-container">
+                    <h3 className="main-title">{tags}</h3>
+                </div>
                 
                 <div className="categoryTag-feed"> 
             
