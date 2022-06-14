@@ -37,6 +37,11 @@ const Details = () => {
         }, []) 
 
         return (
+            <section>
+                <div className="title-container">
+                <h3 className="main-title">{details.title}</h3>
+            </div>
+            
             <section className="homePage"> 
                 <TopScroll />
                 <section className="details-body">
@@ -92,6 +97,7 @@ const Details = () => {
                            
                         </section>
                 </section>
+            </section>
             </section>
     )
 }

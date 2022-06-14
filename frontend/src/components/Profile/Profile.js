@@ -56,10 +56,10 @@ const Profile = () => {
   return (
     <section>
        <div className="title-container">
-                <h3 className="main-title">Profile</h3>
+                <h3 className="main-title">PROFILE</h3>
             </div>
      
-      <h3 className="welcome">{`Welcome ${user.fullName}`}</h3>
+      <h1 className="welcome">{user.superhero ? `Welcome ${user.superhero}` : `Welcome ${user.fullName}`}</h1>
       <div className="profile-info-and-form">
         <div className="profile-info">
             <p><span>Username:</span> {`${user.username}`}</p>
@@ -70,12 +70,12 @@ const Profile = () => {
               {user.age && 
                 <p><span>Age:</span> {`${user.age}`}</p>
               }
-              {/* {user.location &&  */}
-                <p><span>Super Hero Name:</span> {`${user.superhero}`}</p>
-              {/* } */}
-              {/* {user.movie &&  */}
+              {user.superhero && 
+                <p><span>Superhero Name:</span> {`${user.superhero}`}</p>
+               } 
+              {user.movie && 
                 <p><span>Favorite Marvel movie:</span> {`${user.movie}`}</p>
-              {/* } */}
+               } 
         </div>
 
         <div className="profile-form">

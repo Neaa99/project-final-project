@@ -24,7 +24,7 @@ const ProfileForm = ({ fullName, setFullName, age, setAge, superhero, setSuperhe
                     value={age} 
                     onChange={(event) => setAge(event.target.value)} 
                 />
-                <label htmlFor="superhero">Super Hero name</label>
+                <label htmlFor="superhero">Superhero name</label>
                 <input 
                     id="superhero" 
                     className="input" 

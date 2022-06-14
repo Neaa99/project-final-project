@@ -1,12 +1,21 @@
 :root {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
-  --primary-one: #fabc3c;
-  --primary-two: #ffb238;
-  --primary-three:#f19143;
-  --primary-four: #ff773d;   
+  --primary-one: #e62429 ;
+  --primary-two: #2C49F5 ;
+  --primary-three:#FD7E6D;
+  --primary-four: #5D5DFC;   
   --primary-fifth: #f55536; 
   /* --primary-sixth: #3B2B20;                                                                                                                                                                                                                                                              */
+}
+
+@font-face {
+  font-family: 'marvelregular';
+  src: url('marvelregular-dj83-webfont.woff2') format('woff2'),
+       url('marvelregular-dj83-webfont.woff') format('woff');
+  /* font-weight: normal;
+  font-style: normal; */
+
 }
 
 body {
@@ -33,18 +42,19 @@ code {
   /* flex-wrap: wrap; FAFBFD*/
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 @media (min-width:1024px) {
 
-  .homePage {
+  /* .homePage {
     margin-top: 180px;
-  }
+  } */
 
 }
 
 /*/////////////////////////////////////////// Login / Profile /////////////////////////////////////////////////////////////////////*/
+
 
 .landingpage-section-wrapper {
   width: 100%;
@@ -65,6 +75,7 @@ code {
   padding: 50px;
 }
 
+
 .form {
   display: flex;
   flex-direction: column;
@@ -73,7 +84,7 @@ code {
 .input {
   width: 180px;
   height: 30px;
-  border: none;
+  border-color: #e62429;
   border-radius: 5px;
   margin: 5px;
 }
@@ -112,7 +123,7 @@ label {
   width: 250px;
   padding: 20px;
   border-radius: 20px;
-  background: var(--primary-two);
+  background: var(--primary-one);
   box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
 }
 
@@ -211,31 +222,57 @@ a:link {
  text-decoration: none;
 }
 
-@media (min-width:1024px) {
+@media (min-width: 700px) {
   .profile-info-and-form {
     flex-direction: row;
     height: 100vh;
     align-items: flex-start;
+    margin-top: 100px;
   }
   .profile-info, .profile-form {
-    height: 400px;
+    width: 300px;
+    font-size:larger;
     justify-content: flex-start;
   }
+  .landingpage-section {
+    padding: 7%;
+  }
+  .welcome {
+    margin-top: 50px;
+  }
 }
+
 
 /*///////////////////////////////////// Header /////////////////////////////////////////////////////////////////////*/
 
 .header {
-  background: #FD7E6D;
+  /* background: #FD7E6D; */
+  background-image: url("https://i.postimg.cc/QxgfGQ4H/pexels-mohan-reddy-4388593.jpg");
+  background-position: 80%;
+  /* animation: colorChange 5s infinite; */
+
+  /* background: linear-gradient(
+    to left bottom,
+    var(--primary-three),
+    var(--primary-four)
+  ); */
+
   color: #000;
   width: 100vw;
-  height: 10%;
+  height: 70px;
   top: 0;
   position: fixed;
   border-radius: 20px;
   position: fixed;
   z-index: 10;
   display: flex;
+}
+
+@keyframes colorChange {
+  0%   {background-color: #F6EABE;}
+  25%  {background-color: #FDA65D;}
+  50%  {background-color: #FFA810;}
+  100% {background-color: #FDA65D;} 
 }
 
 .backLink {
@@ -408,6 +445,14 @@ a:link {
 .main-title {
   text-align: center;
   font-size: auto;
+  text-shadow: 3px 3px 3px #D40000;
+  font-family: 'marvelregular';
+  font-size: 7vw;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, .8);
+  text-transform: uppercase;
+  
+
 
 }
 
@@ -418,7 +463,7 @@ a:link {
   margin-top: 0px;
   top: 0px;
   width: 60vw;
-  height: 65px;
+  height: 75px;  /*65px */
   margin: 0 70px;
   /* border: 1px solid black; */
   display: flex;
@@ -440,7 +485,7 @@ a:link {
 
 .info-box {
   display: flex;
-  margin: 0px;
+  margin: 10px 0;
 }
 
 .info-poster {
@@ -515,7 +560,7 @@ a:link {
   background: #849D35;
 }
 
-@media (min-width:1024px) {
+@media (min-width:800px) {
 
   .categoryTag-feed {
     flex-direction: row;
@@ -523,15 +568,49 @@ a:link {
     gap: 10px;
     /* margin-bottom: 50px;  */
   }
-  .main-title {
-    z-index: 200;
-    position: -webkit-sticky;
-    position: sticky;
-    text-align: center;
-    margin-top: -150px;
-    top: 30px;
-  }
+  .title-container {
+    width: auto;
+    font-size: 24px;
+     
+    }
+  .movie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    /* margin: 0 100px; */
+    /* border: 1px solid black; */
 
+    }
+    .info-box {
+      max-width: 600px;
+      margin: 10px;
+    }
+    .info-poster {
+       width: 330px;
+
+    }
+    .info-title {
+      font-size: 24px;
+    }
+    .info-rating, .info-medium, .info-desc, .info-date {
+      font-size: 18px;
+    }
+    .one-tag {
+      font-size: 16px;
+      padding: 5px;
+      border-radius: 6px;
+    }
+  
+}
+
+@media (min-width:1224) {
+
+  .info-box {
+    max-width: 700px;
+    margin: 10px;
+  }
 }
 
 /*/////////////////////////////////////// Feed & Scrollbar Styling /////////////////////////////////////////////////////////////////////*/
@@ -562,7 +641,7 @@ a:link {
 .scroller {
   overflow: auto;
   width: 90vw;
-  height: 520px;
+  height: 550px;
   display: flex;
   flex-direction: row;
 }
@@ -660,6 +739,27 @@ a:link {
   align-items: center;
 } 
 
+@media (min-width:1024px) {
+  .listed-tags {
+  gap: 20px;
+
+  }
+  .tag-item {
+    width: 250px;
+    height: 250px;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media (min-width:700px) {
+
+  .tag-item {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 /*///////////////////////////////////// Hamburger menu /////////////////////////////////////////////////////////////////////*/
 
 .sideMenu-closed {
@@ -691,7 +791,9 @@ a:link {
 .sideMenu-open {
   position: fixed;
   background: #FD7E6D;
-  top:0;
+  background-image: url("https://i.postimg.cc/QxgfGQ4H/pexels-mohan-reddy-4388593.jpg");
+  border-radius: 10px;;
+  top:20px;
   right: 0;
   left: 0;
   height: 100vh;
@@ -726,7 +828,7 @@ a:link {
 }
 
 /* .hamburger {
-  z-index: 300;
+  text-shadow: 6px 6px 20px rgba(122,122,122,0.212);
 } */
 
 
@@ -734,7 +836,7 @@ a:link {
   .sideMenu-open {
     width: 20%;
     margin-top: 100px;
-    top:-10px;
+    top:-50px;
   }
   .header-list-item {
     font-size: 24px;

@@ -30,7 +30,7 @@ const { category } = useParams()
                             to={`/feed/${marvel.title}`} 
                             key={marvel.id}
                             tabIndex="0"
-                            className="movie-container">
+                            >
 
                               
                         <div className="info-box">

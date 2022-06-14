@@ -82,10 +82,11 @@ const Marvel = () => {
         }, []) 
 
         return (
-            
-            
+            <section>
+            <div className="title-container">
+            <h3 className="main-title">FEED</h3>
+        </div>
             <div className="homePage">
-                <h1 className="main-title">Feed</h1>
                 <TopScroll />
             <h3>All marvel:</h3>
                 <section className="scroller">
@@ -216,6 +217,7 @@ const Marvel = () => {
                 </section>
     
             </div>
+            </section>
         )
 }
 

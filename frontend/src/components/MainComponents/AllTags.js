@@ -8,7 +8,7 @@ const AllTags = () => {
     return (
         <section>
             <div className="title-container">
-                <h3 className="main-title">All tags</h3>
+                <h3 className="main-title">TAGS</h3>
             </div>
                         
                 <div className="listed-tags">

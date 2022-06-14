@@ -7,7 +7,7 @@ const AllCategories = () => {
 
         <section>
             <div className="title-container">
-                <h3 className="main-title">All Categories</h3>
+                <h3 className="main-title">CATEGORIES</h3>
             </div>
             <div className="listed-tags">
 
