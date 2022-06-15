@@ -12,103 +12,103 @@ const AllCategories = () => {
             <div className="listed-tags">
 
              <Link to={`/feed/categories/Phase 1`}>
-                    <p className="tag-item red">Phase 1</p>
+                    <p className="tag-item phase red">Phase 1</p>
                 </Link>
                 <Link to={`/feed/categories/Phase 2`}>
-                    <p className="tag-item blue">Phase 2</p>
+                    <p className="tag-item phase red">Phase 2</p>
                 </Link>
                 <Link to={`/feed/categories/Phase 3`}>
-                    <p className="tag-item green">Phase 3</p>
+                    <p className="tag-item phase red">Phase 3</p>
                 </Link>
                 <Link to={`/feed/categories/Phase 4`}>
-                    <p className="tag-item red">Phase 4</p>
+                    <p className="tag-item phase red">Phase 4</p>
                 </Link>
                 <Link to={`/feed/categories/Iron Man`}>
-                    <p className="tag-item red">Iron Man</p>
+                    <p className="tag-item tony red">Iron Man</p>
                 </Link>
                 <Link to={`/feed/categories/The Hulk`}>
-                    <p className="tag-item red">The Hulk</p>
+                    <p className="tag-item hulk red">The Hulk</p>
                 </Link>
                 <Link to={`/feed/categories/Thor`}>
-                    <p className="tag-item red">Thor</p>
+                    <p className="tag-item thor red">Thor</p>
                 </Link>
                 <Link to={`/feed/categories/Asgardiens`}>
-                    <p className="tag-item red">Asgardiens</p>
+                    <p className="tag-item asgardien red">Asgardiens</p>
                 </Link>
                 <Link to={`/feed/categories/Loki`}>
-                    <p className="tag-item red">Loki</p>
+                    <p className="tag-item loki red">Loki</p>
                 </Link>
                 <Link to={`/feed/categories/Captain America`}>
-                    <p className="tag-item red">Captain America</p>
+                    <p className="tag-item rogers red">Captain America</p>
                 </Link>
                 <Link to={`/feed/categories/Avengers`}>
-                    <p className="tag-item red">Avengers</p>
+                    <p className="tag-item avengers red">Avengers</p>
                 </Link>
                 <Link to={`/feed/categories/Black Widow`}>
-                    <p className="tag-item red">Black Widow</p>
+                    <p className="tag-item natasha red">Black Widow</p>
                 </Link>
                 <Link to={`/feed/categories/Falcon`}>
-                    <p className="tag-item red">Falcon</p>
+                    <p className="tag-item falcon red">Falcon</p>
                 </Link>
                 <Link to={`/feed/categories/Guardians of the Galaxy`}>
-                    <p className="tag-item red">Guardians of the Galaxy</p>
+                    <p className="tag-item galaxy red">Guardians of the Galaxy</p>
                 </Link>
                 <Link to={`/feed/categories/Ant-Man`}>
-                    <p className="tag-item red">Ant-Man</p>
-                </Link>
-                <Link to={`/feed/categories/Falcon`}>
-                    <p className="tag-item red">Falcon</p>
+                    <p className="tag-item antman red">Ant-Man</p>
                 </Link>
                 <Link to={`/feed/categories/Doctor Strange`}>
-                    <p className="tag-item red">Doctor Strange</p>
+                    <p className="tag-item strange red">Doctor Strange</p>
                 </Link>
                 <Link to={`/feed/categories/Spider-Man`}>
-                    <p className="tag-item red">Spider-Man</p>
+                    <p className="tag-item spider red">Spider-Man</p>
                 </Link>
                 <Link to={`/feed/categories/Black Panther`}>
-                    <p className="tag-item red">Black Panther</p>
+                    <p className="tag-item panther red">Black Panther</p>
                 </Link>
                 <Link to={`/feed/categories/Shang-Chi`}>
-                    <p className="tag-item red">Shang-Chi</p>
+                    <p className="tag-item shang red">Shang-Chi</p>
                 </Link>
                 <Link to={`/feed/categories/Eternals`}>
-                    <p className="tag-item red">Eternals</p>
+                    <p className="tag-item eternals red">Eternals</p>
                 </Link>
                 <Link to={`/feed/categories/Scarlet Witch`}>
-                    <p className="tag-item red">Scarlet Witch</p>
+                    <p className="tag-item wanda red">Scarlet Witch</p>
                 </Link>
                 <Link to={`/feed/categories/Upcoming`}>
-                    <p className="tag-item red">Upcoming</p>
+                    <p className="tag-item upcoming red">Upcoming</p>
                 </Link>
                 <Link to={`/feed/categories/Animated`}>
-                    <p className="tag-item red">Animated</p>
+                    <p className="tag-item animated red">Animated</p>
+                </Link>
+                <Link to={`/feed/categories/Captain Marvel`}>
+                    <p className="tag-item capMarvel red">Captain Marvel</p>
                 </Link>
                 <Link to={`/feed/categories/Hawkeye`}>
-                    <p className="tag-item red">Hawkeye</p>
+                    <p className="tag-item hawkeye red">Hawkeye</p>
                 </Link>
                 <Link to={`/feed/categories/OneShot`}>
-                    <p className="tag-item red">OneShot</p>
+                    <p className="tag-item oneshot red">OneShot</p>
                 </Link>
                 <Link to={`/feed/categories/Documentary`}>
-                    <p className="tag-item red">Documentary</p>
+                    <p className="tag-item doc red">Documentary</p>
                 </Link>
                 <Link to={`/feed/categories/Deadpool`}>
-                    <p className="tag-item red">"Deadpool</p>
+                    <p className="tag-item deadpool red">Deadpool</p>
                 </Link>
                 <Link to={`/feed/categories/Marvel Legacy`}>
-                    <p className="tag-item red">Marvel Legacy</p>
+                    <p className="tag-item legacy red">Marvel Legacy</p>
                 </Link>
                 <Link to={`/feed/categories/Wolverine`}>
-                    <p className="tag-item red">Wolverine</p>
+                    <p className="tag-item wolf red">Wolverine</p>
                 </Link>
                 <Link to={`/feed/categories/X-Men`}>
-                    <p className="tag-item red">X-Men</p>
+                    <p className="tag-item xmen red">X-Men</p>
                 </Link>
                 <Link to={`/feed/categories/Fantastic Four`}>
-                    <p className="tag-item red">Fantastic Four</p>
+                    <p className="tag-item four red">Fantastic Four</p>
                 </Link>
                 <Link to={`/feed/categories/S.H.I.E.L.D`}>
-                    <p className="tag-item red">S.H.I.E.L.D</p>
+                    <p className="tag-item sheild red">S.H.I.E.L.D</p>
                 </Link>
                 
 

@@ -247,7 +247,9 @@ a:link {
 
 .header {
   /* background: #FD7E6D; */
-  background-image: url("https://i.postimg.cc/QxgfGQ4H/pexels-mohan-reddy-4388593.jpg");
+  /* background-image: url("https://i.postimg.cc/QxgfGQ4H/pexels-mohan-reddy-4388593.jpg"); */
+  background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
+
   background-position: 80%;
   /* animation: colorChange 5s infinite; */
 
@@ -281,13 +283,8 @@ a:link {
   all: unset;
 }
 
-.header-list-item {
-  cursor: pointer;
-  margin: 20px;
-}
-
 .icon {
-  width: 30px;
+  width: 40px;
 }
 
 .icon-box {
@@ -301,14 +298,10 @@ a:link {
 }
 
 .icon:hover {
-  margin-right: 5px;
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
 }
 
-.list-item {
-  font-size: 16px;
-  padding: 3px;
-  border-radius: 3px;
-}
+
 
 /*///////////////////////////////////////// Details /////////////////////////////////////////////////////////////////////*/
 
@@ -399,7 +392,7 @@ a:link {
     height: 700px;
   }
   .tags-box {
-    max-width:450px;
+    max-width:650px;
     max-height: 200px;
     flex-wrap: wrap;
   }
@@ -451,7 +444,7 @@ a:link {
   font-family: 'marvelregular';
   font-size: 30px;
   letter-spacing: 3px;
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, .9);
   text-transform: uppercase;
 }
 
@@ -491,6 +484,12 @@ a:link {
   height: auto;
   width: 150px;
   border-radius: 10px;
+  transition: 0.5s;
+
+}
+
+.info-poster:hover {
+  box-shadow: 6px 6px 20px rgba(122,122,122,0.912);
 }
 
 .info-details {
@@ -686,13 +685,17 @@ a:link {
 
 
 .scroll-tag {
-  border-radius: 7px;
-  padding: 5px;
+  transition: 1.3s;
+
 }
 
 .scroll-tag:hover {
   box-shadow: 5px 5px 10px rgba(122,122,122,0.412);
-
+  /* background: #FD7E6D; */
+  background-image: url("https://i.postimg.cc/HxdVNcL1/pruplestar.png");
+  background-position: 20% 10%;
+  color: white;
+  border-radius: 7px;
 }
 
 @media (min-width:1024px) {
@@ -740,7 +743,13 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 } 
+
+.tag-item:hover {
+  box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
+  
+}
 
 @media (min-width:1024px) {
   .listed-tags {
@@ -793,10 +802,10 @@ a:link {
 
 .sideMenu-open {
   position: fixed;
-  background: #FD7E6D;
-  background-image: url("https://i.postimg.cc/QxgfGQ4H/pexels-mohan-reddy-4388593.jpg");
+  /* background: #FD7E6D; */
+  background-image: url("https://i.postimg.cc/QdJhV6b1/comiclessred.png");
   border-radius: 10px;;
-  top:20px;
+  top:-50px;
   right: 0;
   left: 0;
   height: 100vh;
@@ -830,20 +839,577 @@ a:link {
   z-index: 100;
 }
 
-/* .hamburger {
-  text-shadow: 6px 6px 20px rgba(122,122,122,0.212);
-} */
+.list-item {
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.header-list {
+  margin-top: 50px;
+}
+.header-list-item {
+  cursor: pointer;
+  margin: 20px;
+  font-size: 24px;
+  font-weight: 500;;
+}
 
 
 @media (min-width:1024px) {
   .sideMenu-open {
     width: 20%;
-    margin-top: 100px;
     top:-50px;
   }
   .header-list-item {
     font-size: 24px;
   }
-
+  .header-list {
+    margin-top: 50px;
+  }
 
 }
+
+/*///////////////////////////////////// images /////////////////////////////////////////////////////////////////////*/
+
+.tony:hover {
+  background-image: url("https://i.postimg.cc/KjygWjRS/tony.webp");
+  background-position: 50%;
+  color: white;
+}
+
+.tag-item {
+  transition: 1.3s;
+
+}
+
+.phase:hover {
+  background-image: url("https://i.postimg.cc/gkdQ3PGn/stars.jpg");
+  background-position: 40%;
+  color: white;
+}
+
+.thor:hover {
+  background-image: url("https://i.postimg.cc/3RCKKFKR/thor.webp");
+  background-position: 50%;
+  color: white;
+}
+
+.hulk:hover {
+  background-image: url("https://i.postimg.cc/2837BHgP/hulk.webp");
+  background-position: 60% 10%;
+  color: white;
+}
+
+.asgardien:hover {
+  background-image: url("https://i.postimg.cc/8csF0YSW/asgard.jpg");
+  background-position: 50%;
+  background-size: cover;
+  color: white;
+}
+
+.loki:hover {
+  background-image: url("https://i.postimg.cc/mD9Z1GBm/lokii.webp");
+  background-position: 50%;
+  background-size: cover;
+  color: white;
+}
+
+.rogers:hover {
+  background-image: url("https://i.postimg.cc/m2fjH3Nj/rogers.jpg");
+  background-position: 30%;
+  background-size: cover;
+  color: white;
+}
+
+.avengers:hover {
+  background-image: url("https://i.postimg.cc/BbVGmYSj/ave.webp");
+  background-position: 50%;
+  color: white;
+}
+
+.natasha:hover {
+  background-image: url("https://i.postimg.cc/fL44StH9/natasha.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.falcon:hover {
+  background-image: url("https://i.postimg.cc/HskNx9pN/falc.webp");
+  background-position: 50% 10%;
+  background-size: cover;
+  color: white;
+}
+
+.galaxy:hover {
+  background-image: url("https://i.postimg.cc/85WJQ0Xr/galax.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.antman:hover {
+  background-image: url("https://i.postimg.cc/pT2bR9qY/Ant-Man-and-the-Wasp-Promo-Ant-Man.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.strange:hover {
+  background-image: url("https://i.postimg.cc/bJ8DPR7C/benedict-cumberbatch-doctor-strange-sorcerer-supreme.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.spider:hover {
+  background-image: url("https://i.postimg.cc/DZdCfB88/sp.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.panther:hover {
+  background-image: url("https://i.postimg.cc/DZkXphfX/panther.jpg");
+  background-position: 40%;
+  background-size: cover;
+  color: white;
+}
+.shang:hover {
+  background-image: url("https://i.postimg.cc/qqY0QJ4f/shangchi.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.eternals:hover {
+  background-image: url("https://i.postimg.cc/g2M9KcDg/et.webp");
+  background-position: 50% 10%;
+  background-size: cover;
+  color: white;
+}
+.wanda:hover {
+  background-image: url("https://i.postimg.cc/Pf6mhB2B/scarlet.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.upcoming:hover {
+  background-image: url("https://i.postimg.cc/gkdQ3PGn/stars.jpg");
+  background-position: 10%;
+  background-size: cover;
+  color: white;
+}
+
+.animated:hover {
+  background-image: url("https://i.postimg.cc/sfZw6fVT/anim.webp");
+  background-position: 60%;
+  background-size: cover;
+  color: white;
+}
+.hawkeye:hover {
+  background-image: url("https://i.postimg.cc/52jHgyJ0/hawk.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.oneshot:hover {
+  background-image: url("https://i.postimg.cc/gkdQ3PGn/stars.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.doc:hover {
+  background-image: url("https://i.postimg.cc/gkdQ3PGn/stars.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.deadpool:hover {
+  background-image: url("https://i.postimg.cc/s2wNrT8K/pool.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.legacy:hover {
+  background-image: url("https://i.postimg.cc/gkdQ3PGn/stars.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.wolf:hover {
+  background-image: url("https://i.postimg.cc/3w5vw7Mx/wolfi.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.xmen:hover {
+  background-image: url("https://i.postimg.cc/C53F4hsZ/xmenn.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.four:hover {
+  background-image: url("https://i.postimg.cc/0yfz9SCc/four.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.sheild:hover {
+  background-image: url("https://i.postimg.cc/JnbVWNNh/shield-marvel-1.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.capMarvel:hover {
+  background-image: url("https://i.postimg.cc/K8D1mW26/cap.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.nick:hover {
+  background-image: url("https://i.postimg.cc/PqxynYDk/1529317045-nick-fury-samuel-l-jackson-mcu.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.quill:hover {
+  background-image: url("https://i.postimg.cc/ZnT0XF98/quill.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.groot:hover {
+  background-image: url("https://i.postimg.cc/LX4ppyT8/grooot.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.capMarvel:hover {
+  background-image: url("https://i.postimg.cc/K8D1mW26/cap.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.pepper:hover {
+  background-image: url("https://i.postimg.cc/fbRs425T/pepper.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.jarvis:hover {
+  background-image: url("https://i.postimg.cc/cCZTjjMF/1461679852-avengers-paul-bettany-the-vision.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.thanos:hover {
+  background-image: url("https://i.postimg.cc/JnTGVHjS/thanos.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.rhodney:hover {
+  background-image: url("https://i.postimg.cc/PqyqYvVN/rhodney.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.howard:hover {
+  background-image: url("https://i.postimg.cc/Z5FYzySj/Howard-stark.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.foster:hover {
+  background-image: url("https://i.postimg.cc/zvg5ty7C/jane.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.bucky:hover {
+  background-image: url("https://i.postimg.cc/9fgrsqdK/bucky.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.peggy:hover {
+  background-image: url("https://i.postimg.cc/L6kh2Wkz/pegg.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.rocket:hover {
+  background-image: url("https://i.postimg.cc/DyhyjgVm/rocket.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.gamora:hover {
+  background-image: url("https://i.postimg.cc/XY7N3YYb/Gamora-Guardians-of-the-Galaxy.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.drax:hover {
+  background-image: url("https://i.postimg.cc/Qt5hSB0p/drax.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.nebula:hover {
+  background-image: url("https://i.postimg.cc/Y0bVxMK6/ne.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.yondu:hover {
+  background-image: url("https://i.postimg.cc/kG4wqSzS/Yondu-Udonta-in-Guardians-Galaxy.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.friday:hover {
+  background-image: url("https://i.postimg.cc/jdfPNvH5/friday.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.wong:hover {
+  background-image: url("https://i.postimg.cc/Vsnjpm6g/wong.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.mj:hover {
+  background-image: url("https://i.postimg.cc/BZTmDxxJ/mj.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.ned:hover {
+  background-image: url("https://i.postimg.cc/zGrbhgFY/ned.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.happy:hover {
+  background-image: url("https://i.postimg.cc/MZBpYGT6/Happy-Hogan-Endgame-Textless.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.valkyrie:hover {
+  background-image: url("https://i.postimg.cc/RCwvHbsq/val.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.shuri:hover {
+  background-image: url("https://i.postimg.cc/WzVL8TWz/shuri.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.wasp:hover {
+  background-image: url("https://i.postimg.cc/FsD5btjF/wasp.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.flash:hover {
+  background-image: url("https://i.postimg.cc/Yq2TCXT5/rsz-the-flash.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.venom:hover {
+  background-image: url("https://i.postimg.cc/HLMhhF7y/venommm.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.electro:hover {
+  background-image: url("https://i.postimg.cc/FKvyh6Bc/c4e0d26a70e76c8e8aa54dd1bb3ae6f2-marvel-figuren-the-amazing-spiderman.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.octopus:hover {
+  background-image: url("https://i.postimg.cc/9M8ZtQFt/Doctor-Octopus-looking-on-in-Spider-Man-2.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.xavier:hover {
+  background-image: url("https://i.postimg.cc/xjXtxwDT/profX.jpg");
+  background-position: 40% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.riri:hover {
+  background-image: url("https://i.postimg.cc/CK6bbKKC/rir.jpg");
+  background-position: 50%;
+  background-size: cover;
+  color: white;
+}
+
+.mantis:hover {
+  background-image: url("https://i.postimg.cc/hjdQxb6g/mantis.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.msMarvel:hover {
+  background-image: url("https://i.postimg.cc/qB2Cvw2x/ms.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.echo:hover {
+  background-image: url("https://i.postimg.cc/cCcHMDmq/maya-lopez-echo.webp");
+  background-position: 50%;
+  background-size: cover;
+  /* color: white; */
+}
+
+.moonknight:hover {
+  background-image: url("https://i.postimg.cc/MT7Kqsgc/moon.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.phoenix:hover {
+  background-image: url("https://i.postimg.cc/bY5FqzHt/Dark-Phoenix-Sophie-Turner-X-Men-1280x720.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+.magneto:hover {
+  background-image: url("https://i.postimg.cc/qR5QBLnT/magneto.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.summers:hover {
+  background-image: url("https://i.postimg.cc/jSTVrxth/Scott-Summers-Cyclops.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.rouge:hover {
+  background-image: url("https://i.postimg.cc/tChfkKWn/the-gifted-rogue-anna-paquin-cameo-1040578-1280x0.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.mystique:hover {
+  background-image: url("https://i.postimg.cc/TPrp3YDY/jennifer-lawrence-confirms-apocalypse-is-her-final-9586-1200.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.fantastic:hover {
+  background-image: url("https://i.postimg.cc/SNJRzGMP/Fantastic-Four-Vol-6-1-Mr-Fantastic-Variant-Textless.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.invisible:hover {
+  background-image: url("https://i.postimg.cc/PxVhtB25/Susan-Storm-Earth-616-from-Fantastic-Four-Vol-6-34-cover-001.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.torch:hover {
+  background-image: url("https://i.postimg.cc/28h6wS0d/Jonathan-Storm-Earth-TRN670-from-Marvel-Strike-Force-001.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.thing:hover {
+  background-image: url("https://i.postimg.cc/Y2mqrSBc/thing.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.doom:hover {
+  background-image: url("https://i.postimg.cc/5NSJyYPr/doom.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.goblin:hover {
+  background-image: url("https://i.postimg.cc/4xxD38HK/green.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.gwen:hover {
+  background-image: url("https://i.postimg.cc/prP06TD9/qwen.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.blade:hover {
+  background-image: url("https://i.postimg.cc/7PcG9cw4/bladee.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.morbius:hover {
+  background-image: url("https://i.postimg.cc/pLQm2L8V/morbius.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.modok:hover {
+  background-image: url("https://i.postimg.cc/Kz1Lvyx9/modokk.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.monkey:hover {
+  background-image: url("https://i.postimg.cc/zXZW5MMj/Hit-Monkey-Earth-616-from-Deadpool-Vol-2-61-0002.webp");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+.miles:hover {
+  background-image: url("https://i.postimg.cc/63Z3m69N/Miles-Morales-from-MM-promo.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  color: white;
+}
+
+
+
+
+
+

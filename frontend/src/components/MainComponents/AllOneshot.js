@@ -1,31 +1,30 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import TopScroll from '../Headers/TopScroll'
 
 
-const Category = () => {
+const AllOneshot = () => {
 
-const [Category, setCategory] = useState([]) 
-const { category } = useParams() 
+const [AllOneshot, setAllOneshot] = useState([]) 
 
-    useEffect(() => { fetch(`https://marvel-api-linnea.herokuapp.com/marvel/categories/${category}`) 
+    useEffect(() => { fetch(`https://marvel-api-linnea.herokuapp.com/marvel/medium/OneShot`) 
         .then(res => res.json()) 
         .then(data => { 
-            setCategory(data) 
+            setAllOneshot(data) 
         }) }, []) 
 
         return (
 <>
         <div className="title-container">
-            <h3 className="main-title">{category}</h3>
+            <h3 className="main-title">All Movies</h3>
         </div>
             <div className="categoryTag-feed"> 
 
                 <TopScroll />
 
                 <section className="movie-container">
-                    {Category.map((marvel) => (
+                    {AllOneshot.map((marvel) => (
                         <Link
                             to={`/feed/${marvel.title}`} 
                             key={marvel.id}
@@ -66,4 +65,4 @@ const { category } = useParams()
 
 
 
-export default Category
+export default AllOneshot

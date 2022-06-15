@@ -46,19 +46,35 @@ const Header = () => {
                 
             <nav className="meny">
               <ul className={active ? "sideMenu-open" : "sideMenu-closed"}>
-              
-              <Link to="/authorized/profile">
-                    <p className="header-list-item">Profile</p>
-                  </Link>
-                  <Link to="/feed">
-                    <p className="header-list-item">Feed</p>
-                  </Link>
-                  <p className="header-list-item" 
-                      onClick={() => {
-                        dispatch(account.actions.logOut())
-                        localStorage.removeItem('user')
-                      }}>Log out
-                  </p>
+              <div className="header-list">
+                <Link to="/authorized/profile">
+                      <p className="header-list-item">Profile</p>
+                    </Link>
+                    <Link to="/feed">
+                      <p className="header-list-item">Feed</p>
+                    </Link>
+                    <Link to="/feed/categories">
+                      <p className="header-list-item">Categories</p>
+                    </Link>
+                     <Link to="/feed/tags">
+                      <p className="header-list-item">Tags</p>
+                    </Link>
+                    <Link to="/feed/movies">
+                      <p className="header-list-item">Movies</p>
+                    </Link>
+                    <Link to="/feed/series">
+                      <p className="header-list-item">Series</p>
+                    </Link>
+                    <Link to="/feed/oneshot">
+                      <p className="header-list-item">Oneshots</p>
+                    </Link>
+                    <p className="header-list-item" 
+                        onClick={() => {
+                          dispatch(account.actions.logOut())
+                          localStorage.removeItem('user')
+                        }}>Log out
+                    </p>
+                  </div>
                 
                   <div className={active ? "closeMenu-open" : "closeMenu-closed"}>
 
