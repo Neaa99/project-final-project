@@ -20,7 +20,6 @@ const AuthorizedPage = () => {
   return (
     <>
       <Header />
-      {/* <Sidebar /> */}
     </>
   )
 }

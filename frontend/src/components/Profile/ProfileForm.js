@@ -3,7 +3,6 @@ import React from 'react'
 const ProfileForm = ({ fullName, setFullName, age, setAge, superhero, setSuperhero, movie, setMovie, onFormSubmit }) => {
     return (
         <>
-            <p>Add more info to your profile</p>
             <form 
                 className="profile-info-form" 
                 onSubmit={onFormSubmit}

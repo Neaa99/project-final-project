@@ -55,13 +55,22 @@ code {
 
 /*/////////////////////////////////////////// Login / Profile /////////////////////////////////////////////////////////////////////*/
 
+.red-background {
+  background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
+  background-repeat: repeat;
+  height: 100%;
+  height: 100vh;
+}
 
 .landingpage-section-wrapper {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
+  
 }
 
 .landingpage-section {
@@ -69,10 +78,19 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.665);
   box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
-  border-radius: 28px;
+  border-radius: 10px;
   padding: 50px;
+}
+
+.landingpage-section label {
+  color: black;
+}
+
+.landingpage-section h3 {
+  text-align: center;
+  margin-top: -30px;;
 }
 
 
@@ -91,6 +109,8 @@ code {
 
 label {
   text-align: center;
+  color: white;
+  margin-top: 20px;
 }
 
 .not-member, .error-msg {
@@ -99,6 +119,35 @@ label {
 
 .welcome {
   text-align: center;
+  text-shadow: 3px 3px 3px #d40000;
+  font-family: 'marvelregular';
+  font-size: 100px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, .9);
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.begin-header {
+  align-self: flex-start;
+  text-shadow: 3px 3px 3px #d40000;
+  font-family: 'marvelregular';
+  font-size: 100px;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, .9);
+  text-transform: uppercase;
+  margin: 0px 0 50px 100px;
+}
+
+.end-header {
+  align-self: flex-end;
+  text-shadow: 3px 3px 3px #d40000;
+  font-family: 'marvelregular';
+  font-size: 100px;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, .9);
+  text-transform: uppercase;
+  margin: 0px 100px 50px 100px;
 }
 
 .profile-info-and-form {
@@ -114,6 +163,7 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 }
 
 .profile-info {
@@ -121,9 +171,12 @@ label {
   flex-direction: column;
   display: flex;
   width: 250px;
-  padding: 20px;
-  border-radius: 20px;
-  background: var(--primary-one);
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.736);
+
+  /* background: var(--primary-one); */
   box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
 }
 
@@ -133,8 +186,9 @@ label {
   display: flex;
   width: 250px;
   padding: 20px;
-  border-radius: 20px;
-  background: var(--primary-two);
+  /* border-radius: 20px; */
+  border: 1px solid black;
+  /* background: var(--primary-two); */
   box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
 }
 
@@ -169,8 +223,8 @@ span {
 
 .btn {
   font-family: Poppins;
-  font-size: 12px;
-  width: 130px;
+  font-size: 14px;
+  width: 140px;
   height: 50px;
   line-height: 42px;
   align-self: center;
@@ -213,7 +267,7 @@ span {
 }
 
 .create-account-btn {
-  width: 160px;
+  width: 200px;
 }
 
 a:visited,
@@ -224,9 +278,9 @@ a:link {
 
 @media (min-width: 700px) {
   .profile-info-and-form {
-    flex-direction: row;
-    height: 100vh;
-    align-items: flex-start;
+    /* flex-direction: row; */
+    /* height: 100vh; */
+    /* align-items: flex-start; */
     margin-top: 100px;
   }
   .profile-info, .profile-form {
@@ -235,10 +289,14 @@ a:link {
     justify-content: flex-start;
   }
   .landingpage-section {
-    padding: 7%;
+    padding: 100px;
   }
   .welcome {
     margin-top: 50px;
+  }
+  .btn {
+    font-size: 16px;
+
   }
 }
 
@@ -547,7 +605,9 @@ a:link {
 }
 
 .red {
-  background: #FD7E6D;
+  /* background: #FD7E6D; */
+  background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
+  background-size: cover;
 }
 
 .blue {
@@ -692,11 +752,36 @@ a:link {
 .scroll-tag:hover {
   box-shadow: 5px 5px 10px rgba(122,122,122,0.412);
   /* background: #FD7E6D; */
-  background-image: url("https://i.postimg.cc/HxdVNcL1/pruplestar.png");
-  background-position: 20% 10%;
+  background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
+  background-position: 0% 15%;
   color: white;
   border-radius: 7px;
 }
+@media (max-width:500px) {
+ 
+  .mobile-hide {
+    display: none;
+   
+  }
+  .top-nav {
+    justify-content: center;
+
+
+  }
+}
+
+@media (max-width:1024px) {
+  .scroll-tag {
+    background-image: url("https://i.postimg.cc/HxdVNcL1/pruplestar.png");
+    background-position: 20% 10%;
+    border-radius: 7px;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+
+  }
+}
+
 
 @media (min-width:1024px) {
 
@@ -712,6 +797,7 @@ a:link {
   }
   .top-nav {
     justify-content: space-evenly;
+    
   }
 
 }
@@ -809,7 +895,7 @@ a:link {
   right: 0;
   left: 0;
   height: 100vh;
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -852,7 +938,6 @@ a:link {
   cursor: pointer;
   margin: 20px;
   font-size: 24px;
-  font-weight: 500;;
 }
 
 
@@ -876,10 +961,12 @@ a:link {
   background-image: url("https://i.postimg.cc/KjygWjRS/tony.webp");
   background-position: 50%;
   color: white;
+  
 }
 
 .tag-item {
-  transition: 1.3s;
+  transition: 1.3s ease;
+  
 
 }
 
@@ -951,7 +1038,7 @@ a:link {
 
 .antman:hover {
   background-image: url("https://i.postimg.cc/pT2bR9qY/Ant-Man-and-the-Wasp-Promo-Ant-Man.webp");
-  background-position: 50% 20%;
+  background-position:  20%;
   background-size: cover;
   color: white;
 }
@@ -977,7 +1064,6 @@ a:link {
 }
 .shang:hover {
   background-image: url("https://i.postimg.cc/qqY0QJ4f/shangchi.webp");
-  background-position: 50% 20%;
   background-size: cover;
   color: white;
 }

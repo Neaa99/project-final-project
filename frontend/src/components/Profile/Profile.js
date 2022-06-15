@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 import ProfileForm from './ProfileForm'
-
 import { account } from '../../reducers/account'
-
 import { EDIT_USER } from '../../utils/constants'
+
+import { BackIcon } from 'components/Headers/BackIcon'
 
 const Profile = () => {
   const user = useSelector(store => store.account)
@@ -16,6 +17,12 @@ const Profile = () => {
   const [movie, setMovie] = useState(user.movie)
 
   const dispatch = useDispatch()
+
+  const [active, setActive] = useState(false)
+
+   const btnHandler = () => {
+        setActive(!active)
+      }
 
   const onFormSubmit = (event) => {
     event.preventDefault()
@@ -54,7 +61,7 @@ const Profile = () => {
   }
 
   return (
-    <section>
+    <section className="red-background">
        <div className="title-container">
                 <h3 className="main-title">PROFILE</h3>
             </div>
@@ -78,7 +85,8 @@ const Profile = () => {
                } 
         </div>
 
-        <div className="profile-form">
+
+        <div className={active ? "sideMenu-open" : "sideMenu-closed"}>
           <ProfileForm
             fullName={fullName}
             setFullName={setFullName}
@@ -91,7 +99,11 @@ const Profile = () => {
             onFormSubmit={onFormSubmit}
           />
         </div>
+        <button className="btn custom-btn" onClick={btnHandler}>
+                   {active ? "Close" : "Edith Profile"}
+                  </button>
       </div>
+      
     </section>
   )
 }

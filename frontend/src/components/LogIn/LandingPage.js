@@ -8,14 +8,14 @@ const LandingPage = () => {
   const account = useSelector(store => store.account)
 
   return (
-    <>
+    <section classNAme="red-background">
       {account.signup && (
         <SignupForm /> 
       )}
       {!account.signup && (
         <LoginForm /> 
       )}
-    </>
+    </section>
   )
 }
 

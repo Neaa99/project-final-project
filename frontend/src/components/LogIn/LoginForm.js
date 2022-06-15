@@ -68,7 +68,8 @@ const LoginForm = () => {
   return (
     <div className="landingpage-section-wrapper">
       <section className="landingpage-section">
-        <h3>Log in</h3>
+        <h3>Welcome back! 
+          <br></br>Log in here</h3>
         <form className="form" onSubmit={onFormSubmit}>
           <label htmlFor="username">Username:</label>
           <input 

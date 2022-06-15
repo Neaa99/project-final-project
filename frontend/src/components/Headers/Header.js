@@ -48,7 +48,7 @@ const Header = () => {
               <ul className={active ? "sideMenu-open" : "sideMenu-closed"}>
               <div className="header-list">
                 <Link to="/authorized/profile">
-                      <p className="header-list-item">Profile</p>
+                      <p className="header-list-item bold">Profile</p>
                     </Link>
                     <Link to="/feed">
                       <p className="header-list-item">Feed</p>
@@ -68,7 +68,7 @@ const Header = () => {
                     <Link to="/feed/oneshot">
                       <p className="header-list-item">Oneshots</p>
                     </Link>
-                    <p className="header-list-item" 
+                    <p className="header-list-item bold" 
                         onClick={() => {
                           dispatch(account.actions.logOut())
                           localStorage.removeItem('user')
