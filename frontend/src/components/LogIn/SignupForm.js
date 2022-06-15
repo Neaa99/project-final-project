@@ -69,7 +69,7 @@ const SignupForm = () => {
   return (
     <div className="landingpage-section-wrapper">
       <h1 className="begin-header mobile-hide">Begin your Marvel journey here...</h1>
-      <h1 className="end-header mobile-hide">To the beyond</h1>
+      <h1 className="end-header mobile-hide">Avengers, assemble!</h1>
       <section className="landingpage-section signup-section">
         <h3>Sign Up here</h3>
         <form className="form signup-form" onSubmit={onFormSubmit}>
