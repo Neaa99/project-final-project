@@ -67,6 +67,7 @@ const LoginForm = () => {
 
   return (
     <div className="landingpage-section-wrapper">
+      <h1 className="begin-header mobile-hide">Avengers, assemble!</h1>
       <section className="landingpage-section">
         <h3>Welcome back! 
           <br></br>Log in here</h3>

@@ -129,25 +129,13 @@ label {
 }
 
 .begin-header {
-  align-self: flex-start;
   text-shadow: 3px 3px 3px #d40000;
   font-family: 'marvelregular';
   font-size: 100px;
   letter-spacing: 5px;
   color: rgba(255, 255, 255, .9);
   text-transform: uppercase;
-  margin: 0px 0 50px 100px;
-}
-
-.end-header {
-  align-self: flex-end;
-  text-shadow: 3px 3px 3px #d40000;
-  font-family: 'marvelregular';
-  font-size: 80px;
-  letter-spacing: 5px;
-  color: rgba(255, 255, 255, .9);
-  text-transform: uppercase;
-  margin: 0px 100px 50px 100px;
+  margin: 50px 0;
 }
 
 .profile-info-and-form {
@@ -772,7 +760,7 @@ a:link {
 
 @media (max-width:1024px) {
   .scroll-tag {
-    background-image: url("https://i.postimg.cc/HxdVNcL1/pruplestar.png");
+    background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
     background-position: 20% 10%;
     border-radius: 7px;
     color: white;
