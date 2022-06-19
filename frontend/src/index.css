@@ -308,7 +308,7 @@ a:link {
   color: #000;
   width: 100vw;
   /* height: 70px; */
-  height: 8%;
+  height: 10%;
   top: 0;
   position: fixed;
   border-radius: 20px;
@@ -316,6 +316,7 @@ a:link {
   z-index: 10;
   display: flex;
 }
+
 
 @keyframes colorChange {
   0%   {background-color: #F6EABE;}
@@ -348,6 +349,11 @@ a:link {
 }
 
 
+@media (min-width: 700px) {
+  .header {
+   height: 8%;
+  }
+}
 
 /*///////////////////////////////////////// Details /////////////////////////////////////////////////////////////////////*/
 
@@ -487,11 +493,11 @@ a:link {
   text-align: center;
   font-size: auto;
   text-shadow: 3px 3px 3px #D40000;
-  font-family: 'marvelregular';
-  font-size: 30px;
-  letter-spacing: 3px;
+  font-size: 25px;
   color: rgba(255, 255, 255, .9);
   text-transform: uppercase;
+  font-family: 'marvelregular';
+  letter-spacing: 3px;
 }
 
 .title-container {
@@ -501,7 +507,7 @@ a:link {
   margin-top: 0px;
   top: 0px;
   width: 60vw;
-  height: 75px;  /*65px */
+  height: 65px;  /*65px */
   margin: 0 70px;
   /* border: 1px solid black; */
   display: flex;
@@ -536,6 +542,7 @@ a:link {
 
 .info-poster:hover {
   box-shadow: 6px 6px 20px rgba(122,122,122,0.912);
+  transform: scale(1.05);
 }
 
 .info-details {
@@ -553,15 +560,15 @@ a:link {
 }
 
 .info-desc {
-  font-size: 10px;
+  font-size: 12px;
   /* width: 170px; */
-  max-height: 80px;
+  max-height: 75px;
   overflow: hidden;
   /* border: 1px solid black; */
 }
 
 .info-rating {
-  font-size: 10px;
+  font-size: 12px;
   color: #DC0023
 }
 
@@ -573,7 +580,7 @@ a:link {
 }
 
 .info-medium {
-  font-size: 10px;
+  font-size: 12px;
   /* margin: 0; */
 }
 
@@ -586,8 +593,8 @@ a:link {
 
 .one-tag {
   background: #FD7E6D;
-  font-size: 10px;
-  padding: 3px;
+  font-size: 12px;
+  padding: 5px;
   border-radius: 3px;
   margin: 0;
 }
@@ -599,7 +606,9 @@ a:link {
 }
 
 .blue {
-  background: #5D5DFC;
+  /* background: #5D5DFC; */
+  background-image: url("https://i.postimg.cc/4xysZPNb/comic-Blue.png");
+  background-size: cover;
 }
 
 .green {
@@ -710,6 +719,12 @@ a:link {
 .inside-scroller img {
   margin: 0;
   max-height: 430px; 
+}
+
+.inside-scroller img:hover {
+  box-shadow: 5px 5px 10px rgba(122,122,122,0.412);
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 
