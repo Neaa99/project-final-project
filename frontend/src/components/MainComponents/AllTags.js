@@ -9,13 +9,14 @@ const AllTags = () => {
     return (
         <section>
             <Header />
+
             <div className="title-container">
                 <h3 className="main-title">TAGS</h3>
             </div>
                         
-                <div className="listed-tags">
+            <div className="listed-tags">
 
-                <Link to={`/feed/tags/Tony Stark`}>
+                    <Link to={`/feed/tags/Tony Stark`}>
                         <p className="tag-item tony red">Tony Stark</p>
                     </Link>
                     <Link to={`/feed/tags/Thor`}>
@@ -228,11 +229,7 @@ const AllTags = () => {
                     <Link to={`/feed/tags/Miles Morales`}>
                         <p className="tag-item miles red">Miles Morales</p>
                     </Link>
-                
 
-
-
-                
                 </div>
 
            

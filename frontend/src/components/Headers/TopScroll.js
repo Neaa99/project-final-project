@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from 'react-router-dom'
 
 
-
 const TopScroll = () => {
 
 
@@ -26,10 +25,7 @@ const TopScroll = () => {
                 </Link>
                 <Link to={`/feed/oneshot`}>
                     <li className="scroll-tag mobile-hide">Oneshots</li>
-                </Link>
-
-                
-                
+                </Link>      
             </div>
         </div>
     )

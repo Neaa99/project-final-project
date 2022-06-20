@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink, Link, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import TopScroll from '../Headers/TopScroll'
 import Header from 'components/Headers/Header'
@@ -21,8 +21,8 @@ const Tags = () => {
 
         return (
             
-            <section>
-                        <Header />
+            <>
+                <Header />
 
                 <div className="title-container">
                     <h3 className="main-title">{tags}</h3>
@@ -55,21 +55,17 @@ const Tags = () => {
                                                 <p className="one-tag red">{marvel.tags[0]}</p>)} 
                                                 {marvel.tags[1] && (
                                                 <p className="one-tag red">{marvel.tags[1]}</p>)} 
-                                                                
-            
-            
+         
                                             </div>
-            
-            
-            
+
                                         </div>
                                     </div>
                                 </Link>
                              ))}
                         </section>
-                        </div>
-                        </section>
-                )
+                    </div>
+            </>
+        )
 }
 
 

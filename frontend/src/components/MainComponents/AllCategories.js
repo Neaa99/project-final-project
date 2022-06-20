@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Header from 'components/Headers/Header'
@@ -6,9 +6,9 @@ import Header from 'components/Headers/Header'
 const AllCategories = () => {
 
     return (
-
-        <section>
+        <>
             <Header />
+
             <div className="title-container">
                 <h3 className="main-title">CATEGORIES</h3>
             </div>
@@ -114,12 +114,8 @@ const AllCategories = () => {
                     <p className="tag-item sheild red">S.H.I.E.L.D</p>
                 </Link>
                 
-
-
-
-            
             </div>
-        </section>
+        </>
     )
 }
 

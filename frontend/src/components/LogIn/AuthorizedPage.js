@@ -2,9 +2,6 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-import Sidebar from 'components/Headers/Sidebar'
-import Header from 'components/Headers/Header'
-
 const AuthorizedPage = () => {
 
   const accessToken = useSelector(store => store.account.accessToken);
@@ -19,7 +16,7 @@ const AuthorizedPage = () => {
 
   return (
     <>
-      
+    {/* Add here of you want something to show on everypage, eg: header */}
     </>
   )
 }

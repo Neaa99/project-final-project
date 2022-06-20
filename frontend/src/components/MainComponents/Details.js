@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink, Link, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import uniqid from 'uniqid';
 
 import TopScroll from 'components/Headers/TopScroll';
@@ -38,25 +38,26 @@ const Details = () => {
         }, []) 
 
         return (
-            <section>
+            <>
                 <Header />
+
                 <div className="title-container">
-                <h3 className="main-title">{details.title}</h3>
-            </div>
+                    <h3 className="main-title">{details.title}</h3>
+                </div>
             
-            <section className="homePage"> 
-                <TopScroll />
-                <section className="details-body">
+                <section className="homePage"> 
+                    <TopScroll />
+                    <section className="details-body">
                    
-                    <img className="movie-image" src={details.poster} alt={details.title} tabIndex="0"/>
+                        <img className="movie-image" src={details.poster} alt={details.title} tabIndex="0"/>
                     
-                    <section className="movie-summary">
-                        <h2 className="movie-title">{details.title}</h2>
-                        <p className="movie-medium bold">{details.medium}</p>
-                            
-                        <div className="movie-desc">
-                            <p>{details.description}</p>
-                        </div>
+                        <section className="movie-summary">
+                            <h2 className="movie-title">{details.title}</h2>
+                            <p className="movie-medium bold">{details.medium}</p>
+                                
+                            <div className="movie-desc">
+                                <p>{details.description}</p>
+                            </div>
 
                             <div className="movie-details">
                                 <p className="details-p"><span>Release date:</span> 
@@ -80,11 +81,11 @@ const Details = () => {
                         
                             <p className="details-category-title"><span>Categories:</span></p>
                             <div className="details-category">
-                                <p className="category-box">{marvelCategories.map((category) => (
+                                <div className="category-box">{marvelCategories.map((category) => (
                                     <Link to={`/feed/categories/${category}`} key={uniqid()}>
                                         <p className="tag blue">{category}</p>
                                     </Link>))}
-                                </p>
+                                </div>
                             </div>
 
                             <p className="details-tags-title"><span>Tags:</span></p>
@@ -95,12 +96,10 @@ const Details = () => {
                                     </Link>))}
                                 </div> 
                             </div>
-
-                           
                         </section>
                 </section>
             </section>
-            </section>
+            </>
     )
 }
 

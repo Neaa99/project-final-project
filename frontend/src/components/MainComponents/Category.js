@@ -18,11 +18,12 @@ const { category } = useParams()
 
         return (
     <>
-    <Header />
-        <div className="title-container">
+        <Header />
 
+        <div className="title-container">
             <h3 className="main-title">{category}</h3>
         </div>
+
             <div className="categoryTag-feed"> 
 
                 <TopScroll />
@@ -50,20 +51,14 @@ const { category } = useParams()
                                     <p className="one-tag red">{marvel.tags[0]}</p>)} 
                                     {marvel.tags[1] && (
                                     <p className="one-tag red">{marvel.tags[1]}</p>)} 
-                                                    
-
-
                                 </div>
-
-
-
                             </div>
                         </div>
                     </Link>
                  ))}
             </section>
             </div>
-            </>
+        </>
     )
 }
 

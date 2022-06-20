@@ -1,18 +1,16 @@
 import React, { useState } from 'react'
-import { NavLink, Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import Hamburger from "hamburger-react";
 
-import { useDispatch } from 'react-redux'
-import { account } from "reducers/account";
 
+import { account } from "reducers/account";
 import { BackIcon } from "./BackIcon";
 
 
 const Header = () => {
 
     const [active, setActive] = useState(false)
-
-
 
     const dispatch = useDispatch()
 
@@ -22,9 +20,9 @@ const Header = () => {
         navigate(-1);
       };
 
-      const btnHandler = () => {
-        setActive(!active)
-      }
+    const btnHandler = () => {
+      setActive(!active)
+    }
 
     return(
         <header>
@@ -77,9 +75,7 @@ const Header = () => {
                   </div>
                 
                   <div className={active ? "closeMenu-open" : "closeMenu-closed"}>
-
-                  </div>
-                  
+                  </div> 
               </ul>
           </nav>
             </div>

@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom'
 import ProfileForm from './ProfileForm'
 import { account } from '../../reducers/account'
 import { EDIT_USER } from '../../utils/constants'
-import Header from 'components/Headers/Header'
-
-import { BackIcon } from 'components/Headers/BackIcon'
 
 const Profile = () => {
   const user = useSelector(store => store.account)
@@ -63,29 +60,28 @@ const Profile = () => {
 
   return (
     <section className="red-background">
-      {/* <Header /> */}
         <div className="title-container">
             <h3 className="main-title"></h3>
         </div>
      
-      <h1 className="welcome">Profile</h1>
-      <div className="profile-info-and-form">
-        <div className="profile-info">
-            <p><span>Username:</span> {`${user.username}`}</p>
-            <p><span>Email:</span> {`${user.email}`}</p>
-              {user.fullName && 
-                <p><span>Name:</span> {`${user.fullName}`}</p>
-              }
-              {user.age && 
-                <p><span>Age:</span> {`${user.age}`}</p>
-              }
-              {user.superhero && 
-                <p><span>Superhero Name:</span> {`${user.superhero}`}</p>
-               } 
-              {user.movie && 
-                <p><span>Favorite Marvel movie:</span> {`${user.movie}`}</p>
-               } 
-        </div>
+        <h1 className="welcome">Profile</h1>
+        <div className="profile-info-and-form">
+          <div className="profile-info">
+              <p><span>Username:</span> {`${user.username}`}</p>
+              <p><span>Email:</span> {`${user.email}`}</p>
+                {user.fullName && 
+                  <p><span>Name:</span> {`${user.fullName}`}</p>
+                }
+                {user.age && 
+                  <p><span>Age:</span> {`${user.age}`}</p>
+                }
+                {user.superhero && 
+                  <p><span>Superhero Name:</span> {`${user.superhero}`}</p>
+                } 
+                {user.movie && 
+                  <p><span>Favorite Marvel movie:</span> {`${user.movie}`}</p>
+                } 
+          </div>
 
 
         <div className={active ? "sideMenu-open" : "sideMenu-closed"}>
@@ -101,6 +97,7 @@ const Profile = () => {
             onFormSubmit={onFormSubmit}
           />
         </div>
+
         <div className="btn-container">
           <button className="btn custom-btn" onClick={btnHandler}>
             {active ? "Close" : "Edith Profile"}
@@ -109,6 +106,7 @@ const Profile = () => {
              <p>Explore</p>    
           </Link>
         </div>
+        
       </div>
       
     </section>
