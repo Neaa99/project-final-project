@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { NavLink, Link, useParams } from 'react-router-dom'
 
 import TopScroll from '../Headers/TopScroll'
+import Header from 'components/Headers/Header'
 
 const Tags = () => {
 
@@ -21,6 +22,7 @@ const Tags = () => {
         return (
             
             <section>
+                        <Header />
 
                 <div className="title-container">
                     <h3 className="main-title">{tags}</h3>

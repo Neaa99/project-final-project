@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 
 const ProfileForm = ({ fullName, setFullName, age, setAge, superhero, setSuperhero, movie, setMovie, onFormSubmit }) => {
+    
+    const [active, setActive] = useState(false)
+
+    const btnHandler = () => {
+        setActive(!active)
+      }
+    
     return (
         <>
             <form 
@@ -60,7 +68,7 @@ const ProfileForm = ({ fullName, setFullName, age, setAge, superhero, setSuperhe
                     <option value="Blade">Blade</option>
                     <option value="Morbius">Morbius</option>
                 </select>
-                <button className="btn custom-btn" type="submit">Add</button>
+                <button className="btn custom-btn" type="submit" onClick={btnHandler}>Add</button>
           </form>
         </>
     )

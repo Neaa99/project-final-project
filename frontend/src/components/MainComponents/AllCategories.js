@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+import Header from 'components/Headers/Header'
+
 const AllCategories = () => {
 
     return (
 
         <section>
+            <Header />
             <div className="title-container">
                 <h3 className="main-title">CATEGORIES</h3>
             </div>

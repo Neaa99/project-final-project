@@ -47,25 +47,25 @@ const Header = () => {
             <nav className="meny">
               <ul className={active ? "sideMenu-open" : "sideMenu-closed"}>
               <div className="header-list">
-                <Link to="/authorized/profile">
+                    <Link to="/authorized/profile" onClick={btnHandler}>
                       <p className="header-list-item bold">Profile</p>
                     </Link>
-                    <Link to="/feed">
+                    <Link to="/feed" onClick={btnHandler}>
                       <p className="header-list-item">Feed</p>
                     </Link>
-                    <Link to="/feed/categories">
+                    <Link to="/feed/categories" onClick={btnHandler}>
                       <p className="header-list-item">Categories</p>
                     </Link>
-                     <Link to="/feed/tags">
+                     <Link to="/feed/tags" onClick={btnHandler}>
                       <p className="header-list-item">Tags</p>
                     </Link>
-                    <Link to="/feed/movies">
+                    <Link to="/feed/movies" onClick={btnHandler}>
                       <p className="header-list-item">Movies</p>
                     </Link>
-                    <Link to="/feed/series">
+                    <Link to="/feed/series" onClick={btnHandler}>
                       <p className="header-list-item">Series</p>
                     </Link>
-                    <Link to="/feed/oneshot">
+                    <Link to="/feed/oneshot" onClick={btnHandler}>
                       <p className="header-list-item">Oneshots</p>
                     </Link>
                     <p className="header-list-item bold" 

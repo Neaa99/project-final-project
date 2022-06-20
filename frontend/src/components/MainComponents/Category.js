@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
 import TopScroll from '../Headers/TopScroll'
+import Header from 'components/Headers/Header'
 
 
 const Category = () => {
@@ -16,8 +17,10 @@ const { category } = useParams()
         }) }, []) 
 
         return (
-<>
+    <>
+    <Header />
         <div className="title-container">
+
             <h3 className="main-title">{category}</h3>
         </div>
             <div className="categoryTag-feed"> 

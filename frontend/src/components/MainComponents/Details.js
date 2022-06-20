@@ -3,6 +3,7 @@ import { NavLink, Link, useParams } from 'react-router-dom'
 import uniqid from 'uniqid';
 
 import TopScroll from 'components/Headers/TopScroll';
+import Header from 'components/Headers/Header';
 
 const Details = () => {
 
@@ -38,6 +39,7 @@ const Details = () => {
 
         return (
             <section>
+                <Header />
                 <div className="title-container">
                 <h3 className="main-title">{details.title}</h3>
             </div>

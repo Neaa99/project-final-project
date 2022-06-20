@@ -16,6 +16,7 @@ import NotFound from 'components/Headers/NotFound'
 import AllMovies from 'components/MainComponents/AllMovies'
 import AllSeries from 'components/MainComponents/AllSeries'
 import AllOneshot from 'components/MainComponents/AllOneshot'
+import Welcome from 'components/LogIn/Welcome'
 
 import { account } from './reducers/account'
 
@@ -32,7 +33,7 @@ export const App = () => {
         <main>
           <Routes>
             <Route exact path="/" element={<LandingPage />}></Route>
-            <Route exact path="/authorized" element={<><AuthorizedPage /><Profile /></>}></Route>
+            <Route exact path="/authorized" element={<><AuthorizedPage /><Welcome /></>}></Route>
             <Route path="/authorized/profile" element={<><AuthorizedPage /><Profile /></>}></Route>
             <Route exact path="/feed" element={<><AuthorizedPage /><Feed /></>}></Route>
             <Route exact path='/feed/:title' element={<><AuthorizedPage /><Details /></>}></Route>

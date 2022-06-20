@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import TopScroll from 'components/Headers/TopScroll'
+import Header from 'components/Headers/Header'
 
 
-const Marvel = () => {
+const Feed = () => {
 
     const [marvel, setMarvel] = useState([])
     const [avengers, setAvengers] = useState([])
@@ -83,6 +84,7 @@ const Marvel = () => {
 
         return (
             <section>
+                <Header />
             <div className="title-container">
             <h3 className="main-title">FEED</h3>
         </div>
@@ -221,4 +223,4 @@ const Marvel = () => {
         )
 }
 
-export default Marvel
+export default Feed

@@ -19,7 +19,7 @@ const AuthorizedPage = () => {
 
   return (
     <>
-      <Header />
+      
     </>
   )
 }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import TopScroll from '../Headers/TopScroll'
+import Header from 'components/Headers/Header'
 
 
 const AllSeries = () => {
@@ -15,9 +16,11 @@ const [allSeries, setAllSeries] = useState([])
         }) }, []) 
 
         return (
-<>
+    <>
+    <Header />
         <div className="title-container">
-            <h3 className="main-title">All Movies</h3>
+
+            <h3 className="main-title">All Series</h3>
         </div>
             <div className="categoryTag-feed"> 
 

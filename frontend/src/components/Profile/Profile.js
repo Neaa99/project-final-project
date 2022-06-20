@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import ProfileForm from './ProfileForm'
 import { account } from '../../reducers/account'
 import { EDIT_USER } from '../../utils/constants'
+import Header from 'components/Headers/Header'
 
 import { BackIcon } from 'components/Headers/BackIcon'
 
@@ -36,7 +37,7 @@ const Profile = () => {
       body: JSON.stringify({ fullName: fullName, age: age, superhero: superhero, movie: movie })
     }
 
-    fetch(EDIT_USER(user.id), options)
+    fetch(EDIT_USER(user.AuthId), options)
       .then(res => res.json())
       .then(data => {
         if (data.success) {
@@ -62,11 +63,12 @@ const Profile = () => {
 
   return (
     <section className="red-background">
-       <div className="title-container">
-                <h3 className="main-title">PROFILE</h3>
-            </div>
+      {/* <Header /> */}
+        <div className="title-container">
+            <h3 className="main-title"></h3>
+        </div>
      
-      <h1 className="welcome">{user.superhero ? `Welcome ${user.superhero}` : `Welcome ${user.fullName}`}</h1>
+      <h1 className="welcome">Profile</h1>
       <div className="profile-info-and-form">
         <div className="profile-info">
             <p><span>Username:</span> {`${user.username}`}</p>
@@ -99,9 +101,14 @@ const Profile = () => {
             onFormSubmit={onFormSubmit}
           />
         </div>
-        <button className="btn custom-btn" onClick={btnHandler}>
-                   {active ? "Close" : "Edith Profile"}
-                  </button>
+        <div className="btn-container">
+          <button className="btn custom-btn" onClick={btnHandler}>
+            {active ? "Close" : "Edith Profile"}
+          </button>
+          <Link to='/feed' className="btn custom-btn">
+             <p>Explore</p>    
+          </Link>
+        </div>
       </div>
       
     </section>

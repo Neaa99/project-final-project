@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
+import Header from "components/Headers/Header";
+
 
 const AllTags = () => {
 
     return (
         <section>
+            <Header />
             <div className="title-container">
                 <h3 className="main-title">TAGS</h3>
             </div>
