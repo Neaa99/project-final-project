@@ -58,8 +58,8 @@ code {
 .red-background {
   background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
   background-repeat: repeat;
-  height: 100%;
-  height: 100vh;
+  /* height: 100%; */
+  /* height: 100vh; */
 }
 
 .landingpage-section-wrapper {
@@ -70,7 +70,8 @@ code {
   justify-content: center;
   align-items: center;
   background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
-  
+  height: 100%;
+  height: 100vh;
 }
 
 .landingpage-section {
@@ -333,8 +334,9 @@ a:link {
 
   }
   .welcome-link {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
   }
   .welcome-container {
     padding: 50px;
@@ -734,10 +736,13 @@ a:link {
 }
 
 @media (min-width:1224px) {
-
   .info-box {
-    max-width: 700px;
+    max-width: 600px;
     margin: 10px;
+  }
+  .main-title {
+   height: 70px;
+
   }
 }
 
@@ -927,6 +932,7 @@ a:link {
   height: 150px;
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
   border-radius: 10px;
 } 
