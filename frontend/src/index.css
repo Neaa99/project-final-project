@@ -494,6 +494,10 @@ a:link {
   .details-category-title, .details-tags-title {
     margin: 10px 0;
   }
+  .details-category, .details-tags {
+    max-width: 650px;
+    
+  }
 }
 
 
