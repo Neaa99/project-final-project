@@ -34,7 +34,7 @@ const Profile = () => {
       body: JSON.stringify({ fullName: fullName, age: age, superhero: superhero, movie: movie })
     }
 
-    fetch(EDIT_USER(user.AuthId), options)
+    fetch(EDIT_USER(user.id), options)
       .then(res => res.json())
       .then(data => {
         if (data.success) {

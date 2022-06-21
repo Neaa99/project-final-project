@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = localStorage.getItem('user') ? { 
-  AuthId: JSON.parse(localStorage.getItem('user')).AuthId,
+  id: JSON.parse(localStorage.getItem('user')).id,
   username: JSON.parse(localStorage.getItem('user')).username,
   email: JSON.parse(localStorage.getItem('user')).email,
   fullName: JSON.parse(localStorage.getItem('user')).fullName,
@@ -14,7 +14,7 @@ const initialState = localStorage.getItem('user') ? {
 }
 :
 {
-  AuthId: null,
+  id: null,
   username: null,
   email: null,
   fullName: null,
@@ -31,7 +31,7 @@ export const account = createSlice({
   initialState,
   reducers: {
     setID: (store, action) => {
-      store.AuthId = action.payload
+      store.id = action.payload
     },
 
     setUsername: (store, action) => {
@@ -67,7 +67,7 @@ export const account = createSlice({
 
     logOut: (store, action) => {
       store.accessToken = null
-      store.AuthId = null
+      store.id = null
       store.username = null
       store.email = null
     }
