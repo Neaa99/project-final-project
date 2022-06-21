@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import TopScroll from 'components/Headers/TopScroll'
 import Header from 'components/Headers/Header'
+import Footer from './Footer'
 
 const Feed = () => {
 
@@ -88,7 +89,7 @@ const Feed = () => {
 
                 <div className="homePage">
                     <TopScroll />
-                    <h3>All marvel:</h3>
+                    <h3 className="feed-title">All marvel:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {marvel.map((marvel) => (
@@ -97,14 +98,14 @@ const Feed = () => {
                                     to={`/feed/${marvel.title}`} 
                                     key={marvel.id}
                                     tabIndex="0">
-                                    <p>{marvel.title}</p>    
+                                    <p className="bold">{marvel.title}</p>    
                                     <img src={marvel.poster} alt={marvel.title}/>
                                 </Link>
                             ))}
                         </div>
                     </section>
         
-                    <h3>Avengers:</h3>
+                    <h3 className="feed-title">Avengers:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {avengers.map((marvel) => (
@@ -112,14 +113,14 @@ const Feed = () => {
                                     to={`/feed/${marvel.title}`} 
                                     key={marvel.id}
                                     tabIndex="0">
-                                    <p>{marvel.title}</p>    
+                                    <p className="bold">{marvel.title}</p>    
                                     <img src={marvel.poster} alt={marvel.title}/>
                                 </Link>
                             ))}
                         </div>
                     </section>
 
-                    <h3>Upcoming movies and series:</h3>
+                    <h3 className="feed-title">Upcoming movies and series:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {upcoming.map((marvel) => (
@@ -127,14 +128,14 @@ const Feed = () => {
                                     to={`/feed/${marvel.title}`} 
                                     key={marvel.id}
                                     tabIndex="0">
-                                    <p>{marvel.title}</p>    
+                                    <p className="bold">{marvel.title}</p>    
                                     <img src={marvel.poster} alt={marvel.title}/>
                                 </Link>
                             ))}
                         </div>
                     </section>
 
-                    <h3>Asgardiens:</h3>
+                    <h3 className="feed-title">Asgardiens:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {asgardiens.map((marvel) => (
@@ -142,14 +143,14 @@ const Feed = () => {
                                     to={`/feed/${marvel.title}`} 
                                     key={marvel.id}
                                     tabIndex="0">
-                                    <p>{marvel.title}</p>    
+                                    <p className="bold">{marvel.title}</p>    
                                     <img src={marvel.poster} alt={marvel.title}/>
                                 </Link>
                             ))}
                         </div>
                     </section>
 
-                    <h3>Spider-Man:</h3>
+                    <h3 className="feed-title">Spider-Man:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {spiderman.map((marvel) => (
@@ -157,14 +158,14 @@ const Feed = () => {
                                     to={`/feed/${marvel.title}`} 
                                     key={marvel.id}
                                     tabIndex="0">
-                                    <p>{marvel.title}</p>    
+                                    <p className="bold">{marvel.title}</p>    
                                     <img src={marvel.poster} alt={marvel.title}/>
                                 </Link>
                             ))}
                         </div>
                     </section>
 
-                    <h3>X-Man:</h3>
+                    <h3 className="feed-title">X-Man:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {xmen.map((marvel) => (
@@ -172,14 +173,14 @@ const Feed = () => {
                                     to={`/feed/${marvel.title}`} 
                                     key={marvel.id}
                                     tabIndex="0">
-                                    <p>{marvel.title}</p>    
+                                    <p className="bold">{marvel.title}</p>    
                                     <img src={marvel.poster} alt={marvel.title}/>
                                 </Link>
                             ))}
                         </div>
                     </section>
 
-                    <h3>Animated series and movies:</h3>
+                    <h3 className="feed-title">Animated series and movies:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {animated.map((marvel) => (
@@ -187,14 +188,14 @@ const Feed = () => {
                                     to={`/feed/${marvel.title}`} 
                                     key={marvel.id}
                                     tabIndex="0">
-                                    <p>{marvel.title}</p>    
+                                    <p className="bold">{marvel.title}</p>    
                                     <img src={marvel.poster} alt={marvel.title}/>
                                 </Link>
                             ))}
                         </div>
                     </section>
 
-                    <h3>OneShots:</h3>
+                    <h3 className="feed-title">OneShots:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {oneShot.map((marvel) => (
@@ -202,7 +203,7 @@ const Feed = () => {
                                     to={`/feed/${marvel.title}`} 
                                     key={marvel.id}
                                     tabIndex="0">
-                                    <p>{marvel.title}</p>    
+                                    <p className="bold">{marvel.title}</p>    
                                     <img src={marvel.poster} alt={marvel.title}/>
                                 </Link>
                             ))}
@@ -210,6 +211,7 @@ const Feed = () => {
                     </section>
         
                 </div>
+                <Footer />
             </>
         )
 }

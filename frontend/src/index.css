@@ -299,6 +299,11 @@ a:link {
   transition: 0.7s;
 }
 
+.footer-text {
+  text-align: center;
+  margin: 50px;
+}
+
 
 
 @media (min-width: 700px) {
@@ -745,22 +750,25 @@ a:link {
 
 /*/////////////////////////////////////// Feed & Scrollbar Styling /////////////////////////////////////////////////////////////////////*/
 
-/* ::-webkit-scrollbar {
-  width: 5px;
+::-webkit-scrollbar {
+  width: 1px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
 }
 
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
-  background: #888;
+  background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
+  box-shadow: 6px 6px 20px rgba(122,122,122,0.412);
+  border-radius: 5px;
+  
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
-} */
+}
 
 /* Hide scrollbar for IE, Edge add Firefox */
 .scrollbar-hidden {
@@ -796,6 +804,17 @@ a:link {
   box-shadow: 5px 5px 10px rgba(122,122,122,0.412);
   transform: scale(1.1);
   transition: 0.4s;
+}
+
+.feed-title {
+  font-family: 'marvelregular';
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 10px;
+  letter-spacing: 3px;
+  /* color: rgba(255, 255, 255, .9); */
+  color: black;
+  /* text-shadow: 3px 3px 3px #d40000; */
 }
 
 

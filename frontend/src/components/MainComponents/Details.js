@@ -4,6 +4,7 @@ import uniqid from 'uniqid';
 
 import TopScroll from 'components/Headers/TopScroll';
 import Header from 'components/Headers/Header';
+import Footer from './Footer';
 
 const Details = () => {
 
@@ -99,6 +100,7 @@ const Details = () => {
                         </section>
                 </section>
             </section>
+            
             </>
     )
 }

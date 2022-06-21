@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 
 import Header from "components/Headers/Header";
+import Footer from "./Footer";
 
 
 const AllTags = () => {
@@ -232,8 +233,9 @@ const AllTags = () => {
 
                 </div>
 
-           
+                <Footer />
         </section>
+        
     )
 }
 

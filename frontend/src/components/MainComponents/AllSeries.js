@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import TopScroll from '../Headers/TopScroll'
 import Header from 'components/Headers/Header'
+import Footer from './Footer'
 
 
 const AllSeries = () => {
@@ -58,6 +59,7 @@ return (
                  ))}
             </section>
             </div>
+            <Footer />
         </>
     )
 }

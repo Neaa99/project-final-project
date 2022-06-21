@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import ProfileForm from './ProfileForm'
+import Footer from 'components/MainComponents/Footer'
 import { account } from '../../reducers/account'
 import { EDIT_USER } from '../../utils/constants'
 
@@ -108,7 +109,7 @@ const Profile = () => {
         </div>
         
       </div>
-      
+      <Footer />
     </section>
   )
 }

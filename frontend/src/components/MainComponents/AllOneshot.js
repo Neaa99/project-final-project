@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import TopScroll from '../Headers/TopScroll'
 import Header from 'components/Headers/Header'
+import Footer from './Footer'
 
 
 const AllOneshot = () => {
@@ -59,6 +60,7 @@ const [AllOneshot, setAllOneshot] = useState([])
                  ))}
             </section>
         </div>
+        <Footer />
     </>
     )
 }
