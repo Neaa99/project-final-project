@@ -53,8 +53,8 @@ const AllTags = () => {
                     <Link to={`/feed/tags/Thanos`}>
                         <p className="tag-item thanos red">Thanos</p>
                     </Link>
-                    <Link to={`/feed/tags/Rhodney`}>
-                        <p className="tag-item rhodney red">Rhodney</p>
+                    <Link to={`/feed/tags/Rhodey`}>
+                        <p className="tag-item rhodney red">Rhodey</p>
                     </Link>
                     <Link to={`/feed/tags/Bruce Banner`}>
                         <p className="tag-item hulk red">Bruce Banner</p>
