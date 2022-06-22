@@ -706,6 +706,7 @@ a:link {
     width: auto;
     font-size: 24px;
      height: 85px;
+    margin: 0 70px;
     }
   .movie-container {
     display: flex;
