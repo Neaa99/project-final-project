@@ -15,11 +15,11 @@ const Welcome = () => {
       <h1 className="welcome">{user.superhero ? `Welcome ${user.superhero}` : `Welcome ${user.fullName}` ? !user.superhero : `Welcome`}</h1>
             <div className="welcome-container">
                 <Link to="/authorized/profile" className='welcome-link'>
-                    <p className="header-list-item bold">Profile</p>
+                    <p className="welcome-link-item bold">Profile</p>
                 </Link>
 
                 <Link to="/feed" className='welcome-link'>
-                    <p className="header-list-item bold">Let's start exploring!</p>
+                    <p className="welcome-link-item bold">Let's start exploring!</p>
                 </Link>
             </div>
         </section>

@@ -129,6 +129,11 @@ label {
   margin: 10px;
 }
 
+.welcome-link-item {
+  font-size: 32px;
+  text-align: center;
+}
+
 .begin-header {
   text-shadow: 3px 3px 3px #d40000;
   font-family: 'marvelregular';
