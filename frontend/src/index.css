@@ -1,21 +1,12 @@
 :root {
   font-size: 62.5%;
-  font-family: 'Poppins', sans-serif;
-  --primary-one: #e62429 ;
-  --primary-two: #2C49F5 ;
-  --primary-three:#FD7E6D;
-  --primary-four: #5D5DFC;   
-  --primary-fifth: #f55536; 
-  /* --primary-sixth: #3B2B20;                                                                                                                                                                                                                                                              */
+  font-family: 'Poppins', sans-serif;                                                                                                                                                                                                                                                                                                                                                    
 }
 
 @font-face {
   font-family: 'marvelregular';
   src: url('marvelregular-dj83-webfont.woff2') format('woff2'),
        url('marvelregular-dj83-webfont.woff') format('woff');
-  /* font-weight: normal;
-  font-style: normal; */
-
 }
 
 body {
@@ -29,7 +20,6 @@ body {
   height: 100%;
   background-color: #ffd8be6b;
   font-size: 1.6rem;
-  /* background-color: #FAFBFD; */
 }
 
 code {
@@ -39,18 +29,8 @@ code {
 
 .homePage {
   display: flex;
-  /* flex-wrap: wrap; FAFBFD*/
   flex-direction: column;
   align-items: center;
-  /* margin-top: 60px; */
-}
-
-@media (min-width:1024px) {
-
-  /* .homePage {
-    margin-top: 180px;
-  } */
-
 }
 
 /*/////////////////////////////////////////// Login / Profile / Welcome /////////////////////////////////////////////////////////////////////*/
@@ -58,7 +38,6 @@ code {
 .red-background {
   background-image: url("https://i.postimg.cc/cHRqN03k/marvel-red1.png");
   background-repeat: repeat;
-  /* height: 100%; */
   height: 120vh;
 }
 
@@ -93,7 +72,6 @@ code {
   text-align: center;
   margin-top: -30px;;
 }
-
 
 .form {
   display: flex;
@@ -169,8 +147,6 @@ label {
   border-radius: 10px;
   border: 1px solid black;
   background: rgba(255, 255, 255, 0.736);
-
-  /* background: var(--primary-one); */
   box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
 }
 
@@ -180,9 +156,7 @@ label {
   display: flex;
   width: 250px;
   padding: 20px;
-  /* border-radius: 20px; */
   border: 1px solid black;
-  /* background: var(--primary-two); */
   box-shadow: 6px 6px 20px rgba(122,122,122,0.512);
 }
 
@@ -191,7 +165,6 @@ label {
   height: 50px;
   border-radius: 5px;
 }
-
 
 span {
   font-weight: bold;
@@ -249,7 +222,6 @@ span {
   width:0;
   background: #f0094a;
   box-shadow:
-   /* -1px -1px 5px 0px #fff, */
    7px 7px 20px 0px #0003,
    4px 4px 5px 0px #0002;
   transition:400ms ease all;
@@ -314,9 +286,6 @@ a:link {
 
 @media (min-width: 700px) {
   .profile-info-and-form {
-    /* flex-direction: row; */
-    /* height: 100vh; */
-    /* align-items: flex-start; */
     margin-top: 20px;
   }
   .profile-info-form {
@@ -353,22 +322,10 @@ a:link {
 /*///////////////////////////////////// Header /////////////////////////////////////////////////////////////////////*/
 
 .header {
-  /* background: #FD7E6D; */
-  /* background-image: url("https://i.postimg.cc/QxgfGQ4H/pexels-mohan-reddy-4388593.jpg"); */
   background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
-
   background-position: 80%;
-  /* animation: colorChange 5s infinite; */
-
-  /* background: linear-gradient(
-    to left bottom,
-    var(--primary-three),
-    var(--primary-four)
-  ); */
-
   color: #000;
   width: 100vw;
-  /* height: 70px; */
   height: 10%;
   top: 0;
   position: fixed;
@@ -376,14 +333,6 @@ a:link {
   position: fixed;
   z-index: 10;
   display: flex;
-}
-
-
-@keyframes colorChange {
-  0%   {background-color: #F6EABE;}
-  25%  {background-color: #FDA65D;}
-  50%  {background-color: #FFA810;}
-  100% {background-color: #FDA65D;} 
 }
 
 .backLink {
@@ -429,7 +378,6 @@ a:link {
 
 .movie-image{
   height: 60vh;
-
 }
 
 .movie-summary{
@@ -451,7 +399,6 @@ a:link {
 .movie-details {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .details-p {
@@ -461,14 +408,11 @@ a:link {
 .details-category-title, .details-tags-title {
   margin: 0;
   width: auto;
-  
-  
 }
 
 .details-category, .details-tags {
   overflow: auto;
   max-width: 350px;
-  
 }
 
 .tag {
@@ -480,9 +424,7 @@ a:link {
 
 .tag:hover {
   box-shadow: 5px 5px 10px rgba(122,122,122,0.512);
-
 }
-
 
 .category-box, .tags-box {
   display: flex;
@@ -531,18 +473,14 @@ a:link {
     flex-direction: row;
     width: 80vw;
     font-size: 20px;
-    /* border: 1px solid black; */
   }
   .movie-summary {
     max-width: 800px;
     margin-left: 60px;
-    /* border: 1px solid black; */
-
   }
   .category-box, .tags-box {
     max-height: 150px;
     width: 700px;
-    /* border: 1px solid black; */
   }
   .details-category, .details-tags {
     overflow: visible;
@@ -582,9 +520,8 @@ a:link {
   margin-top: 0px;
   top: 0px;
   width: 60vw;
-  height: 65px;  /*65px */
+  height: 65px; 
   margin: 0 75px;
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -637,10 +574,8 @@ a:link {
 
 .info-desc {
   font-size: 12px;
-  /* width: 170px; */
   max-height: 75px;
   overflow: hidden;
-  /* border: 1px solid black; */
 }
 
 .info-rating {
@@ -657,7 +592,6 @@ a:link {
 
 .info-medium {
   font-size: 12px;
-  /* margin: 0; */
 }
 
 .mini-tag-box {
@@ -676,19 +610,13 @@ a:link {
 }
 
 .red {
-  /* background: #FD7E6D; */
   background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
   background-size: cover;
 }
 
 .blue {
-  /* background: #5D5DFC; */
   background-image: url("https://i.postimg.cc/4xysZPNb/comic-Blue.png");
   background-size: cover;
-}
-
-.green {
-  background: #849D35;
 }
 
 @media (min-width:700px) {
@@ -700,7 +628,6 @@ a:link {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    /* margin-bottom: 50px;  */
   }
   .title-container {
     width: auto;
@@ -714,8 +641,6 @@ a:link {
     flex-wrap: wrap;
     justify-content: center;
     width: 100vw;
-    /* margin: 0 100px; */
-    /* border: 1px solid black; */
 
     }
     .info-box {
@@ -772,10 +697,6 @@ a:link {
   width: 1px;
 }
 
-/* ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-} */
-
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
   background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
@@ -830,9 +751,7 @@ a:link {
   font-size: 40px;
   margin: 10px;
   letter-spacing: 3px;
-  /* color: rgba(255, 255, 255, .9); */
   color: black;
-  /* text-shadow: 3px 3px 3px #d40000; */
 }
 
 
@@ -862,7 +781,6 @@ a:link {
 
 .scroll-tag:hover {
   box-shadow: 5px 5px 10px rgba(122,122,122,0.412);
-  /* background: #FD7E6D; */
   background-image: url("https://i.postimg.cc/y8H71qF7/comiclessred.png");
   background-position: 0% 15%;
   color: white;
@@ -907,9 +825,7 @@ a:link {
 }
 
 @media (min-width:1024px) {
-
   .span-box {
-    /* border: 1px solid black; */
     width: 600px;
     height: 80px;
 
@@ -921,9 +837,7 @@ a:link {
   }
   .top-nav {
     justify-content: space-evenly;
-    
   }
-
 }
 
 
@@ -1006,7 +920,6 @@ a:link {
 
 .sideMenu-open {
   position: fixed;
-  /* background: #FD7E6D; */
   background-image: url("https://i.postimg.cc/cHRqN03k/marvel-red1.png");
   border-radius: 10px;;
   top:-50px;
@@ -1017,7 +930,6 @@ a:link {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  /* z-index: 10; */
   transition: all 1s ease;
   display: flex;
   margin-block-start: 0;
@@ -1074,8 +986,6 @@ a:link {
   .header-list-item {
     font-size: 24px;
   }
-
-
 }
 
 /*///////////////////////////////////// images /////////////////////////////////////////////////////////////////////*/
