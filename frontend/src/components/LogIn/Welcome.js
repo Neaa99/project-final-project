@@ -12,7 +12,8 @@ const Welcome = () => {
             <div className="title-container">
                 <h3 className="main-title"></h3>
             </div>
-      <h1 className="welcome">{user.superhero ? `Welcome ${user.superhero}` : `Welcome ${user.fullName}` ? !user.superhero : `Welcome`}</h1>
+            
+            <h1 className="welcome">{user.superhero ? `Welcome ${user.superhero}` : `Welcome ${user.fullName}` ? !user.superhero : `Welcome`}</h1>
             <div className="welcome-container">
                 <Link to="/authorized/profile" className='welcome-link'>
                     <p className="welcome-link-item bold">Profile</p>

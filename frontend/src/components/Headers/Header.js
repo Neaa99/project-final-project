@@ -13,7 +13,6 @@ const Header = () => {
     const [active, setActive] = useState(false)
 
     const dispatch = useDispatch()
-
     const navigate = useNavigate();
 
     const onBackButtonClick = () => {
