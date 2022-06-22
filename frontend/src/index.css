@@ -753,7 +753,7 @@ a:link {
 @media (min-width:1800px) {
 
   .info-box {
-    max-width: 900px;
+    max-width: 800px;
   }
   .main-title {
     height: 50px;
