@@ -130,7 +130,7 @@ label {
 }
 
 .welcome-link-item {
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -583,7 +583,7 @@ a:link {
   top: 0px;
   width: 60vw;
   height: 65px;  /*65px */
-  margin: 0 70px;
+  margin: 0 75px;
   /* border: 1px solid black; */
   display: flex;
   align-items: center;
