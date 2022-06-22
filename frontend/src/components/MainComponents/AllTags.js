@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 
 import Header from "components/Headers/Header";
+import TopScroll from "components/Headers/TopScroll";
 import Footer from "./Footer";
 
 
@@ -14,7 +15,7 @@ const AllTags = () => {
             <div className="title-container">
                 <h3 className="main-title">TAGS</h3>
             </div>
-                        
+                    
             <div className="listed-tags">
 
                     <Link to={`/feed/tags/Tony Stark`}>
@@ -77,7 +78,7 @@ const AllTags = () => {
                     <Link to={`/feed/tags/The Falcon`}>
                         <p className="tag-item falcon red">The Falcon</p>
                     </Link>
-                    <Link to={`/feed/tags/Rocket Racoon`}>
+                    <Link to={`/feed/tags/Rocket Raccoon`}>
                         <p className="tag-item rocket red">Rocket Racoon</p>
                     </Link>
                     <Link to={`/feed/tags/Gamora`}>
@@ -92,7 +93,7 @@ const AllTags = () => {
                     <Link to={`/feed/tags/Yondu`}>
                         <p className="tag-item yondu red">Yondu</p>
                     </Link>
-                    <Link to={`/feed/tags/Wanda`}>
+                    <Link to={`/feed/tags/Wanda Maximoff`}>
                         <p className="tag-item wanda red">Wanda</p>
                     </Link>
                     <Link to={`/feed/tags/F.R.I.D.A.Y.`}>
@@ -155,9 +156,6 @@ const AllTags = () => {
                     <Link to={`/feed/tags/Charles Xavier`}>
                         <p className="tag-item xavier red">Charles Xavier</p>
                     </Link>
-                    <Link to={`/feed/tags/Fantastic Four`}>
-                        <p className="tag-item four red">Fantastic Four</p>
-                    </Link>
                     <Link to={`/feed/tags/Riri Williams`}>
                         <p className="tag-item riri red">Riri Williams</p>
                     </Link>
@@ -188,7 +186,7 @@ const AllTags = () => {
                     <Link to={`/feed/tags/Scott Summers`}>
                         <p className="tag-item summers red">Scott Summers</p>
                     </Link>
-                    <Link to={`/feed/tags/Rouge`}>
+                    <Link to={`/feed/tags/Rogue`}>
                         <p className="tag-item rouge red">Rogue</p>
                     </Link>
                     <Link to={`/feed/tags/Mystique`}>
