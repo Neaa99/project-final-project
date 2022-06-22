@@ -8,10 +8,13 @@ const NotFound = () => {
   };
 
   return (
-    <div>
-    <p>Sorry this page don't exist</p>
-    <button onClick={onHomeButtonClick}>Go to home</button>
-  </div>
+    <section className="red-background">
+      <div className="not-found">
+        <h2>Sorry this page don't exist</h2>
+        <button className="btn custom-btn" onClick={onHomeButtonClick}>Go to home</button>
+      </div>
+    </section>
+
   );
 };
 
