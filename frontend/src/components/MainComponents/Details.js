@@ -58,6 +58,8 @@ const Details = () => {
                             <div className="movie-desc">
                                 <p>{details.description}</p>
                             </div>
+                            <p className="info-rating"><span className="IMBd">IMDb:</span> {details.imdbRating}</p>
+
 
                             <div className="movie-details">
                                 <p className="details-p"><span>Release date:</span> 
@@ -75,7 +77,7 @@ const Details = () => {
                                 )}
                                  {details.oneShotLength && (
                                         <p className="details-p"><span>Length of OneSHot:</span> 
-                                            <br/>{details.oneShotLength}</p>
+                                            <br/>{details.oneShotLength} min</p>
                                 )}
                             </div>
                         
