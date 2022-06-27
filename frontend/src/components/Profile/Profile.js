@@ -84,6 +84,14 @@ const Profile = () => {
                 } 
           </div>
 
+          <div className="btn-container">
+          <button className="btn custom-btn" onClick={btnHandler}>
+            {active ? "Close" : "Edith Profile"}
+          </button>
+          <Link to='/feed' className="btn custom-btn">
+             <p>Explore</p>    
+          </Link>
+        </div>
 
         <div className={active ? "sideMenu-open" : "sideMenu-closed"}>
           <ProfileForm
@@ -96,18 +104,9 @@ const Profile = () => {
             movie={movie}
             setMovie={setMovie}
             onFormSubmit={onFormSubmit}
+            btnHandler={btnHandler}
           />
         </div>
-
-        <div className="btn-container">
-          <button className="btn custom-btn" onClick={btnHandler}>
-            {active ? "Close" : "Edith Profile"}
-          </button>
-          <Link to='/feed' className="btn custom-btn">
-             <p>Explore</p>    
-          </Link>
-        </div>
-        
       </div>
       <Footer />
     </section>

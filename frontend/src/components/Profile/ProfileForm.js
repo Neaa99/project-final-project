@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
 
-const ProfileForm = ({ fullName, setFullName, age, setAge, superhero, setSuperhero, movie, setMovie, onFormSubmit }) => {
+const ProfileForm = ({ fullName, setFullName, age, setAge, superhero, setSuperhero, movie, setMovie, onFormSubmit, btnHandler }) => {
     
-    const [active, setActive] = useState(false)
+    // const [active, setActive] = useState(false)
 
-    const btnHandler = () => {
-        setActive(!active)
-      }
+    // const btnHandler = () => {
+    //     setActive(!active)
+    //   }
     
     return (
         <>
