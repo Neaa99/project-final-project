@@ -17,6 +17,7 @@ const Details = () => {
         fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
             .then(res => res.json())
             .then(data => {
+                console.log(data)
                 setDetails(data)
             })
         }, [title])

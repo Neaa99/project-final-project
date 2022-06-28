@@ -367,7 +367,7 @@ a:link {
 
 @media (min-width: 700px) {
   .header {
-   height: 8%;
+   height: 10%;
   }
 }
 
@@ -676,13 +676,24 @@ a:link {
   
 }
 
-@media (min-width:1224px) {
+@media (min-width:1000px) {
   .info-box {
     max-width: 600px;
     margin: 10px;
   }
   .main-title {
    height: 70px;
+
+  }
+}
+
+@media (min-width:1224px) {
+  .info-box {
+    max-width: 600px;
+    margin: 10px;
+  }
+  .main-title {
+   height: 40px;
 
   }
 }
