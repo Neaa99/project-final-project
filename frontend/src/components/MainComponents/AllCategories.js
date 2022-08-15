@@ -27,6 +27,12 @@ const AllCategories = () => {
                 <Link to={`/feed/categories/Phase 4`}>
                     <p className="tag-item phase red">Phase 4</p>
                 </Link>
+                <Link to={`/feed/categories/Phase 5`}>
+                    <p className="tag-item phase red">Phase 5</p>
+                </Link>
+                <Link to={`/feed/categories/Phase 6`}>
+                    <p className="tag-item phase red">Phase 6</p>
+                </Link>
                 <Link to={`/feed/categories/Iron Man`}>
                     <p className="tag-item tony red">Iron Man</p>
                 </Link>
