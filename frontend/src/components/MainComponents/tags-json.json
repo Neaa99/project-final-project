@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Phase 1",
+        "image": "https://i.postimg.cc/gkdQ3PGn/stars.jpg",
+        "classname": "phase"
+    },
+    {
+        "title": "Qull starlord",
+        "image": "https://i.postimg.cc/ZnT0XF98/quill.jpg",
+        "classname": "quill"
+
+    },
+    {
+        "title": "Thor",
+        "image": "https://i.postimg.cc/3RCKKFKR/thor.webp",
+        "classname": "thor"
+    },
+    {
+        "title": "Loki",
+        "image": "https://i.postimg.cc/mD9Z1GBm/lokii.webp",
+        "classname": "loki"
+    }
+]

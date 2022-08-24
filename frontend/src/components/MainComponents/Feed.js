@@ -120,21 +120,6 @@ const Feed = () => {
                         </div>
                     </section>
 
-                    <h3 className="feed-title">Upcoming movies and series:</h3>
-                    <section className="scroller">
-                        <div className="inside-scroller">
-                            {upcoming.map((marvel) => (
-                                <Link
-                                    to={`/feed/${marvel.title}`} 
-                                    key={marvel.id}
-                                    tabIndex="0">
-                                    <p className="bold">{marvel.title}</p>    
-                                    <img src={marvel.poster} alt={marvel.title}/>
-                                </Link>
-                            ))}
-                        </div>
-                    </section>
-
                     <h3 className="feed-title">Asgardiens:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
@@ -184,6 +169,21 @@ const Feed = () => {
                     <section className="scroller">
                         <div className="inside-scroller">
                             {animated.map((marvel) => (
+                                <Link
+                                    to={`/feed/${marvel.title}`} 
+                                    key={marvel.id}
+                                    tabIndex="0">
+                                    <p className="bold">{marvel.title}</p>    
+                                    <img src={marvel.poster} alt={marvel.title}/>
+                                </Link>
+                            ))}
+                        </div>
+                    </section>
+
+                    <h3 className="feed-title">Upcoming movies and series:</h3>
+                    <section className="scroller">
+                        <div className="inside-scroller">
+                            {upcoming.map((marvel) => (
                                 <Link
                                     to={`/feed/${marvel.title}`} 
                                     key={marvel.id}

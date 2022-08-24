@@ -402,6 +402,8 @@ a:link {
   font-weight: 700;
 }
 
+
+
 .movie-details {
   display: flex;
   flex-wrap: wrap;
@@ -602,7 +604,7 @@ a:link {
 
 .mini-tag-box {
   display: flex;
-  max-width: 20vh;
+  max-width: 30vh;
   max-height: 50px;
   gap: 5px; 
 }
@@ -766,7 +768,7 @@ a:link {
   font-family: 'marvelregular';
   text-transform: uppercase;
   font-size: 40px;
-  margin: 10px;
+  margin: 20px;
   letter-spacing: 3px;
   color: black;
 }
