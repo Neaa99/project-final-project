@@ -931,16 +931,6 @@ a:link {
   margin-block-start: 0;
 }
 
-.closeMenu-closed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 20px;
-  transition: all 1s ease;
-  cursor: pointer;
-  opacity: 0;
-}
-
 .sideMenu-open {
   position: fixed;
   background-image: url("https://i.postimg.cc/cHRqN03k/marvel-red1.png");
@@ -959,7 +949,7 @@ a:link {
   margin-top: 50px;
 }
 
-.closeMenu-open {
+/* .closeMenu-open {
   position: fixed;
   top: 0;
   left: 0;
@@ -968,6 +958,18 @@ a:link {
   cursor: pointer;
   display: block;
 }
+
+
+.closeMenu-closed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  transition: all 1s ease;
+  cursor: pointer;
+  opacity: 0;
+} */
+
 
 .top-header {
   width: 100%;

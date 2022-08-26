@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import Hamburger from "hamburger-react";
 
-
 import { account } from "reducers/account";
 import { BackIcon } from "./BackIcon";
 
@@ -75,8 +74,8 @@ const Header = (props) => {
                     </p>
                   </div>
                 
-                  <div className={active ? "closeMenu-open" : "closeMenu-closed"}>
-                  </div> 
+                  {/* <div className={active ? "closeMenu-open" : "closeMenu-closed"}>
+                  </div>  */}
               </ul>
           </nav>
             </div>
