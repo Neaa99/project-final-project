@@ -683,10 +683,7 @@ a:link {
     max-width: 600px;
     margin: 10px;
   }
-  .main-title {
-   height: 70px;
 
-  }
 }
 
 @media (min-width:1224px) {
@@ -694,19 +691,13 @@ a:link {
     max-width: 600px;
     margin: 10px;
   }
-  .main-title {
-   height: 40px;
 
-  }
 }
 
 @media (min-width:1800px) {
 
   .info-box {
     max-width: 800px;
-  }
-  .main-title {
-    height: 35px;
   }
 }
 
