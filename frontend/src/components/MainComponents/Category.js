@@ -21,9 +21,6 @@ const { category } = useParams()
     <>
         <Header title={category}/>
 
-        <div className="title-container">
-            {/* <h3 className="main-title">{category}</h3> */}
-        </div>
 
             <div className="categoryTag-feed"> 
 

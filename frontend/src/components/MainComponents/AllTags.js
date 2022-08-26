@@ -12,11 +12,6 @@ const AllTags = () => {
         <section>
             <Header title="TAGS"/>
 
-            <div className="title-container">
-                {/* <h3 className="main-title">TAGS</h3> */}
-
-            </div>
-
             <div className="topscroll">
                 <TopScroll />
             </div>

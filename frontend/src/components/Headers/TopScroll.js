@@ -6,7 +6,7 @@ const TopScroll = () => {
 
 
     return (
-        <div className="span-box">
+        <div>
             <div className="top-nav">
                 <Link to={`/feed`}>
                     <li className="scroll-tag ">Feed</li>

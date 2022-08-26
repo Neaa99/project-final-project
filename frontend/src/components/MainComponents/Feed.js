@@ -84,10 +84,6 @@ const Feed = () => {
             <>
                 <Header title="Feed" />
 
-                <div className="title-container">
-                    {/* <h3 className="main-title">FEED</h3> */}
-                </div>
-
                 <div className="homePage">
                     <TopScroll />
                     <h3 className="feed-title">All marvel:</h3>

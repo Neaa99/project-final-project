@@ -11,10 +11,6 @@ const AllCategories = () => {
         <>
             <Header title="CATEGORIES"/>
 
-            <div className="title-container">
-                {/* <h3 className="main-title">CATEGORIES</h3> */}
-            </div>
-
             <div className="topscroll">
                 <TopScroll />
             </div>
