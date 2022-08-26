@@ -1,0 +1,142 @@
+[
+    {
+        "title": "Phase 1",
+        "classname": "phase"
+    },
+    {
+        "title": "Phase 2",
+        "classname": "phase"
+    },
+    {
+        "title": "Phase 3",
+        "classname": "phase"
+    },
+    {
+        "title": "Phase 4",
+        "classname": "phase"
+    },
+    {
+        "title": "Phase 5",
+        "classname": "phase"
+    },
+    {
+        "title": "Phase 6",
+        "classname": "phase"
+    },
+    {
+        "title": "Iron Man",
+        "classname": "tony"
+    },
+    {
+        "title": "The Hulk",
+        "classname": "hulk"
+    },
+    {
+        "title": "Thor",
+        "classname": "thor"
+    },
+    {
+        "title": "Asgardiens",
+        "classname": "asgardien"
+    },
+    {
+        "title": "Loki",
+        "classname": "loki"
+    },
+    {
+        "title": "Captain America",
+        "classname": "rogers"
+    },
+    {
+        "title": "Avengers",
+        "classname": "avengers"
+    },
+    {
+        "title": "Black Widow",
+        "classname": "natasha"
+    },
+    {
+        "title": "Falcon",
+        "classname": "falcon"
+    },
+    {
+        "title": "Guardians of the Galaxy",
+        "classname": "galaxy"
+    },
+    {
+        "title": "Ant-Man",
+        "classname": "antman"
+    },
+    {
+        "title": "Doctor Strange",
+        "classname": "strange"
+    },
+    {
+        "title": "Spider-Man",
+        "classname": "spider"
+    },
+    {
+        "title": "Black Panther",
+        "classname": "panther"
+    },
+    {
+        "title": "Shang-Chi",
+        "classname": "shang"
+    },
+    {
+        "title": "Eternals",
+        "classname": "eternals"
+    },
+    {
+        "title": "Scarlet Witch",
+        "classname": "wanda"
+    },
+    {
+        "title": "Upcoming",
+        "classname": "upcoming"
+    },
+    {
+        "title": "Animated",
+        "classname": "animated"
+    },
+    {
+        "title": "Captain Marvel",
+        "classname": "capMarvel"
+    },
+    {
+        "title": "Hawkeye",
+        "classname": "hawkeye"
+    },
+    {
+        "title": "OneShot",
+        "classname": "oneshot"
+    },
+    {
+        "title": "Documentary",
+        "classname": "doc"
+    },
+    {
+        "title": "Deadpool",
+        "classname": "deadpool"
+    },
+    {
+        "title": "Marvel Legacy",
+        "classname": "legacy"
+    },
+    {
+        "title": "Wolverine",
+        "classname": "wolf"
+    },
+    {
+        "title": "X-Men",
+        "classname": "xmen"
+    },
+    {
+        "title": "Fantastic Four",
+        "classname": "four"
+    },
+    {
+        "title": "S.H.I.E.L.D",
+        "classname": "sheild"
+    }
+]

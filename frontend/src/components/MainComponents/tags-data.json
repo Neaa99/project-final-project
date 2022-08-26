@@ -1,0 +1,283 @@
+[
+    {
+        "title": "Tony Stark",
+        "classname": "tony"
+    },
+    {
+        "title": "Thor",
+        "classname": "thor"
+    },
+    {
+        "title": "Black Widow",
+        "classname": "natasha"
+    },
+    {
+        "title": "Hawkeye",
+        "classname": "hawkeye"
+    },
+    {
+        "title": "S.H.I.E.L.D",
+        "classname": "sheild"
+    },
+    {
+        "title": "Nick Fury",
+        "classname": "nick"
+    },
+    {
+        "title": "Peter Quill",
+        "classname": "quill"
+    },
+    {
+        "title": "Groot",
+        "classname": "groot"
+    },
+    {
+        "title": "Loki",
+        "classname": "loki"
+    },
+    {
+        "title": "Pepper Potts",
+        "classname": "pepper"
+    },
+    {
+        "title": "Vision",
+        "classname": "jarvis"
+    },
+    {
+        "title": "Thanos",
+        "classname": "thanos"
+    },
+    {
+        "title": "Rhodey",
+        "classname": "rhodney"
+    },
+    {
+        "title": "Bruce Banner",
+        "classname": "hulk"
+    },
+    {
+        "title": "Howard Stark",
+        "classname": "howard"
+    },
+    {
+        "title": "Jane Foster",
+        "classname": "foster"
+    },
+    {
+        "title": "Steve Rogers",
+        "classname": "rogers"
+    },
+    {
+        "title": "Bucky",
+        "classname": "bucky"
+    },
+    {
+        "title": "Peggy Carter",
+        "classname": "peggy"
+    },
+    {
+        "title": "The Falcon",
+        "classname": "falcon"
+    },
+    {
+        "title": "Rocket Racoon",
+        "classname": "rocket"
+    },
+    {
+        "title": "Gamora",
+        "classname": "gamora"
+    },
+    {
+        "title": "Drax",
+        "classname": "drax"
+    },
+    {
+        "title": "Nebula",
+        "classname": "nebula"
+    },
+    {
+        "title": "Yondu",
+        "classname": "yondu"
+    },
+    {
+        "title": "Wanda",
+        "classname": "wanda"
+    },
+    {
+        "title": "F.R.I.D.A.Y.",
+        "classname": "friday"
+    },
+    {
+        "title": "Ant-Man",
+        "classname": "antman"
+    },
+    {
+        "title": "T'Challa",
+        "classname": "panther"
+    },
+    {
+        "title": "Peter Parker",
+        "classname": "spider"
+    },
+    {
+        "title": "Stephen Strange",
+        "classname": "strange"
+    },
+    {
+        "title": "Wong",
+        "classname": "wong"
+    },
+    {
+        "title": "MJ",
+        "classname": "mj"
+    },
+    {
+        "title": "Ned Leeds",
+        "classname": "ned"
+    },
+    {
+        "title": "Happy",
+        "classname": "happy"
+    },
+    {
+        "title": "Valkyrie",
+        "classname": "valkyrie"
+    },
+    {
+        "title": "Shuri",
+        "classname": "shuri"
+    },
+    {
+        "title": "The Wasp",
+        "classname": "wasp"
+    },
+    {
+        "title": "Captain Marvel",
+        "classname": "capMarvel"
+    },
+    {
+        "title": "Flash",
+        "classname": "flash"
+    },
+    {
+        "title": "Shang-Chi",
+        "classname": "shang"
+    },
+    {
+        "title": "Eternals",
+        "classname": "eternals"
+    },
+    {
+        "title": "Venom",
+        "classname": "venom"
+    },
+    {
+        "title": "Electro",
+        "classname": "electro"
+    },
+    {
+        "title": "Doctor Octopus",
+        "classname": "octopus"
+    },
+    {
+        "title": "Charles Xavier",
+        "classname": "xavier"
+    },
+    {
+        "title": "Riri Williams",
+        "classname": "riri"
+    },
+    {
+        "title": "Mantis",
+        "classname": "mantis"
+    },
+    {
+        "title": "Ms. Marvel",
+        "classname": "msMarvel"
+    },
+    {
+        "title": "Echo",
+        "classname": "echo"
+    },
+    {
+        "title": "Moon Knight",
+        "classname": "moonknight"
+    },
+    {
+        "title": "Deadpool",
+        "classname": "deadpool"
+    },
+    {
+        "title": "Logan",
+        "classname": "wolf"
+    },
+    {
+        "title": "Phoenix",
+        "classname": "phoenix"
+    },
+    {
+        "title": "Magneto",
+        "classname": "magneto"
+    },
+    {
+        "title": "Scott Summers",
+        "classname": "summers"
+    },
+    {
+        "title": "Rogue",
+        "classname": "rouge"
+    },
+    {
+        "title": "Mystique",
+        "classname": "mystique"
+    },
+    {
+        "title": "Mr. Fantastic",
+        "classname": "fantastic"
+    },
+    {
+        "title": "Invisible Women",
+        "classname": "invisible"
+    },
+    {
+        "title": "Human Torch",
+        "classname": "torch"
+    },
+    {
+        "title": "The Thing",
+        "classname": "thing"
+    },
+    {
+        "title": "Dr. Doom",
+        "classname": "doom"
+    },
+    {
+        "title": "Green Goblin",
+        "classname": "goblin"
+    },
+    {
+        "title": "Gwen Stacy",
+        "classname": "gwen"
+    },
+    {
+        "title": "Morbius",
+        "classname": "morbius"
+    },
+    {
+        "title": "Blade",
+        "classname": "blade"
+    },
+    {
+        "title": "M.O.D.O.K.",
+        "classname": "modok"
+    },
+    {
+        "title": "Hit-Monkey",
+        "classname": "monkey"
+    },
+    {
+        "title": "Miles Morales",
+        "classname": "miles"
+    }
+
+]

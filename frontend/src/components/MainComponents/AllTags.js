@@ -5,6 +5,8 @@ import Header from "components/Headers/Header";
 import TopScroll from "components/Headers/TopScroll";
 import Footer from "./Footer";
 
+import data from './tags-data.json'
+
 
 const AllTags = () => {
 
@@ -17,9 +19,16 @@ const AllTags = () => {
             </div>
                     
             <div className="listed-tags">
-                
+                {data &&
+                    data.map(({ title, classname }) => (
+                        <Link to={`/feed/tags/${title}`} key={title}>
+                            <p className={`tag-item red ${classname}`}>{title}</p>
+                        </Link>
+                    ))}
 
-                    <Link to={`/feed/tags/Tony Stark`}>
+                {/* Before map: */}
+                <section>
+                    {/* <Link to={`/feed/tags/Tony Stark`}>
                         <p className="tag-item tony red">Tony Stark</p>
                     </Link>
                     <Link to={`/feed/tags/Thor`}>
@@ -228,7 +237,9 @@ const AllTags = () => {
                     </Link>
                     <Link to={`/feed/tags/Miles Morales`}>
                         <p className="tag-item miles red">Miles Morales</p>
-                    </Link>
+                    </Link> */}
+                </section>
+                  
 
                 </div>
 

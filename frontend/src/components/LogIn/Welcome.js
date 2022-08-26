@@ -10,7 +10,6 @@ const Welcome = () => {
     return (
         <section className="red-background">
             <div className="title-container">
-                <h3 className="main-title"></h3>
             </div>
 
             <h1 className="welcome">{user.superhero ? `Welcome ${user.superhero}` : `Welcome ${user.fullName}` ? !user.superhero : `Welcome`}</h1>
