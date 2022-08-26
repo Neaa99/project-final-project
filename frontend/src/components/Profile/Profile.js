@@ -64,22 +64,22 @@ const Profile = () => {
         <div className="title-container">
         </div>
      
-        <h1 className="welcome">Profile</h1>
+        <h1 className="welcome" tabIndex="0">Profile</h1>
         <div className="profile-info-and-form">
           <div className="profile-info">
-              <p><span>Username:</span> {`${user.username}`}</p>
-              <p><span>Email:</span> {`${user.email}`}</p>
+              <p tabIndex="0"><span>Username:</span> {`${user.username}`}</p>
+              <p tabIndex="0"><span>Email:</span> {`${user.email}`}</p>
                 {user.fullName && 
-                  <p><span>Name:</span> {`${user.fullName}`}</p>
+                  <p tabIndex="0"><span>Name:</span> {`${user.fullName}`}</p>
                 }
                 {user.age && 
-                  <p><span>Age:</span> {`${user.age}`}</p>
+                  <p tabIndex="0"><span>Age:</span> {`${user.age}`}</p>
                 }
                 {user.superhero && 
-                  <p><span>Superhero Name:</span> {`${user.superhero}`}</p>
+                  <p tabIndex="0"><span>Superhero Name:</span> {`${user.superhero}`}</p>
                 } 
                 {user.movie && 
-                  <p><span>Favorite Marvel movie:</span> {`${user.movie}`}</p>
+                  <p tabIndex="0"><span>Favorite Marvel movie:</span> {`${user.movie}`}</p>
                 } 
           </div>
 

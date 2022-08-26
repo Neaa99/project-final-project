@@ -14,6 +14,7 @@ const ProfileForm = ({ fullName, setFullName, age, setAge, superhero, setSuperhe
             <form 
                 className="profile-info-form" 
                 onSubmit={onFormSubmit}
+                role="form"
             >
                 <label htmlFor="fullname">Full name</label>
                 <input 

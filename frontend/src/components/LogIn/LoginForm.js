@@ -67,31 +67,35 @@ const LoginForm = () => {
 
   return (
     <div className="landingpage-section-wrapper">
-      <h1 className="begin-header mobile-hide">Avengers, assemble!</h1>
+      <h1 className="begin-header mobile-hide" tabIndex="0">Avengers, assemble!</h1>
       <section className="landingpage-section">
-        <h3>Welcome back! 
+        <h3 tabIndex="0">Welcome back! 
           <br></br>Log in here</h3>
         <form className="form" onSubmit={onFormSubmit}>
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="username" tabIndex="0">Username:</label>
           <input 
+            tabIndex="0"
             className="input" 
             type="text" 
             value={username} 
             onChange={(event) => setUsername(event.target.value)} 
           />
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password" tabIndex="0">Password:</label>
           <input 
+            tabIndex="0"
             className="input" 
             type="password" 
             value={password} 
             onChange={(event) => setPassword(event.target.value)} 
           />
           {error && <p className="error-msg">{error.message}</p>}
-          <button className="btn custom-btn" type="submit">Log in</button>
+          <button className="btn custom-btn" type="submit" tabIndex="0">Log in</button>
         </form>
         <div>
-          <p className='not-member'> Not yet a member? </p>
-          <button className="btn custom-btn create-account-btn" onClick={() => handleOnClick(account.actions.showSignupForm(true))}> Create an account</button>
+          <p className='not-member' tabIndex="0"> Not yet a member? </p>
+          <button className="btn custom-btn create-account-btn" onClick={() => handleOnClick(account.actions.showSignupForm(true))} tabIndex="0"> 
+            Create an account
+          </button>
         </div>
       </section>
     </div>
