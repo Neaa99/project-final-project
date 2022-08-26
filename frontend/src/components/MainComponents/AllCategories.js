@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Header from 'components/Headers/Header'
+import TopScroll from 'components/Headers/TopScroll'
 import Footer from './Footer'
 
 const AllCategories = () => {
@@ -13,6 +14,11 @@ const AllCategories = () => {
             <div className="title-container">
                 {/* <h3 className="main-title">CATEGORIES</h3> */}
             </div>
+
+            <div className="topscroll">
+                <TopScroll />
+            </div>
+
             <div className="listed-tags">
 
              <Link to={`/feed/categories/Phase 1`}>

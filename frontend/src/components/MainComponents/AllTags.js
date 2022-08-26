@@ -14,9 +14,15 @@ const AllTags = () => {
 
             <div className="title-container">
                 {/* <h3 className="main-title">TAGS</h3> */}
+
+            </div>
+
+            <div className="topscroll">
+                <TopScroll />
             </div>
                     
             <div className="listed-tags">
+                
 
                     <Link to={`/feed/tags/Tony Stark`}>
                         <p className="tag-item tony red">Tony Stark</p>

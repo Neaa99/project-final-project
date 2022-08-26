@@ -792,6 +792,10 @@ a:link {
   margin: 0;
 }
 
+.topscroll {
+  display: flex;
+  justify-content: center;
+}
 
 .scroll-tag {
   transition: 1.3s;
