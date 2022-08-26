@@ -18,10 +18,10 @@ const [AllOneshot, setAllOneshot] = useState([])
 
         return (
     <>
-        <Header />
+        <Header title="All OneShots"/>
 
         <div className="title-container">
-            <h3 className="main-title">All OneShots</h3>
+            {/* <h3 className="main-title">All OneShots</h3> */}
         </div>
         
         <div className="categoryTag-feed"> 

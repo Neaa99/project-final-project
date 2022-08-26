@@ -18,10 +18,10 @@ const [allSeries, setAllSeries] = useState([])
 
 return (
     <>
-        <Header />
+        <Header title="All Series"/>
 
         <div className="title-container">
-            <h3 className="main-title">All Series</h3>
+            {/* <h3 className="main-title">All Series</h3> */}
         </div>
 
         <div className="categoryTag-feed"> 

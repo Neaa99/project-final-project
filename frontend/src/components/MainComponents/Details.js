@@ -40,10 +40,10 @@ const Details = () => {
 
         return (
             <>
-                <Header />
+                <Header title={details.title}/>
 
                 <div className="title-container">
-                    <h3 className="main-title">{details.title}</h3>
+                    {/* <h3 className="main-title">{details.title}</h3> */}
                 </div>
             
                 <section className="homePage"> 

@@ -10,10 +10,10 @@ const AllTags = () => {
 
     return (
         <section>
-            <Header />
+            <Header title="TAGS"/>
 
             <div className="title-container">
-                <h3 className="main-title">TAGS</h3>
+                {/* <h3 className="main-title">TAGS</h3> */}
             </div>
                     
             <div className="listed-tags">

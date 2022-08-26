@@ -82,9 +82,10 @@ const Feed = () => {
 
         return (
             <>
-                <Header />
+                <Header title="Feed" />
+
                 <div className="title-container">
-                    <h3 className="main-title">FEED</h3>
+                    {/* <h3 className="main-title">FEED</h3> */}
                 </div>
 
                 <div className="homePage">

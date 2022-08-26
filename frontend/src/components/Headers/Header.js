@@ -8,7 +8,7 @@ import { account } from "reducers/account";
 import { BackIcon } from "./BackIcon";
 
 
-const Header = () => {
+const Header = (props) => {
 
     const [active, setActive] = useState(false)
 
@@ -33,6 +33,8 @@ const Header = () => {
                     className="hamburger"
                     onToggle={()=> btnHandler()}
                     />
+
+                    <h1 className="main-title">{props.title}</h1>
 
                   <button className="backLink" onClick={onBackButtonClick}>
                     <BackIcon />

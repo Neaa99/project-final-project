@@ -18,10 +18,10 @@ const [allMovies, setAllMovies] = useState([])
 
         return (
             <>
-                <Header />
+                <Header title="All Movies"/>
 
                 <div className="title-container">
-                    <h3 className="main-title">All Movies</h3>
+                    {/* <h3 className="main-title">All Movies</h3> */}
                 </div>
                 
                 <div className="categoryTag-feed"> 

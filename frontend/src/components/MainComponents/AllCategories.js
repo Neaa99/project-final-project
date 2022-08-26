@@ -8,10 +8,10 @@ const AllCategories = () => {
 
     return (
         <>
-            <Header />
+            <Header title="CATEGORIES"/>
 
             <div className="title-container">
-                <h3 className="main-title">CATEGORIES</h3>
+                {/* <h3 className="main-title">CATEGORIES</h3> */}
             </div>
             <div className="listed-tags">
 
