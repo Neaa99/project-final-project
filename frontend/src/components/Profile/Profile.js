@@ -87,6 +87,7 @@ const Profile = () => {
           <button className="btn custom-btn" onClick={btnHandler}>
             {active ? "Close" : "Edith Profile"}
           </button>
+          
           <Link to='/feed' className="btn custom-btn">
              <p>Explore</p>    
           </Link>
