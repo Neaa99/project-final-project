@@ -82,7 +82,7 @@ const Details = () => {
                             <div className="details-category">
                                 <div className="category-box">{marvelCategories.map((category) => (
                                     <Link to={`/feed/categories/${category}`} key={uniqid()}>
-                                        <p className="tag blue">{category}</p>
+                                        <p className="tag blue" tabIndex="0">{category}</p>
                                     </Link>))}
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ const Details = () => {
                             <div className="details-tags">
                                 <div className="tags-box"> {marvelTags.map((tag) => (
                                     <Link to={`/feed/tags/${tag}`} key={uniqid()}>
-                                        <p className="tag red">{tag}</p>
+                                        <p className="tag red" tabIndex="0">{tag}</p>
                                     </Link>))}
                                 </div> 
                             </div>

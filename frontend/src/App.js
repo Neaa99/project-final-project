@@ -32,11 +32,11 @@ export const App = () => {
       <Provider store={store}>
         <main>
           <Routes>
-            <Route exact path="/" element={<LandingPage />}></Route>
-            <Route exact path="/authorized" element={<><AuthorizedPage /><Welcome /></>}></Route>
+            <Route path="/" element={<LandingPage />}></Route>
+            <Route path="/authorized" element={<><AuthorizedPage /><Welcome /></>}></Route>
             <Route path="/authorized/profile" element={<><AuthorizedPage /><Profile /></>}></Route>
-            <Route exact path="/feed" element={<><AuthorizedPage /><Feed /></>}></Route>
-            <Route exact path='/feed/:title' element={<><AuthorizedPage /><Details /></>}></Route>
+            <Route path="/feed" element={<><AuthorizedPage /><Feed /></>}></Route>
+            <Route path='/feed/:title' element={<><AuthorizedPage /><Details /></>}></Route>
             <Route path='/feed/tags/:tags' element={<><AuthorizedPage /><Tags /></>}></Route>
             <Route path='/feed/categories/:category' element={<><AuthorizedPage /><Category /></>}></Route>
             <Route path='/feed/tags' element={<><AuthorizedPage /><AllTags /></>}></Route>

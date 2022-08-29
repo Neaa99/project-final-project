@@ -72,7 +72,7 @@ const LoginForm = () => {
         <h3 tabIndex="0">Welcome back! 
           <br></br>Log in here</h3>
         <form className="form" onSubmit={onFormSubmit}>
-          <label htmlFor="username" tabIndex="0">Username:</label>
+          <label htmlFor="username">Username:</label>
           <input 
             tabIndex="0"
             className="input" 
@@ -80,7 +80,7 @@ const LoginForm = () => {
             value={username} 
             onChange={(event) => setUsername(event.target.value)} 
           />
-          <label htmlFor="password" tabIndex="0">Password:</label>
+          <label htmlFor="password">Password:</label>
           <input 
             tabIndex="0"
             className="input" 
