@@ -310,9 +310,10 @@ a:link {
   .landingpage-section {
     padding: 100px;
   }
-  .welcome {
-    /* margin-top: 50px; */
-  }
+  /* .welcome {
+    margin-top: 50px;
+  } */
+
   .btn {
     font-size: 16px;
 
