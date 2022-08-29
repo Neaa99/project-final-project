@@ -61,8 +61,8 @@ const Profile = () => {
 
   return (
     <section className="red-background">
-        <div className="title-container">
-            <h3 className="main-title"></h3>
+        <div className="nothing">
+            {/* <h3 className="main-title"></h3> */}
         </div>
      
         <h1 className="welcome">Profile</h1>

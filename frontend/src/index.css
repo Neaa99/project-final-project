@@ -290,6 +290,10 @@ a:link {
   padding: 250px;
 }
 
+.nothing {
+  padding: 5px;
+}
+
 @media (min-width: 700px) {
   .profile-info-and-form {
     margin-top: 20px;
@@ -307,7 +311,7 @@ a:link {
     padding: 100px;
   }
   .welcome {
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   .btn {
     font-size: 16px;
