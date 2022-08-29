@@ -68,37 +68,41 @@ const SignupForm = () => {
 
   return (
     <div className="landingpage-section-wrapper">
-      <h1 className="begin-header mobile-hide">Begin your Marvel journey here...</h1>
+      <h1 className="begin-header mobile-hide" tabIndex="0">Begin your Marvel journey here...</h1>
       <section className="landingpage-section signup-section">
-        <h3>Sign Up here</h3>
+        <h3 tabIndex="0">Sign Up here</h3>
         <form className="form signup-form" onSubmit={onFormSubmit}>
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="username" tabIndex="0">Username:</label>
           <input 
+            tabIndex="0"
             className="input signup-username-input" 
             type="text" 
             value={username} 
             onChange={(event) => setUsername(event.target.value)} 
           />
-          <label htmlFor="Email">Email:</label>
+          <label htmlFor="Email" tabIndex="0">Email:</label>
           <input 
+            tabIndex="0"
             className="input signup-Email-input" 
             type="email" 
             value={email} 
             onChange={(event) => setEmail(event.target.value)} 
           />
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password" tabIndex="0">Password:</label>
           <input 
+            tabIndex="0"
             className="input signup-password-input" 
             type="password" 
             value={password} 
             onChange={(event) => setPassword(event.target.value)} 
           />
           {error && <p className="error-msg">{error.message}</p>}
-          <button className="btn custom-btn signup-button" type="submit">Sign Up</button>
+          <button className="btn custom-btn signup-button" type="submit" tabIndex="0">Sign Up</button>
         </form>
         <div>
-          <p> Already a member? </p>
-          <button 
+          <p tabIndex="0"> Already a member? </p>
+          <button
+            tabIndex="0"   
             className="btn custom-btn" 
             onClick={handleOnClick}
           > 

@@ -23,11 +23,7 @@ const Tags = () => {
         return (
             
             <>
-                <Header />
-
-                <div className="title-container">
-                    <h3 className="main-title">{tags}</h3>
-                </div>
+                <Header title={tags}/>
                 
                 <div className="categoryTag-feed"> 
             

@@ -84,13 +84,9 @@ const Feed = () => {
             <>
                 <Header title="Feed" />
 
-                <div className="title-container">
-                    {/* <h3 className="main-title">FEED</h3> */}
-                </div>
-
                 <div className="homePage">
                     <TopScroll />
-                    <h3 className="feed-title">All marvel:</h3>
+                    <h3 className="feed-title" tabIndex="0">All marvel:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {marvel.map((marvel) => (
@@ -106,7 +102,7 @@ const Feed = () => {
                         </div>
                     </section>
         
-                    <h3 className="feed-title">Avengers:</h3>
+                    <h3 className="feed-title" tabIndex="0">Avengers:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {avengers.map((marvel) => (
@@ -121,7 +117,7 @@ const Feed = () => {
                         </div>
                     </section>
 
-                    <h3 className="feed-title">Asgardiens:</h3>
+                    <h3 className="feed-title" tabIndex="0">Asgardiens:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {asgardiens.map((marvel) => (
@@ -136,7 +132,7 @@ const Feed = () => {
                         </div>
                     </section>
 
-                    <h3 className="feed-title">Spider-Man:</h3>
+                    <h3 className="feed-title" tabIndex="0">Spider-Man:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {spiderman.map((marvel) => (
@@ -151,7 +147,7 @@ const Feed = () => {
                         </div>
                     </section>
 
-                    <h3 className="feed-title">X-Man:</h3>
+                    <h3 className="feed-title" tabIndex="0">X-Man:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {xmen.map((marvel) => (
@@ -166,7 +162,7 @@ const Feed = () => {
                         </div>
                     </section>
 
-                    <h3 className="feed-title">Animated series and movies:</h3>
+                    <h3 className="feed-title" tabIndex="0">Animated series and movies:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {animated.map((marvel) => (
@@ -181,7 +177,7 @@ const Feed = () => {
                         </div>
                     </section>
 
-                    <h3 className="feed-title">Upcoming movies and series:</h3>
+                    <h3 className="feed-title" tabIndex="0">Upcoming movies and series:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {upcoming.map((marvel) => (
@@ -196,7 +192,7 @@ const Feed = () => {
                         </div>
                     </section>
 
-                    <h3 className="feed-title">OneShots:</h3>
+                    <h3 className="feed-title" tabIndex="0">OneShots:</h3>
                     <section className="scroller">
                         <div className="inside-scroller">
                             {oneShot.map((marvel) => (

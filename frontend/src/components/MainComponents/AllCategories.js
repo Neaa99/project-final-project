@@ -5,15 +5,13 @@ import Header from 'components/Headers/Header'
 import TopScroll from 'components/Headers/TopScroll'
 import Footer from './Footer'
 
+import data from './category-data.json'
+
 const AllCategories = () => {
 
     return (
         <>
             <Header title="CATEGORIES"/>
-
-            <div className="title-container">
-                {/* <h3 className="main-title">CATEGORIES</h3> */}
-            </div>
 
             <div className="topscroll">
                 <TopScroll />
@@ -21,7 +19,15 @@ const AllCategories = () => {
 
             <div className="listed-tags">
 
-             <Link to={`/feed/categories/Phase 1`}>
+                {data &&
+                    data.map(({ title, classname}) => (
+                        <Link to={`/feed/categories/${title}`}>
+                            <p className={`tag-item red ${classname}`}>{title}</p>
+                        </Link>
+                    ))}
+
+            <section>
+            {/* <Link to={`/feed/categories/Phase 1`}>
                     <p className="tag-item phase red">Phase 1</p>
                 </Link>
                 <Link to={`/feed/categories/Phase 2`}>
@@ -125,7 +131,9 @@ const AllCategories = () => {
                 </Link>
                 <Link to={`/feed/categories/S.H.I.E.L.D`}>
                     <p className="tag-item sheild red">S.H.I.E.L.D</p>
-                </Link>
+                </Link> */}
+            </section>
+            
                 
             </div>
             <Footer />

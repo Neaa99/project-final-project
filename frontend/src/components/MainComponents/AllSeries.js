@@ -20,10 +20,6 @@ return (
     <>
         <Header title="All Series"/>
 
-        <div className="title-container">
-            {/* <h3 className="main-title">All Series</h3> */}
-        </div>
-
         <div className="categoryTag-feed"> 
 
             <TopScroll />

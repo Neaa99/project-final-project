@@ -41,10 +41,6 @@ const Details = () => {
         return (
             <>
                 <Header title={details.title}/>
-
-                <div className="title-container">
-                    {/* <h3 className="main-title">{details.title}</h3> */}
-                </div>
             
                 <section className="homePage"> 
                     <TopScroll />
@@ -53,36 +49,36 @@ const Details = () => {
                         <img className="movie-image" src={details.poster} alt={details.title} tabIndex="0"/>
                     
                         <section className="movie-summary">
-                            <h2 className="movie-title">{details.title}</h2>
-                            <p className="movie-medium bold">{details.medium}</p>
+                            <h2 className="movie-title" tabIndex="0">{details.title}</h2>
+                            <p className="movie-medium bold" tabIndex="0">{details.medium}</p>
                                 
-                            <div className="movie-desc">
+                            <div className="movie-desc" tabIndex="0">
                                 <p>{details.description}</p>
                             </div>
-                            <p className="info-rating"><span className="IMBd">IMDb:</span> {details.imdbRating}</p>
+                            <p className="info-rating" tabIndex="0"><span className="IMBd">IMDb:</span> {details.imdbRating}</p>
 
 
                             <div className="movie-details">
-                                <p className="details-p"><span>Release date:</span> 
+                                <p className="details-p" tabIndex="0"><span>Release date:</span> 
                                     <br/>{details.release_date}</p>
-                                <p className="details-p"><span>Director:</span>
+                                <p className="details-p" tabIndex="0"><span>Director:</span>
                                     <br/> {details.director}</p>
 
                                 {details.numberOfEpisodes && (
-                                    <p className="details-p"><span>Number of episodes:</span> 
+                                    <p className="details-p" tabIndex="0"><span>Number of episodes:</span> 
                                         <br/>{details.numberOfEpisodes}</p>
                                 )}
                                 {details.box_office && (
-                                        <p className="details-p"><span>Box office:</span> 
+                                        <p className="details-p" tabIndex="0"><span>Box office:</span> 
                                             <br/>{details.box_office}</p>
                                 )}
                                  {details.oneShotLength && (
-                                        <p className="details-p"><span>Length of OneSHot:</span> 
+                                        <p className="details-p" tabIndex="0"><span>Length of OneSHot:</span> 
                                             <br/>{details.oneShotLength} min</p>
                                 )}
                             </div>
                         
-                            <p className="details-category-title"><span>Categories:</span></p>
+                            <p className="details-category-title" tabIndex="0"><span>Categories:</span></p>
                             <div className="details-category">
                                 <div className="category-box">{marvelCategories.map((category) => (
                                     <Link to={`/feed/categories/${category}`} key={uniqid()}>
@@ -91,7 +87,7 @@ const Details = () => {
                                 </div>
                             </div>
 
-                            <p className="details-tags-title"><span>Tags:</span></p>
+                            <p className="details-tags-title" tabIndex="0"><span>Tags:</span></p>
                             <div className="details-tags">
                                 <div className="tags-box"> {marvelTags.map((tag) => (
                                     <Link to={`/feed/tags/${tag}`} key={uniqid()}>
