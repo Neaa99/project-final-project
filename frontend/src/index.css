@@ -821,6 +821,7 @@ a:link {
   }
   .top-nav {
     justify-content: center;
+    margin-top: 100px;
   }
 }
 
@@ -844,6 +845,7 @@ a:link {
   .span-box {
     margin: 25px 0 20px 0;
   }
+
 }
 
 @media (max-width:1100px) {

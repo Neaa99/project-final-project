@@ -19,24 +19,12 @@ const Details = () => {
             .then(data => {
                 console.log(data)
                 setDetails(data)
+                setTags(data.tags)
+                setCategory(data.category)
+
+
             })
         }, [title])
-
-       useEffect(() => {
-        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
-            .then(res => res.json())
-            .then(data => {
-                setCategory(data.category)
-            })
-        }, [])       
-
-    useEffect(() => {
-        fetch(`https://marvel-api-linnea.herokuapp.com/marvel/${title}`)
-            .then(res => res.json())
-            .then(data => {
-                setTags(data.tags)
-            })
-        }, []) 
 
         return (
             <>
